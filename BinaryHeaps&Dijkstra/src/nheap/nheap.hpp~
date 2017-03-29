@@ -1,0 +1,10 @@
+/**
+  Header definition of n-ary heap
+ **/
+
+class Nheap() {
+  //maxsize is the largest number of nodes in heap.
+  //n is heap n-arity
+  Nheap(int n, int maxsize);
+
+}
