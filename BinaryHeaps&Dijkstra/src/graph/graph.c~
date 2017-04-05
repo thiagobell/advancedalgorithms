@@ -1,0 +1,46 @@
+#include "graph.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+
+
+//http://www.inf.ufrgs.br/~MRPRITT/doku.php?id=inf05016:2017-1-trabalhos
+Graph::Graph(std::string input_file)
+{
+  std::ifstream inputF(input_file);
+  if(!inputF.is_open()) {
+    //error
+    throw "error opening file";
+  }
+  std::string line="", dummy;
+  while (line.substr(0,4) != "p sp")
+    getline(in,line);
+  
+  std::stringstream linestr;
+  linestr.str(line);
+  linestr >> dummy >> dummy >> n >> m;
+
+}
+
+
+}
+
+
+void read_dimacs(std::istream& in, unsigned& n, unsigned& m, MyGraph& a) {
+  std::string line="", dummy;
+  
+  a.resize(n);
+  unsigned i=0;
+  while (i<m) {
+    getline(in,line);
+    if (line.substr(0,2) == "a ") {
+      std::stringstream arc(line);
+      unsigned u,v,w
+      char ac;
+      arc >> ac >> u >> v >> w;
+      // processar arco (u,v) com peso w
+      i++;
+    }
+  }
+}
+
