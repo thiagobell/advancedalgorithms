@@ -37,7 +37,7 @@ Graph::Graph(std::istream& inputF)
       //origin vertex id is in u.
       unsigned int shift = vertexes[u-1].num_neigh;
       unsigned pos = edges_index + shift;
-      edges[pos].destination_vertex_id = v -1;
+      edges[pos].destination_vertex_id = v;
       edges[pos].weight = w;
       vertexes[u-1].num_neigh++;
       if(shift == 0) {
