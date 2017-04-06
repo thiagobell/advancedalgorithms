@@ -29,7 +29,7 @@ std::vector<unsigned> dijkstra(unsigned s, Graph g)
     //vector is destination weight destination weight ...
     std::vector<unsigned> u_set = g.get_edges_from_vertex(v_node.id);
     std::cout << "2\n";
-    std::cout << "uset size " << u_set.size() << "\n";
+    std::cout << "uset size " << u_set.size()/2 << "\n";
     for(unsigned i = 0; i < u_set.size()/2;i++) {
       std::cout << "3.1\n";
       unsigned u_id = u_set[i*2];
