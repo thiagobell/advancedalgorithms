@@ -1,4 +1,4 @@
-#include "nheap.hpp"
+#include "nheap.h"
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -9,6 +9,15 @@ Nheap<T>::Nheap(int n, int maxsize)
 {
 this->n = n;
 this->maxsize = maxsize;
+}
+
+
+template <class T>
+bool Nheap<T>::empty()
+{
+  if(data.size() == 0)
+    return true;
+  return false;
 }
 
 template <class T>
@@ -37,8 +46,8 @@ void Nheap<T>::heapify_up(unsigned int position_elem)
   if(position_elem == 0) //is root
     return;
   unsigned int position_parent =  get_index_parent(position_elem);
-  unsigned int key_parent = data[position_parent].key;
-  unsigned int key_elem = data[position_elem].key;
+  unsigned int key_parent = data[position_parent].priority;
+  unsigned int key_elem = data[position_elem].priority;
 
   if(key_parent > key_elem) {
     hnode<T> temp;
@@ -65,7 +74,7 @@ void Nheap<T>::heapify_down(unsigned int position_elem) {
 
   if(number_children == 1) {
     //element has only one child
-    if(data[position_elem].key > data[position_first_child].key){
+    if(data[position_elem].priority > data[position_first_child].priority){
       hnode<T> temp = data[position_elem];
       data[position_elem] = data[position_first_child];
       data[position_first_child] = temp;
@@ -74,17 +83,17 @@ void Nheap<T>::heapify_down(unsigned int position_elem) {
   } else {
     //there is more than one child
     unsigned lowest_key, lowest_key_position;
-    lowest_key = data[position_first_child].key;
+    lowest_key = data[position_first_child].priority;
     lowest_key_position = position_first_child;
     for(unsigned i=position_first_child+1; i < position_first_child+number_children;i++){
-      unsigned key = data[i].key;
+      unsigned key = data[i].priority;
       if(key < lowest_key){
 	lowest_key = key;
 	lowest_key_position = i;
       }
     }
 
-    if(data[position_elem].key > lowest_key) {
+    if(data[position_elem].priority > lowest_key) {
       //swap elements if parent has a key larger then one of the smallest children
       hnode<T> temp = data[position_elem];
       data[position_elem] = data[lowest_key_position];
@@ -97,30 +106,30 @@ void Nheap<T>::heapify_down(unsigned int position_elem) {
 }
 
 
-//finds internal vector index for a given key
+//finds internal vector index for a given id
 template <class T>
-unsigned int Nheap<T>::find_elem_index(T value)
+unsigned int Nheap<T>::find_elem_index(T id)
 {
   int i=0;
   while(i < data.size()) {
-    if(data[i].value == value)
+    if(data[i].id == id)
       return i;
     i++;
   }
-  throw "key not found";
+  throw "id not found";
 }
 
 
 template <class T>
-void Nheap<T>::update_key(T value, unsigned int new_key)
+void Nheap<T>::update_key(T id, unsigned int new_priority)
 {
-  unsigned int pos = find_elem_index(value);
-  unsigned int old_key = data[pos].key;
-  if(new_key < old_key) {
-    data[pos].key = new_key;
+  unsigned int pos = find_elem_index(id);
+  unsigned int old_key = data[pos].priority;
+  if(new_priority < old_key) {
+    data[pos].priority = new_priority;
     heapify_up(pos);
   } else {
-    data[pos].key = new_key;
+    data[pos].priority = new_priority;
     heapify_down(pos);
   }
 }
@@ -129,7 +138,7 @@ void Nheap<T>::update_key(T value, unsigned int new_key)
 template <class T>
 hnode<T> Nheap<T>::get_min()
 {
-  if(data.size() > 1) {
+  if(data.size() >= 1) {
     return data[0];
   }
   throw "heap is empty";
@@ -146,11 +155,11 @@ void Nheap<T>::print_heap()
     
     if(nodes_printed_at_level < num_nodes_at_level) {
       nodes_printed_at_level++;     
-      std::cout << data[node_count].key << " ";
+      std::cout << data[node_count].priority << " ";
     } else {
       nodes_printed_at_level = 1;
       num_nodes_at_level *= n;
-      std::cout << "\n" << data[node_count].key << " ";
+      std::cout << "\n" << data[node_count].priority << " ";
     }
     node_count++;
   }
@@ -211,3 +220,4 @@ int main()
   
 }
 */
+template class Nheap<unsigned>;

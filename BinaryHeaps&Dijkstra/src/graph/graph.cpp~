@@ -1,0 +1,54 @@
+#include "graph.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+//file parsing based on:
+//http://www.inf.ufrgs.br/~MRPRITT/doku.php?id=inf05016:2017-1-trabalhos
+Graph::Graph(std::ifstream input)
+{
+
+  std::string line="", dummy;
+  while (line.substr(0,4) != "p sp")
+    getline(inputF,line);
+  
+  std::stringstream linestr;
+  linestr.str(line);
+  linestr >> dummy >> dummy >> n >> m;
+
+  //allocates memory
+  vertexes = new Vertex[n];
+  edges = new Edge[m];
+
+  unsigned last_key = 0;
+  unsigned i=0;
+  unsigned edges_index=0;
+  while (i<m) {
+    getline(inputF,line);
+    if (line.substr(0,2) == "a ") {
+      std::stringstream arc(line);
+      unsigned u,v,w;
+      char ac;
+      arc >> ac >> u >> v >> w;
+      if(last_key > u) {
+	throw "edges in input file are not ordered according to origin vertex";
+      }
+      // processar arco (u,v) com peso w
+      //origin vertex id is in u.
+      unsigned int shift = vertexes[u-1].num_neigh;
+      edges[edges_index + shift].source = vertexes + u -1;
+      edges[edges_index + shift].destination = vertexes + v -1;
+      edges[edges_index + shift].weight = w;
+      vertexes[u-1].num_neigh++;
+      if(shift == 0) {
+	//is first neighbour added. must set pointer
+	vertexes[u-1].first_neigh = edges + edges_index;
+      }
+     edges_index++;
+      
+      i++;
+    }
+  }
+  std::cout << "Graph Loaded " << n << "vertexes " << m << " edges" ;
+  
+}
