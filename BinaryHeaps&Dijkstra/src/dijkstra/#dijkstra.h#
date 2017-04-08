@@ -3,5 +3,4 @@
 
 #include <vector>
 std::vector<unsigned> dijkstra(unsigned s, Graph g, unsigned heap_arity);
-
 #endif

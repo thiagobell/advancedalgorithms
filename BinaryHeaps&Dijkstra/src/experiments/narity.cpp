@@ -1,8 +1,8 @@
-#include "graph/graph.h"
+#include "../graph/graph.h"
 #include <fstream>
 #include <sstream>
 #include <iostream>
-#include "dijkstra/dijkstra.h"
+#include "../dijkstra/dijkstra.h"
 
 
 int main(int argc, char **argv) {
