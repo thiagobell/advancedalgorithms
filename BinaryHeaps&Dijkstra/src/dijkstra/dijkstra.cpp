@@ -15,8 +15,6 @@ std::vector<unsigned> dijkstra(unsigned s, Graph g, unsigned heap_arity)
   Nheap<unsigned int> heap(heap_arity, n_vertex);
   heap.insert(hnode<unsigned>(0,s));
 
-
-  
   while(!heap.empty()) {
     hnode<unsigned> v_node = heap.delete_min();
     visited[v_node.id -1] = true;

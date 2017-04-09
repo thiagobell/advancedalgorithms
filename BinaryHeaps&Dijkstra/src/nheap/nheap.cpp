@@ -3,12 +3,13 @@
 #include <cmath>
 #include <vector>
 #include <string>
-
 template <class T>
 Nheap<T>::Nheap(int n, int maxsize)
 {
 this->n = n;
 this->maxsize = maxsize;
+ num_swaps = 0;
+ data.reserve(maxsize);
 }
 
 
@@ -54,6 +55,7 @@ void Nheap<T>::heapify_up(unsigned int position_elem)
     temp = data[position_parent];
     data[position_parent] = data[position_elem];
     data[position_elem] = temp;
+    num_swaps++;
     heapify_up(position_parent);
   }
 }
@@ -78,6 +80,7 @@ void Nheap<T>::heapify_down(unsigned int position_elem) {
       hnode<T> temp = data[position_elem];
       data[position_elem] = data[position_first_child];
       data[position_first_child] = temp;
+      num_swaps++;
       heapify_down(position_first_child);
     }
   } else {
@@ -98,6 +101,7 @@ void Nheap<T>::heapify_down(unsigned int position_elem) {
       hnode<T> temp = data[position_elem];
       data[position_elem] = data[lowest_key_position];
       data[lowest_key_position] = temp;
+      num_swaps++;
       heapify_down(lowest_key_position);
     }
   }
@@ -184,40 +188,5 @@ hnode<T> Nheap<T>::delete_min()
   heapify_down(0);
   return temp;
 }
-/*
-int main()
-{
-  
-  std::cout << "initializing heap\n";
-  Nheap<std::string> myheap(2, 200);
-  std::cout << "done./n";
-  hnode<std::string> pair1(30,"hello"), pair2(100,"its"),pair3(1,"me"),min;
-  std::cout << "inserting pair1...\n";
-  myheap.insert(pair1);
-  std::cout << "inserting pair2...\n";
-  myheap.insert(pair2);
-  std::cout << "inserting pair3...\n";
-  myheap.insert(pair3);
-  std::cout << "done.\n";
-  myheap.print_heap();
-  min = myheap.get_min();
-  std::cout << "minimum key is " << min.key;
 
-  std::cout << "updating key 1 to 2\n";
-  myheap.update_key("me",2);
-  min = myheap.get_min();
-  std::cout << "minimum key and value are " << min.key <<" "<<min.value << "\n";
-  
-  std::cout << "updating key 30 to 0\n";
-  myheap.update_key("hello",0);
-  min = myheap.get_min();
-  std::cout << "minimum key and value are " << min.key <<" "<<min.value << "\n";
-  myheap.print_heap();
-
-  std::cout << "delete key 0\n";
-  myheap.delete_elem("hello");
-  myheap.print_heap();
-  
-}
-*/
 template class Nheap<unsigned>;

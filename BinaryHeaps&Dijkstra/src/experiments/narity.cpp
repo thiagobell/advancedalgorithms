@@ -4,17 +4,11 @@
 #include <iostream>
 #include "../dijkstra/dijkstra.h"
 #include <chrono>
+#include <cmath>
 
 int main(int argc, char **argv) {
 std::vector<unsigned> distances;
 
-if(argc < 3) {
-std::cout << "error: Expecting origin destination pair\n";
-}
-
- std::chrono::system_clock::time_point t = std::chrono::system_clock::now();
-
- cout << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()-t).count() << endl;
 
  unsigned int o,d;
 
@@ -22,13 +16,32 @@ std::cout << "error: Expecting origin destination pair\n";
  d = std::atoi(argv[2]);
 
  Graph g = Graph(std::cin);
- distances = dijkstra(o,g);
 
-  
-  try {
+ unsigned int min_n, max_n;
+ min_n = 1;
+ max_n = 6;
+ 
+ for(unsigned p=min_n; p <=max_n; p++) {
+   unsigned i = std::pow(2,p);
 
- }catch (const char* msg) {
-std::cout  << msg << std::endl; 
+   std::chrono::system_clock::time_point t = std::chrono::system_clock::now();
+   distances = dijkstra(o,g, i);
+   /*
+   distances = dijkstra(o,g, i);   
+   distances = dijkstra(o,g, i);   
+   distances = dijkstra(o,g, i);   
+   distances = dijkstra(o,g, i);   
+   distances = dijkstra(o,g, i);   
+   distances = dijkstra(o,g, i);   
+   distances = dijkstra(o,g, i);   
+   distances = dijkstra(o,g, i);   
+   distances = dijkstra(o,g, i);   
+   distances = dijkstra(o,g, i);   
+   distances = dijkstra(o,g, i);   
+   */
+
+   std::cout << "n="<<i<<" time=" << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()-t).count() << std::endl;
+
  }
 
 std::cout << distances[d-1]<<"\n";

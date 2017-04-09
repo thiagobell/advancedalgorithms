@@ -28,9 +28,10 @@ class Nheap {
   void heapify_up(unsigned int position_elem);
   void heapify_down(unsigned int position_elem);
   unsigned int find_elem_index(T id);
+  std::vector<hnode<T> > data;
+
  public:
- std::vector<hnode<T> > data;
- 
+  unsigned num_swaps;
   //maxsize is the largest number of nodes in heap.
   //n is heap n-arity
   Nheap(int n, int maxsize);
