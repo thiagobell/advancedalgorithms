@@ -14,11 +14,11 @@ std::cout << "error: Expecting origin destination pair\n";
 
 unsigned int o,d;
 try {
-o = std::atoi(argv[1])q;
+o = std::atoi(argv[1]);
 d = std::atoi(argv[2]);
 
   Graph g = Graph(std::cin);
-  distances = dijkstra(o,g);
+  distances = dijkstra(o,g,2;
 
 
 

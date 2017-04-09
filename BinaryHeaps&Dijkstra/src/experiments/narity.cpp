@@ -8,17 +8,14 @@
 int main(int argc, char **argv) {
 std::vector<unsigned> distances;
 
-if(argc < 3) {
-std::cout << "error: Expecting origin destination pair\n";
-}
 
-unsigned int o,d;
 try {
-o = std::atoi(argv[1])q;
-d = std::atoi(argv[2]);
 
+  unsigned int o,g;
+  o = 1;
+  d = 12;
   Graph g = Graph(std::cin);
-  distances = dijkstra(o,g);
+  distances = dijkstra(o,g,2);
 
 
 
