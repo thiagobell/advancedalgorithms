@@ -1,0 +1,367 @@
+Dijkstra Performance Test -- fixed vertex number
+n = 2^15
+----------------------
+i = 15
+p = 3.05185e-05
+vertexes added
+here
+graph generated
+i value 15 run# 1 origin vertexes 10241#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 2 origin vertexes 9147#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 3 origin vertexes 25030#insert 35 #deletemin 35 #update 0 #swap 8 time=0
+i value 15 run# 4 origin vertexes 27342#insert 74 #deletemin 74 #update 0 #swap 111 time=0
+i value 15 run# 5 origin vertexes 12536#insert 2 #deletemin 2 #update 0 #swap 0 time=0
+i value 15 run# 6 origin vertexes 13753#insert 2 #deletemin 2 #update 0 #swap 0 time=0
+i value 15 run# 7 origin vertexes 3056#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 8 origin vertexes 22614#insert 3 #deletemin 3 #update 0 #swap 0 time=0
+i value 15 run# 9 origin vertexes 10568#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 10 origin vertexes 16094#insert 2 #deletemin 2 #update 0 #swap 0 time=0
+i value 15 run# 11 origin vertexes 11149#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 12 origin vertexes 7540#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 13 origin vertexes 28494#insert 18 #deletemin 18 #update 0 #swap 18 time=0
+i value 15 run# 14 origin vertexes 6406#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 15 origin vertexes 15492#insert 7 #deletemin 7 #update 0 #swap 1 time=0
+i value 15 run# 16 origin vertexes 27293#insert 3 #deletemin 3 #update 0 #swap 0 time=0
+i value 15 run# 17 origin vertexes 463#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 18 origin vertexes 25064#insert 4 #deletemin 4 #update 0 #swap 0 time=0
+i value 15 run# 19 origin vertexes 14053#insert 20 #deletemin 20 #update 0 #swap 21 time=0
+i value 15 run# 20 origin vertexes 16587#insert 5 #deletemin 5 #update 0 #swap 0 time=0
+i value 15 run# 21 origin vertexes 668#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 22 origin vertexes 27508#insert 3 #deletemin 3 #update 0 #swap 0 time=0
+i value 15 run# 23 origin vertexes 3165#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 24 origin vertexes 2339#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 25 origin vertexes 23238#insert 23 #deletemin 23 #update 0 #swap 28 time=0
+i value 15 run# 26 origin vertexes 24121#insert 2 #deletemin 2 #update 0 #swap 0 time=0
+i value 15 run# 27 origin vertexes 31639#insert 7 #deletemin 7 #update 0 #swap 1 time=0
+i value 15 run# 28 origin vertexes 8363#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 15 run# 29 origin vertexes 16669#insert 2 #deletemin 2 #update 0 #swap 0 time=0
+i value 15 run# 30 origin vertexes 26890#insert 38 #deletemin 38 #update 0 #swap 49 time=0
+----------------------
+i = 16
+p = 6.1037e-05
+vertexes added
+here
+graph generated
+i value 16 run# 1 origin vertexes 28139#insert 26192 #deletemin 26192 #update 1782 #swap 280553 time=48
+i value 16 run# 2 origin vertexes 18021#insert 26188 #deletemin 26188 #update 1779 #swap 281122 time=47
+i value 16 run# 3 origin vertexes 9450#insert 26189 #deletemin 26189 #update 1829 #swap 279817 time=47
+i value 16 run# 4 origin vertexes 13007#insert 26188 #deletemin 26188 #update 1781 #swap 280125 time=47
+i value 16 run# 5 origin vertexes 3573#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 16 run# 6 origin vertexes 18150#insert 26188 #deletemin 26188 #update 1771 #swap 281039 time=47
+i value 16 run# 7 origin vertexes 5928#insert 26188 #deletemin 26188 #update 1836 #swap 279945 time=48
+i value 16 run# 8 origin vertexes 10584#insert 26188 #deletemin 26188 #update 1761 #swap 280285 time=47
+i value 16 run# 9 origin vertexes 15380#insert 26188 #deletemin 26188 #update 1738 #swap 280270 time=47
+i value 16 run# 10 origin vertexes 30103#insert 26188 #deletemin 26188 #update 1766 #swap 280750 time=48
+i value 16 run# 11 origin vertexes 10397#insert 26188 #deletemin 26188 #update 1813 #swap 280666 time=48
+i value 16 run# 12 origin vertexes 31059#insert 26188 #deletemin 26188 #update 1818 #swap 280652 time=48
+i value 16 run# 13 origin vertexes 4919#insert 26188 #deletemin 26188 #update 1762 #swap 280660 time=47
+i value 16 run# 14 origin vertexes 24438#insert 26188 #deletemin 26188 #update 1767 #swap 280374 time=47
+i value 16 run# 15 origin vertexes 18762#insert 26189 #deletemin 26189 #update 1834 #swap 280742 time=48
+i value 16 run# 16 origin vertexes 981#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 16 run# 17 origin vertexes 25751#insert 26188 #deletemin 26188 #update 1729 #swap 280621 time=47
+i value 16 run# 18 origin vertexes 21961#insert 26188 #deletemin 26188 #update 1738 #swap 280361 time=46
+i value 16 run# 19 origin vertexes 11087#insert 26188 #deletemin 26188 #update 1820 #swap 280662 time=48
+i value 16 run# 20 origin vertexes 13637#insert 26188 #deletemin 26188 #update 1753 #swap 279673 time=46
+i value 16 run# 21 origin vertexes 2009#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 16 run# 22 origin vertexes 4233#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 16 run# 23 origin vertexes 4860#insert 26189 #deletemin 26189 #update 1824 #swap 280694 time=48
+i value 16 run# 24 origin vertexes 16483#insert 26188 #deletemin 26188 #update 1764 #swap 280462 time=49
+i value 16 run# 25 origin vertexes 18018#insert 26188 #deletemin 26188 #update 1767 #swap 280925 time=48
+i value 16 run# 26 origin vertexes 9684#insert 26188 #deletemin 26188 #update 1768 #swap 280721 time=47
+i value 16 run# 27 origin vertexes 4524#insert 2 #deletemin 2 #update 0 #swap 0 time=0
+i value 16 run# 28 origin vertexes 15427#insert 26189 #deletemin 26189 #update 1771 #swap 280660 time=47
+i value 16 run# 29 origin vertexes 15407#insert 26188 #deletemin 26188 #update 1819 #swap 280865 time=48
+i value 16 run# 30 origin vertexes 3621#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+----------------------
+i = 17
+p = 0.000122074
+vertexes added
+here
+graph generated
+i value 17 run# 1 origin vertexes 13038#insert 32084 #deletemin 32084 #update 10511 #swap 402104 time=451
+i value 17 run# 2 origin vertexes 10802#insert 32084 #deletemin 32084 #update 10347 #swap 401889 time=432
+i value 17 run# 3 origin vertexes 9314#insert 32084 #deletemin 32084 #update 10394 #swap 401731 time=445
+i value 17 run# 4 origin vertexes 16725#insert 32084 #deletemin 32084 #update 10421 #swap 401234 time=445
+i value 17 run# 5 origin vertexes 11167#insert 32084 #deletemin 32084 #update 10350 #swap 401034 time=440
+i value 17 run# 6 origin vertexes 19186#insert 32084 #deletemin 32084 #update 10372 #swap 401937 time=449
+i value 17 run# 7 origin vertexes 32583#insert 32084 #deletemin 32084 #update 10293 #swap 401053 time=445
+i value 17 run# 8 origin vertexes 27974#insert 32084 #deletemin 32084 #update 10451 #swap 401467 time=447
+i value 17 run# 9 origin vertexes 6887#insert 32084 #deletemin 32084 #update 10296 #swap 401990 time=436
+i value 17 run# 10 origin vertexes 531#insert 1 #deletemin 1 #update 0 #swap 0 time=0
+i value 17 run# 11 origin vertexes 28922#insert 32084 #deletemin 32084 #update 10258 #swap 401486 time=438
+i value 17 run# 12 origin vertexes 4903#insert 32084 #deletemin 32084 #update 10311 #swap 401318 time=438
+i value 17 run# 13 origin vertexes 17875#insert 32084 #deletemin 32084 #update 10223 #swap 401156 time=438
+i value 17 run# 14 origin vertexes 31481#insert 32084 #deletemin 32084 #update 10322 #swap 401358 time=433
+i value 17 run# 15 origin vertexes 13569#insert 32084 #deletemin 32084 #update 10452 #swap 401454 time=443
+i value 17 run# 16 origin vertexes 14774#insert 32084 #deletemin 32084 #update 10424 #swap 401705 time=440
+i value 17 run# 17 origin vertexes 24418#insert 32084 #deletemin 32084 #update 10270 #swap 401484 time=442
+i value 17 run# 18 origin vertexes 1454#insert 32084 #deletemin 32084 #update 10385 #swap 401356 time=454
+i value 17 run# 19 origin vertexes 10704#insert 32084 #deletemin 32084 #update 10441 #swap 401553 time=464
+i value 17 run# 20 origin vertexes 8949#insert 32084 #deletemin 32084 #update 10250 #swap 401122 time=435
+i value 17 run# 21 origin vertexes 9126#insert 32084 #deletemin 32084 #update 10321 #swap 401324 time=443
+i value 17 run# 22 origin vertexes 8858#insert 32084 #deletemin 32084 #update 10201 #swap 400821 time=440
+i value 17 run# 23 origin vertexes 11548#insert 32084 #deletemin 32084 #update 10298 #swap 401608 time=445
+i value 17 run# 24 origin vertexes 8166#insert 32084 #deletemin 32084 #update 10411 #swap 401534 time=447
+i value 17 run# 25 origin vertexes 15585#insert 32084 #deletemin 32084 #update 10395 #swap 401472 time=439
+i value 17 run# 26 origin vertexes 31749#insert 32084 #deletemin 32084 #update 10282 #swap 401637 time=435
+i value 17 run# 27 origin vertexes 9912#insert 32084 #deletemin 32084 #update 10391 #swap 401070 time=446
+i value 17 run# 28 origin vertexes 32393#insert 32084 #deletemin 32084 #update 10388 #swap 401424 time=442
+i value 17 run# 29 origin vertexes 14393#insert 32084 #deletemin 32084 #update 10206 #swap 401374 time=436
+i value 17 run# 30 origin vertexes 24890#insert 32084 #deletemin 32084 #update 10440 #swap 401833 time=441
+----------------------
+i = 18
+p = 0.000244148
+vertexes added
+here
+graph generated
+i value 18 run# 1 origin vertexes 1321#insert 32755 #deletemin 32755 #update 26364 #swap 445153 time=1640
+i value 18 run# 2 origin vertexes 8402#insert 32755 #deletemin 32755 #update 26175 #swap 445612 time=1626
+i value 18 run# 3 origin vertexes 18775#insert 32755 #deletemin 32755 #update 26078 #swap 445258 time=1627
+i value 18 run# 4 origin vertexes 7378#insert 32755 #deletemin 32755 #update 26177 #swap 445168 time=1645
+i value 18 run# 5 origin vertexes 2237#insert 32755 #deletemin 32755 #update 26557 #swap 446138 time=1652
+i value 18 run# 6 origin vertexes 26185#insert 32755 #deletemin 32755 #update 26331 #swap 444387 time=1622
+i value 18 run# 7 origin vertexes 22816#insert 32755 #deletemin 32755 #update 26404 #swap 445729 time=1639
+i value 18 run# 8 origin vertexes 14594#insert 32755 #deletemin 32755 #update 26537 #swap 445318 time=1644
+i value 18 run# 9 origin vertexes 10432#insert 32755 #deletemin 32755 #update 26334 #swap 444894 time=1631
+i value 18 run# 10 origin vertexes 25911#insert 32755 #deletemin 32755 #update 26213 #swap 445033 time=1629
+i value 18 run# 11 origin vertexes 22164#insert 32755 #deletemin 32755 #update 26303 #swap 444837 time=1625
+i value 18 run# 12 origin vertexes 30846#insert 32755 #deletemin 32755 #update 26092 #swap 444827 time=1606
+i value 18 run# 13 origin vertexes 24831#insert 32755 #deletemin 32755 #update 26092 #swap 445090 time=1613
+i value 18 run# 14 origin vertexes 5887#insert 32755 #deletemin 32755 #update 26249 #swap 444663 time=1631
+i value 18 run# 15 origin vertexes 4579#insert 32755 #deletemin 32755 #update 26348 #swap 444996 time=1633
+i value 18 run# 16 origin vertexes 9477#insert 32755 #deletemin 32755 #update 26283 #swap 445636 time=1627
+i value 18 run# 17 origin vertexes 29384#insert 32755 #deletemin 32755 #update 26219 #swap 444851 time=1626
+i value 18 run# 18 origin vertexes 12063#insert 32755 #deletemin 32755 #update 26001 #swap 444447 time=1602
+i value 18 run# 19 origin vertexes 2424#insert 32755 #deletemin 32755 #update 26627 #swap 444950 time=1642
+i value 18 run# 20 origin vertexes 18475#insert 32755 #deletemin 32755 #update 26400 #swap 445225 time=1648
+i value 18 run# 21 origin vertexes 31009#insert 32755 #deletemin 32755 #update 26408 #swap 444747 time=1637
+i value 18 run# 22 origin vertexes 24446#insert 32755 #deletemin 32755 #update 26124 #swap 445058 time=1625
+i value 18 run# 23 origin vertexes 14760#insert 32755 #deletemin 32755 #update 26204 #swap 444694 time=1637
+i value 18 run# 24 origin vertexes 24050#insert 32755 #deletemin 32755 #update 26368 #swap 444780 time=1651
+i value 18 run# 25 origin vertexes 31533#insert 32755 #deletemin 32755 #update 26480 #swap 444940 time=1637
+i value 18 run# 26 origin vertexes 18360#insert 32755 #deletemin 32755 #update 26498 #swap 445271 time=1647
+i value 18 run# 27 origin vertexes 10565#insert 32755 #deletemin 32755 #update 26205 #swap 445424 time=1633
+i value 18 run# 28 origin vertexes 32316#insert 32755 #deletemin 32755 #update 26510 #swap 445327 time=1663
+i value 18 run# 29 origin vertexes 21072#insert 32755 #deletemin 32755 #update 26388 #swap 445084 time=1640
+i value 18 run# 30 origin vertexes 4760#insert 32755 #deletemin 32755 #update 26575 #swap 445232 time=1663
+----------------------
+i = 19
+p = 0.000488296
+vertexes added
+here
+graph generated
+i value 19 run# 1 origin vertexes 2462#insert 32768 #deletemin 32768 #update 46309 #swap 470621 time=3588
+i value 19 run# 2 origin vertexes 5465#insert 32768 #deletemin 32768 #update 46197 #swap 471440 time=3632
+i value 19 run# 3 origin vertexes 26649#insert 32768 #deletemin 32768 #update 45973 #swap 470870 time=3596
+i value 19 run# 4 origin vertexes 23495#insert 32768 #deletemin 32768 #update 45978 #swap 470336 time=3688
+i value 19 run# 5 origin vertexes 20499#insert 32768 #deletemin 32768 #update 46194 #swap 470920 time=3752
+i value 19 run# 6 origin vertexes 11226#insert 32768 #deletemin 32768 #update 46276 #swap 471079 time=3618
+i value 19 run# 7 origin vertexes 30044#insert 32768 #deletemin 32768 #update 46416 #swap 471478 time=3603
+i value 19 run# 8 origin vertexes 18620#insert 32768 #deletemin 32768 #update 46317 #swap 471419 time=3590
+i value 19 run# 9 origin vertexes 23520#insert 32768 #deletemin 32768 #update 46601 #swap 471097 time=3600
+i value 19 run# 10 origin vertexes 24940#insert 32768 #deletemin 32768 #update 46049 #swap 470807 time=3571
+i value 19 run# 11 origin vertexes 4515#insert 32768 #deletemin 32768 #update 46483 #swap 470639 time=3608
+i value 19 run# 12 origin vertexes 12974#insert 32768 #deletemin 32768 #update 46266 #swap 470734 time=3581
+i value 19 run# 13 origin vertexes 6399#insert 32768 #deletemin 32768 #update 46286 #swap 471270 time=3597
+i value 19 run# 14 origin vertexes 4755#insert 32768 #deletemin 32768 #update 46384 #swap 470837 time=3611
+i value 19 run# 15 origin vertexes 11323#insert 32768 #deletemin 32768 #update 46419 #swap 470525 time=3717
+i value 19 run# 16 origin vertexes 26451#insert 32768 #deletemin 32768 #update 46271 #swap 471178 time=3764
+i value 19 run# 17 origin vertexes 14484#insert 32768 #deletemin 32768 #update 46275 #swap 470839 time=3703
+i value 19 run# 18 origin vertexes 16758#insert 32768 #deletemin 32768 #update 46567 #swap 471045 time=3667
+i value 19 run# 19 origin vertexes 2010#insert 32768 #deletemin 32768 #update 45877 #swap 470935 time=3593
+i value 19 run# 20 origin vertexes 32428#insert 32768 #deletemin 32768 #update 45860 #swap 471164 time=3654
+i value 19 run# 21 origin vertexes 25035#insert 32768 #deletemin 32768 #update 45923 #swap 471208 time=3628
+i value 19 run# 22 origin vertexes 19062#insert 32768 #deletemin 32768 #update 46213 #swap 471184 time=3590
+i value 19 run# 23 origin vertexes 22314#insert 32768 #deletemin 32768 #update 46274 #swap 470917 time=3584
+i value 19 run# 24 origin vertexes 4428#insert 32768 #deletemin 32768 #update 46005 #swap 471762 time=3613
+i value 19 run# 25 origin vertexes 5022#insert 32768 #deletemin 32768 #update 46189 #swap 470789 time=3683
+i value 19 run# 26 origin vertexes 2028#insert 32768 #deletemin 32768 #update 46223 #swap 471251 time=3569
+i value 19 run# 27 origin vertexes 12834#insert 32768 #deletemin 32768 #update 45954 #swap 470829 time=3558
+i value 19 run# 28 origin vertexes 982#insert 32768 #deletemin 32768 #update 46702 #swap 471518 time=3614
+i value 19 run# 29 origin vertexes 25934#insert 32768 #deletemin 32768 #update 46300 #swap 470522 time=3583
+i value 19 run# 30 origin vertexes 4688#insert 32768 #deletemin 32768 #update 46056 #swap 470246 time=3563
+----------------------
+i = 20
+p = 0.000976592
+vertexes added
+here
+graph generated
+i value 20 run# 1 origin vertexes 18983#insert 32768 #deletemin 32768 #update 68194 #swap 493538 time=6172
+i value 20 run# 2 origin vertexes 4692#insert 32768 #deletemin 32768 #update 67771 #swap 492987 time=6200
+i value 20 run# 3 origin vertexes 2233#insert 32768 #deletemin 32768 #update 67280 #swap 493440 time=5956
+i value 20 run# 4 origin vertexes 1597#insert 32768 #deletemin 32768 #update 67692 #swap 492571 time=5996
+i value 20 run# 5 origin vertexes 25842#insert 32768 #deletemin 32768 #update 67287 #swap 492792 time=5973
+i value 20 run# 6 origin vertexes 2913#insert 32768 #deletemin 32768 #update 67744 #swap 493392 time=6032
+i value 20 run# 7 origin vertexes 11954#insert 32768 #deletemin 32768 #update 67846 #swap 493186 time=6074
+i value 20 run# 8 origin vertexes 2470#insert 32768 #deletemin 32768 #update 68066 #swap 493201 time=6032
+i value 20 run# 9 origin vertexes 21320#insert 32768 #deletemin 32768 #update 67769 #swap 493339 time=5986
+i value 20 run# 10 origin vertexes 14363#insert 32768 #deletemin 32768 #update 68008 #swap 493037 time=6072
+i value 20 run# 11 origin vertexes 10625#insert 32768 #deletemin 32768 #update 68199 #swap 492474 time=6042
+i value 20 run# 12 origin vertexes 4707#insert 32768 #deletemin 32768 #update 67439 #swap 492791 time=5975
+i value 20 run# 13 origin vertexes 13522#insert 32768 #deletemin 32768 #update 68080 #swap 493193 time=6031
+i value 20 run# 14 origin vertexes 4737#insert 32768 #deletemin 32768 #update 67609 #swap 493137 time=5968
+i value 20 run# 15 origin vertexes 19505#insert 32768 #deletemin 32768 #update 67796 #swap 492847 time=6019
+i value 20 run# 16 origin vertexes 21885#insert 32768 #deletemin 32768 #update 67819 #swap 493590 time=6254
+i value 20 run# 17 origin vertexes 15463#insert 32768 #deletemin 32768 #update 67986 #swap 493555 time=6290
+i value 20 run# 18 origin vertexes 3972#insert 32768 #deletemin 32768 #update 67792 #swap 492829 time=6069
+i value 20 run# 19 origin vertexes 2607#insert 32768 #deletemin 32768 #update 67780 #swap 492709 time=6268
+i value 20 run# 20 origin vertexes 28676#insert 32768 #deletemin 32768 #update 67783 #swap 493203 time=6256
+i value 20 run# 21 origin vertexes 21424#insert 32768 #deletemin 32768 #update 67632 #swap 493396 time=6086
+i value 20 run# 22 origin vertexes 18914#insert 32768 #deletemin 32768 #update 68244 #swap 492751 time=6167
+i value 20 run# 23 origin vertexes 3824#insert 32768 #deletemin 32768 #update 67547 #swap 492989 time=6199
+i value 20 run# 24 origin vertexes 28712#insert 32768 #deletemin 32768 #update 67830 #swap 493274 time=6062
+i value 20 run# 25 origin vertexes 17164#insert 32768 #deletemin 32768 #update 68012 #swap 492465 time=6120
+i value 20 run# 26 origin vertexes 12965#insert 32768 #deletemin 32768 #update 67525 #swap 492519 time=5995
+i value 20 run# 27 origin vertexes 1965#insert 32768 #deletemin 32768 #update 67825 #swap 492977 time=6027
+i value 20 run# 28 origin vertexes 30177#insert 32768 #deletemin 32768 #update 67736 #swap 493004 time=6006
+i value 20 run# 29 origin vertexes 2667#insert 32768 #deletemin 32768 #update 67842 #swap 492502 time=5994
+i value 20 run# 30 origin vertexes 18668#insert 32768 #deletemin 32768 #update 67923 #swap 493431 time=6080
+----------------------
+i = 21
+p = 0.00195318
+vertexes added
+here
+graph generated
+i value 21 run# 1 origin vertexes 4475#insert 32768 #deletemin 32768 #update 90007 #swap 512525 time=8654
+i value 21 run# 2 origin vertexes 25153#insert 32768 #deletemin 32768 #update 89878 #swap 511976 time=8677
+i value 21 run# 3 origin vertexes 19885#insert 32768 #deletemin 32768 #update 90050 #swap 513586 time=8972
+i value 21 run# 4 origin vertexes 28393#insert 32768 #deletemin 32768 #update 90019 #swap 513204 time=8816
+i value 21 run# 5 origin vertexes 29656#insert 32768 #deletemin 32768 #update 89624 #swap 512873 time=8673
+i value 21 run# 6 origin vertexes 4227#insert 32768 #deletemin 32768 #update 89882 #swap 512335 time=8709
+i value 21 run# 7 origin vertexes 21900#insert 32768 #deletemin 32768 #update 89907 #swap 512917 time=8689
+i value 21 run# 8 origin vertexes 19254#insert 32768 #deletemin 32768 #update 89981 #swap 513027 time=8705
+i value 21 run# 9 origin vertexes 31509#insert 32768 #deletemin 32768 #update 90020 #swap 512075 time=8745
+i value 21 run# 10 origin vertexes 19809#insert 32768 #deletemin 32768 #update 90313 #swap 512904 time=8833
+i value 21 run# 11 origin vertexes 22705#insert 32768 #deletemin 32768 #update 89896 #swap 511921 time=8801
+i value 21 run# 12 origin vertexes 4001#insert 32768 #deletemin 32768 #update 89789 #swap 512948 time=8856
+i value 21 run# 13 origin vertexes 31286#insert 32768 #deletemin 32768 #update 90251 #swap 513259 time=8741
+i value 21 run# 14 origin vertexes 28944#insert 32768 #deletemin 32768 #update 90001 #swap 513712 time=8689
+i value 21 run# 15 origin vertexes 23812#insert 32768 #deletemin 32768 #update 90117 #swap 513620 time=8768
+i value 21 run# 16 origin vertexes 20577#insert 32768 #deletemin 32768 #update 89916 #swap 512620 time=8721
+i value 21 run# 17 origin vertexes 3059#insert 32768 #deletemin 32768 #update 89639 #swap 512167 time=8717
+i value 21 run# 18 origin vertexes 13136#insert 32768 #deletemin 32768 #update 90110 #swap 512809 time=8765
+i value 21 run# 19 origin vertexes 4659#insert 32768 #deletemin 32768 #update 89889 #swap 512309 time=8730
+i value 21 run# 20 origin vertexes 15902#insert 32768 #deletemin 32768 #update 89896 #swap 512692 time=8694
+i value 21 run# 21 origin vertexes 7585#insert 32768 #deletemin 32768 #update 90105 #swap 512937 time=8729
+i value 21 run# 22 origin vertexes 11388#insert 32768 #deletemin 32768 #update 89493 #swap 512485 time=8647
+i value 21 run# 23 origin vertexes 31994#insert 32768 #deletemin 32768 #update 89826 #swap 512118 time=8703
+i value 21 run# 24 origin vertexes 28695#insert 32768 #deletemin 32768 #update 90138 #swap 512813 time=8758
+i value 21 run# 25 origin vertexes 19272#insert 32768 #deletemin 32768 #update 89861 #swap 513522 time=8710
+i value 21 run# 26 origin vertexes 20653#insert 32768 #deletemin 32768 #update 90120 #swap 513255 time=8720
+i value 21 run# 27 origin vertexes 20715#insert 32768 #deletemin 32768 #update 90242 #swap 512700 time=8734
+i value 21 run# 28 origin vertexes 22959#insert 32768 #deletemin 32768 #update 90329 #swap 513668 time=8740
+i value 21 run# 29 origin vertexes 31399#insert 32768 #deletemin 32768 #update 89775 #swap 512600 time=8682
+i value 21 run# 30 origin vertexes 15798#insert 32768 #deletemin 32768 #update 89938 #swap 512360 time=8729
+----------------------
+i = 22
+p = 0.00390637
+vertexes added
+here
+graph generated
+i value 22 run# 1 origin vertexes 13428#insert 32768 #deletemin 32768 #update 113093 #swap 534380 time=11605
+i value 22 run# 2 origin vertexes 20576#insert 32768 #deletemin 32768 #update 112656 #swap 534232 time=11556
+i value 22 run# 3 origin vertexes 26862#insert 32768 #deletemin 32768 #update 112942 #swap 534179 time=11580
+i value 22 run# 4 origin vertexes 29954#insert 32768 #deletemin 32768 #update 112431 #swap 533419 time=11594
+i value 22 run# 5 origin vertexes 17376#insert 32768 #deletemin 32768 #update 112627 #swap 534034 time=11588
+i value 22 run# 6 origin vertexes 24288#insert 32768 #deletemin 32768 #update 112734 #swap 533928 time=11563
+i value 22 run# 7 origin vertexes 18227#insert 32768 #deletemin 32768 #update 112630 #swap 535013 time=11537
+i value 22 run# 8 origin vertexes 12437#insert 32768 #deletemin 32768 #update 112779 #swap 533550 time=11503
+i value 22 run# 9 origin vertexes 20866#insert 32768 #deletemin 32768 #update 112686 #swap 533344 time=11704
+i value 22 run# 10 origin vertexes 21101#insert 32768 #deletemin 32768 #update 112732 #swap 533916 time=11603
+i value 22 run# 11 origin vertexes 11619#insert 32768 #deletemin 32768 #update 112608 #swap 533738 time=11510
+i value 22 run# 12 origin vertexes 18757#insert 32768 #deletemin 32768 #update 113088 #swap 535307 time=11563
+i value 22 run# 13 origin vertexes 19808#insert 32768 #deletemin 32768 #update 112505 #swap 534355 time=11822
+i value 22 run# 14 origin vertexes 30718#insert 32768 #deletemin 32768 #update 112206 #swap 533458 time=11536
+i value 22 run# 15 origin vertexes 9462#insert 32768 #deletemin 32768 #update 113106 #swap 534059 time=11599
+i value 22 run# 16 origin vertexes 9708#insert 32768 #deletemin 32768 #update 112292 #swap 534149 time=11536
+i value 22 run# 17 origin vertexes 26215#insert 32768 #deletemin 32768 #update 112870 #swap 534203 time=11558
+i value 22 run# 18 origin vertexes 2387#insert 32768 #deletemin 32768 #update 112723 #swap 534685 time=11541
+i value 22 run# 19 origin vertexes 28937#insert 32768 #deletemin 32768 #update 112928 #swap 534741 time=11652
+i value 22 run# 20 origin vertexes 27914#insert 32768 #deletemin 32768 #update 113003 #swap 534296 time=11630
+i value 22 run# 21 origin vertexes 31973#insert 32768 #deletemin 32768 #update 112776 #swap 534020 time=11566
+i value 22 run# 22 origin vertexes 17605#insert 32768 #deletemin 32768 #update 112392 #swap 534148 time=11608
+i value 22 run# 23 origin vertexes 22757#insert 32768 #deletemin 32768 #update 112746 #swap 534867 time=11563
+i value 22 run# 24 origin vertexes 15445#insert 32768 #deletemin 32768 #update 112237 #swap 533519 time=11513
+i value 22 run# 25 origin vertexes 9264#insert 32768 #deletemin 32768 #update 112810 #swap 534553 time=11536
+i value 22 run# 26 origin vertexes 15724#insert 32768 #deletemin 32768 #update 112795 #swap 534625 time=11756
+i value 22 run# 27 origin vertexes 21003#insert 32768 #deletemin 32768 #update 112720 #swap 533975 time=12186
+i value 22 run# 28 origin vertexes 27535#insert 32768 #deletemin 32768 #update 113050 #swap 534443 time=11757
+i value 22 run# 29 origin vertexes 7031#insert 32768 #deletemin 32768 #update 112767 #swap 533699 time=11611
+i value 22 run# 30 origin vertexes 7471#insert 32768 #deletemin 32768 #update 113086 #swap 534249 time=11718
+----------------------
+i = 23
+p = 0.00781274
+vertexes added
+here
+graph generated
+i value 23 run# 1 origin vertexes 22220#insert 32768 #deletemin 32768 #update 135077 #swap 559724 time=15248
+i value 23 run# 2 origin vertexes 19855#insert 32768 #deletemin 32768 #update 134766 #swap 558609 time=15134
+i value 23 run# 3 origin vertexes 16465#insert 32768 #deletemin 32768 #update 135310 #swap 559440 time=15072
+i value 23 run# 4 origin vertexes 2748#insert 32768 #deletemin 32768 #update 135704 #swap 559583 time=15144
+i value 23 run# 5 origin vertexes 1900#insert 32768 #deletemin 32768 #update 134740 #swap 558818 time=14560
+i value 23 run# 6 origin vertexes 4265#insert 32768 #deletemin 32768 #update 134988 #swap 560341 time=14705
+i value 23 run# 7 origin vertexes 7439#insert 32768 #deletemin 32768 #update 135336 #swap 559489 time=14641
+i value 23 run# 8 origin vertexes 3318#insert 32768 #deletemin 32768 #update 135689 #swap 560185 time=15020
+i value 23 run# 9 origin vertexes 21534#insert 32768 #deletemin 32768 #update 135600 #swap 559762 time=15306
+i value 23 run# 10 origin vertexes 17298#insert 32768 #deletemin 32768 #update 135117 #swap 559386 time=15213
+i value 23 run# 11 origin vertexes 3709#insert 32768 #deletemin 32768 #update 135481 #swap 560358 time=15241
+i value 23 run# 12 origin vertexes 19833#insert 32768 #deletemin 32768 #update 135337 #swap 559670 time=15128
+i value 23 run# 13 origin vertexes 20908#insert 32768 #deletemin 32768 #update 135425 #swap 559674 time=15531
+i value 23 run# 14 origin vertexes 20247#insert 32768 #deletemin 32768 #update 135278 #swap 559905 time=15493
+i value 23 run# 15 origin vertexes 10976#insert 32768 #deletemin 32768 #update 135490 #swap 560185 time=15511
+i value 23 run# 16 origin vertexes 5046#insert 32768 #deletemin 32768 #update 135405 #swap 559762 time=15255
+i value 23 run# 17 origin vertexes 24954#insert 32768 #deletemin 32768 #update 134869 #swap 560317 time=14747
+i value 23 run# 18 origin vertexes 2391#insert 32768 #deletemin 32768 #update 135611 #swap 559991 time=15310
+i value 23 run# 19 origin vertexes 10615#insert 32768 #deletemin 32768 #update 135520 #swap 559406 time=15253
+i value 23 run# 20 origin vertexes 15039#insert 32768 #deletemin 32768 #update 135647 #swap 559246 time=15262
+i value 23 run# 21 origin vertexes 22945#insert 32768 #deletemin 32768 #update 135212 #swap 558684 time=15344
+i value 23 run# 22 origin vertexes 32352#insert 32768 #deletemin 32768 #update 135496 #swap 559303 time=15285
+i value 23 run# 23 origin vertexes 28373#insert 32768 #deletemin 32768 #update 135071 #swap 559973 time=14941
+i value 23 run# 24 origin vertexes 17118#insert 32768 #deletemin 32768 #update 134961 #swap 559677 time=15129
+i value 23 run# 25 origin vertexes 9279#insert 32768 #deletemin 32768 #update 134761 #swap 559182 time=14577
+i value 23 run# 26 origin vertexes 20607#insert 32768 #deletemin 32768 #update 134595 #swap 559874 time=14442
+i value 23 run# 27 origin vertexes 19984#insert 32768 #deletemin 32768 #update 135324 #swap 559749 time=14579
+i value 23 run# 28 origin vertexes 21901#insert 32768 #deletemin 32768 #update 135435 #swap 559315 time=14545
+i value 23 run# 29 origin vertexes 30779#insert 32768 #deletemin 32768 #update 135403 #swap 559352 time=14878
+i value 23 run# 30 origin vertexes 3644#insert 32768 #deletemin 32768 #update 135371 #swap 559328 time=14685
+----------------------
+i = 24
+p = 0.0156255
+vertexes added
+here
+graph generated
+i value 24 run# 1 origin vertexes 17641#insert 32768 #deletemin 32768 #update 158364 #swap 593769 time=18176
+i value 24 run# 2 origin vertexes 17284#insert 32768 #deletemin 32768 #update 157362 #swap 591191 time=18158
+i value 24 run# 3 origin vertexes 21937#insert 32768 #deletemin 32768 #update 158241 #swap 592200 time=17891
+i value 24 run# 4 origin vertexes 25048#insert 32768 #deletemin 32768 #update 158666 #swap 591228 time=18167
+i value 24 run# 5 origin vertexes 31583#insert 32768 #deletemin 32768 #update 157824 #swap 593742 time=18451
+i value 24 run# 6 origin vertexes 12598#insert 32768 #deletemin 32768 #update 157753 #swap 591209 time=18410
+i value 24 run# 7 origin vertexes 15305#insert 32768 #deletemin 32768 #update 158146 #swap 593859 time=17971
+i value 24 run# 8 origin vertexes 10433#insert 32768 #deletemin 32768 #update 158191 #swap 591854 time=18624
+i value 24 run# 9 origin vertexes 12573#insert 32768 #deletemin 32768 #update 158734 #swap 593457 time=19282
+i value 24 run# 10 origin vertexes 25067#insert 32768 #deletemin 32768 #update 157446 #swap 590474 time=18595
+i value 24 run# 11 origin vertexes 20159#insert 32768 #deletemin 32768 #update 157718 #swap 593354 time=18722
+i value 24 run# 12 origin vertexes 9666#insert 32768 #deletemin 32768 #update 158167 #swap 591497 time=18715
+i value 24 run# 13 origin vertexes 16684#insert 32768 #deletemin 32768 #update 158002 #swap 593625 time=18690
+i value 24 run# 14 origin vertexes 1034#insert 32768 #deletemin 32768 #update 158326 #swap 592873 time=18868
+i value 24 run# 15 origin vertexes 21365#insert 32768 #deletemin 32768 #update 158689 #swap 593030 time=19045
+i value 24 run# 16 origin vertexes 806#insert 32768 #deletemin 32768 #update 158356 #swap 591962 time=18587
+i value 24 run# 17 origin vertexes 735#insert 32768 #deletemin 32768 #update 158047 #swap 593151 time=18407
+i value 24 run# 18 origin vertexes 28341#insert 32768 #deletemin 32768 #update 157751 #swap 591326 time=18497
+i value 24 run# 19 origin vertexes 8831#insert 32768 #deletemin 32768 #update 157830 #swap 591791 time=18638
+i value 24 run# 20 origin vertexes 3290#insert 32768 #deletemin 32768 #update 157385 #swap 593390 time=18891
+i value 24 run# 21 origin vertexes 9473#insert 32768 #deletemin 32768 #update 158167 #swap 593229 time=18524
+i value 24 run# 22 origin vertexes 11711#insert 32768 #deletemin 32768 #update 157777 #swap 592275 time=18687
+i value 24 run# 23 origin vertexes 2985#insert 32768 #deletemin 32768 #update 158146 #swap 593292 time=19286
+i value 24 run# 24 origin vertexes 3848#insert 32768 #deletemin 32768 #update 157893 #swap 594132 time=19152
+i value 24 run# 25 origin vertexes 5990#insert 32768 #deletemin 32768 #update 157894 #swap 591377 time=19072
+i value 24 run# 26 origin vertexes 10660#insert 32768 #deletemin 32768 #update 157387 #swap 591873 time=18583
+i value 24 run# 27 origin vertexes 17980#insert 32768 #deletemin 32768 #update 157808 #swap 591818 time=19028
+i value 24 run# 28 origin vertexes 29177#insert 32768 #deletemin 32768 #update 158442 #swap 592470 time=19349
+i value 24 run# 29 origin vertexes 7783#insert 32768 #deletemin 32768 #update 158227 #swap 593876 time=18642
+i value 24 run# 30 origin vertexes 22868#insert 32768 #deletemin 32768 #update 158284 #swap 593217 time=19049
+----------------------
+i = 25
+p = 0.031251
+vertexes added
+here

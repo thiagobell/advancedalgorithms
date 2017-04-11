@@ -4,9 +4,13 @@
 #include <iostream>
 #include <chrono>
 #include <cmath>
+#include <cstdlib>
 
 int main()
 {
+  //current time is seed
+  std::srand48(std::time(0));
+  
   unsigned n = 2;
   unsigned int count = 0;
 
@@ -21,17 +25,7 @@ int main()
       next_value++;
       //      std::cout << " inserting priority " << priority << "value "<< next_value-1<<"\n";
     }
-    priority +=1;
-    for(unsigned int j = 0; j < two_i ; j++){
-      heap.insert(hnode<unsigned int>(priority, next_value));
-      next_value++;
-      
-      //      std::cout << " inserting priority " << priority << "value "<< next_value-1<<"\n";
-    }
-    //heap.print_heap();
-    unsigned int new_priority = two_i;
-
-
+ 
     heap.num_swaps = 0;
     std::chrono::system_clock::time_point t = std::chrono::system_clock::now();
 

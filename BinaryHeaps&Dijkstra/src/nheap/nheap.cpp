@@ -9,6 +9,9 @@ Nheap<T>::Nheap(int n, int maxsize)
 this->n = n;
 this->maxsize = maxsize;
  num_swaps = 0;
+ num_insert = 0;
+ num_update = 0;
+ num_deletemin = 0;
  data.reserve(maxsize);
 }
 
@@ -38,6 +41,7 @@ void Nheap<T>::insert(hnode<T> elem)
 {
   unsigned int position = data.size(); //index at which the elem will be inserted
   data.push_back(elem);
+  num_insert++;
   heapify_up(position);
 }
 
@@ -129,6 +133,7 @@ void Nheap<T>::update_key(T id, unsigned int new_priority)
 {
   unsigned int pos = find_elem_index(id);
   unsigned int old_key = data[pos].priority;
+  num_update++;
   if(new_priority < old_key) {
     data[pos].priority = new_priority;
     heapify_up(pos);
@@ -164,7 +169,7 @@ void Nheap<T>::print_heap()
     } else {
       nodes_printed_at_level = 1;
       num_nodes_at_level *= n;
-      std::cout << "\n" << data[node_count].priority << " ";
+      std::cout << "\n"<< "level: " << data[node_count].priority << " ";
     }
     node_count++;
   }
@@ -186,6 +191,7 @@ hnode<T> Nheap<T>::delete_min()
   hnode<T> temp = get_min();
   data[0] = data[data.size()-1];
   data.pop_back();
+  num_deletemin++;
   heapify_down(0);
   return temp;
 }

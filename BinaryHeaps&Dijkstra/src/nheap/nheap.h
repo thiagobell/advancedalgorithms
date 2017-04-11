@@ -31,7 +31,7 @@ class Nheap {
   std::vector<hnode<T> > data;
 
  public:
-  unsigned num_swaps;
+  unsigned num_swaps, num_insert, num_deletemin, num_update;
   //maxsize is the largest number of nodes in heap.
   //n is heap n-arity
   Nheap(int n, int maxsize);
