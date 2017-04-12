@@ -9,25 +9,23 @@
 
 int main() {
 
-  unsigned int max_i = 15 ; //n = 2^i
-  unsigned int min_i = 7;
+  unsigned int max_i = 20 ; //n = 2^i
+  unsigned int min_i = 11;
   unsigned int expo = 20; // m = 2^expo
 
   std::cout << "Dijkstra Performance Test -- fixed vertex number\n";
   std::cout << "m = 2^"<<expo<<"\n";
   
   for(int i =min_i; i<=max_i;i++) {
-  double p = std::pow(2,expo) /(std::pow(2,i*2)-std::pow(2,i));
+    double p = ((double)std::pow(2,expo)) /(std::pow(2,i*2)-std::pow(2,i));
   std::cout <<"----------------------\n";
-  std::cout << "i = "<< i<<"\n";
-  std::cout << "p = "<<p<<"\n";
   //generating graph
-  generate_graph(n,p,"/tmp/graph.file");
+  generate_graph(std::pow(2,i),p,"/tmp/graph.file");
   std::cout << "graph generated\n";
   std::ifstream inputfile;
   inputfile.open("/tmp/graph.file");
   Graph g(inputfile);
-
+  std::cout <<"i= "<< i<< " n= "<< g.numVertexes()<<" m= "<< g.numEdges()<<"\n";
   std::srand(std::time(0));
   //runs dijkstra's 30 times
   for(unsigned j =0; j < 30; j++) {

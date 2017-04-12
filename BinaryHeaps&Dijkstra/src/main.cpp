@@ -13,7 +13,7 @@ std::cout << "error: Expecting origin destination pair\n";
 }
 
 unsigned int o,d;
-try {
+//try {
 o = std::atoi(argv[1]);
 d = std::atoi(argv[2]);
 
@@ -22,9 +22,9 @@ d = std::atoi(argv[2]);
 
 
 
- }catch (const char* msg) {
-std::cout  << msg << std::endl; 
- }
+// }catch (const char* msg) {
+//std::cout  << msg << std::endl; 
+// }
 
 std::cout << distances[d-1]<<"\n";
 

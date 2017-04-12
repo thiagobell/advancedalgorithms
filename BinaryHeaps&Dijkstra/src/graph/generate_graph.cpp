@@ -18,11 +18,9 @@ using namespace std;
 // information stored in edges
 struct EdgeInformation {
   unsigned o,d;
-  unsigned weight;
-  EdgeInformation(unsigned o_, unsigned d_, unsigned w_ ) {
+  EdgeInformation(unsigned o_, unsigned d_) {
     o = o_;
     d = d_;
-    weight = w_;
   }
 };
 
@@ -31,20 +29,21 @@ const unsigned maxweight = 1000;
 
 int generate_graph(int n, double p,const char *filepath_output) {
   vector<EdgeInformation> edges;
+  unsigned int approx_m = n*n*p;
+  edges.reserve(approx_m);
   srand48(time(0));
   ofstream outfile;
   outfile.open(filepath_output);
-
-  for(unsigned i=1; i<=n; i++)
+  for(unsigned i=1; i<=n; i++){
     for(unsigned j=1; j<=n; j++)
       if (i != j && drand48() < p)
-	edges.push_back(EdgeInformation(i,j, lrand48()%maxweight));
- 
+	edges.push_back(EdgeInformation(i,j));
+  }
   // (3) print out in DIMACS challenge format
   outfile << "p sp " << n << " " << edges.size() << endl;
  
   for (unsigned int ind =0; ind < edges.size(); ind++)
-    outfile << "a " << edges[ind].o << " " <<edges[ind].d << " " << edges[ind].weight;
+    outfile << "a " << edges[ind].o << " " <<edges[ind].d << " " << lrand48()%maxweight<<"\n";
 
   outfile.close();
 }

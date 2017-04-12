@@ -11,7 +11,7 @@ int main() {
 
   unsigned int max_i =30;
   unsigned int expo = 15;
-  unsigned int n = std::pow(2, exp);
+  unsigned int n = std::pow(2, expo);
   std::cout << "Dijkstra Performance Test -- fixed vertex number\n";
   std::cout << "n = 2^"<<expo<<"\n";
   

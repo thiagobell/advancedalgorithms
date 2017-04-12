@@ -1,7 +1,0 @@
-#include "graph/graph.h"
-
-int main() {
-  Graph g = Graph("/home/thiago/gitprojects/advancedalgorithms/BinaryHeaps&Dijkstra/nets/USA-road-d.USA.gr");
-  
-
-}

@@ -1,0 +1,815 @@
+vertexes added
+here
+------------------
+num nodes 1024 num edges 1047552
+#insert 1024 #deletemin 1024 #update 5710 #swap 14161 n=2 time=71
+#insert 1024 #deletemin 1024 #update 5753 #swap 6354 n=4 time=71
+#insert 1024 #deletemin 1024 #update 5774 #swap 3848 n=8 time=68
+#insert 1024 #deletemin 1024 #update 5739 #swap 2777 n=16 time=67
+#insert 1024 #deletemin 1024 #update 5723 #swap 1787 n=32 time=67
+#insert 1024 #deletemin 1024 #update 5716 #swap 1640 n=64 time=67
+vertexes added
+here
+------------------
+num nodes 2048 num edges 4192256
+#insert 2048 #deletemin 2048 #update 12792 #swap 29460 n=2 time=290
+#insert 2048 #deletemin 2048 #update 12893 #swap 13200 n=4 time=283
+#insert 2048 #deletemin 2048 #update 12929 #swap 8177 n=8 time=275
+#insert 2048 #deletemin 2048 #update 12842 #swap 5136 n=16 time=274
+#insert 2048 #deletemin 2048 #update 12828 #swap 4166 n=32 time=273
+#insert 2048 #deletemin 2048 #update 12738 #swap 2549 n=64 time=272
+vertexes added
+here
+------------------
+num nodes 4096 num edges 16773120
+#insert 4096 #deletemin 4096 #update 26554 #swap 47083 n=2 time=1205
+#insert 4096 #deletemin 4096 #update 26567 #swap 19221 n=4 time=1164
+#insert 4096 #deletemin 4096 #update 26582 #swap 9675 n=8 time=1131
+#insert 4096 #deletemin 4096 #update 26523 #swap 5922 n=16 time=1111
+#insert 4096 #deletemin 4096 #update 26547 #swap 4895 n=32 time=1094
+#insert 4096 #deletemin 4096 #update 26434 #swap 2986 n=64 time=1089
+vertexes added
+here
+------------------
+num nodes 8192 num edges 67100672
+#insert 8192 #deletemin 8192 #update 53041 #swap 65971 n=2 time=4683
+#insert 8192 #deletemin 8192 #update 52697 #swap 27332 n=4 time=4511
+#insert 8192 #deletemin 8192 #update 52992 #swap 14599 n=8 time=4381
+#insert 8192 #deletemin 8192 #update 52994 #swap 9017 n=16 time=4245
+#insert 8192 #deletemin 8192 #update 52920 #swap 5197 n=32 time=4196
+#insert 8192 #deletemin 8192 #update 53047 #swap 4519 n=64 time=4180
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000approximated m:2136997888
+approximated m:2136997888
+n:1024
+approximated m:2136997888
+n:1024
+p10230
+desired num edges10240approximated m:2136997888
+n:1024
+p10230
+desired num edges10240approximated m:2136997888
+n:1024
+p10230
+approximated m:2136997888
+n:1024
+p10230
+approximated m:2136997888
+n:1024
+p10230
+approximated m:2136997888
+n:1024
+p10230
+p at gen10230approximated m:2136997888
+n:1024
+p10230
+p at gen0.00977517approximated m:10250
+n:1024
+p0.00977517
+------------------
+num nodes 1024 num edges 10356
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.00537372approximated m:22539
+n:2048
+p0.00537372
+------------------
+num nodes 2048 num edges 22632
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.000854544approximated m:229390
+n:16384
+p0.000854544
+------------------
+num nodes 16384 num edges 228954
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.00977517approximated m:10250
+n:1024
+p0.00977517
+------------------
+num nodes 1024 num edges 10210
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.00537372approximated m:22539
+n:2048
+p0.00537372
+------------------
+num nodes 2048 num edges 22614
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.0029304approximated m:49164
+n:4096
+p0.0029304
+------------------
+num nodes 4096 num edges 49309
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.00158711approximated m:106509
+n:8192
+p0.00158711
+------------------
+num nodes 8192 num edges 105860
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.0195503approximated m:20500
+n:1024
+p0.0195503
+------------------
+num nodes 1024 num edges 20482
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.0107474approximated m:45078
+n:2048
+p0.0107474
+------------------
+num nodes 2048 num edges 45302
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.00586081approximated m:98328
+n:4096
+p0.00586081
+------------------
+num nodes 4096 num edges 98393
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.0977517approximated m:102500
+n:1024
+p0.0977517
+------------------
+num nodes 1024 num edges 101905
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.0591109approximated m:247929
+n:2048
+p0.0591109
+------------------
+num nodes 2048 num edges 247550
+#insert 1 #deletemin 1 #update 0 #swap 0 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 n=64 time=0
+p at gen0.00977517approximated m:10250
+n:1024
+p0.00977517
+------------------
+num nodes 1024 num edges 10393
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=64 time=0
+p at gen0.00537372approximated m:22539
+n:2048
+p0.00537372
+------------------
+num nodes 2048 num edges 22601
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=64 time=0
+p at gen0.0029304approximated m:49164
+n:4096
+p0.0029304
+------------------
+num nodes 4096 num edges 49265
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=64 time=0
+p at gen0.0977517approximated m:102500
+n:1024
+p0.0977517
+------------------
+num nodes 1024 num edges 102642
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=64 time=0
+p at gen0.0591109approximated m:247929
+n:2048
+p0.0591109
+------------------
+num nodes 2048 num edges 246827
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=64 time=0
+p at gen1.00392approximated m:65793
+n:256
+p1.00392
+------------------
+num nodes 256 num edges 65280
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=64 time=0
+p at gen1.00196approximated m:262657
+n:512
+p1.00196
+------------------
+num nodes 512 num edges 261632
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=64 time=0
+p at gen1.00392approximated m:65793
+n:256
+p1.00392
+random vertex is 18
+vertex has0 neighbors
+------------------
+num nodes 256 num edges 65280
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=2 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=4 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=8 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=16 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=32 time=0
+#insert 1 #deletemin 1 #update 0 #swap 0 #nodes_visited1 n=64 time=0
+p at gen1.00392approximated m:65793
+n:256
+p1.00392
+random vertex is 214
+vertex has0 neighbors
+random vertex is 49
+vertex has0 neighbors
+random vertex is 54
+vertex has0 neighbors
+random vertex is 48
+vertex has0 neighbors
+random vertex is 115
+vertex has0 neighbors
+random vertex is 17
+vertex has0 neighbors
+random vertex is 194
+vertex has0 neighbors
+random vertex is 30
+vertex has0 neighbors
+random vertex is 171
+vertex has0 neighbors
+random vertex is 98
+vertex has0 neighbors
+random vertex is 175
+vertex has0 neighbors
+random vertex is 1
+vertex has0 neighbors
+random vertex is 78
+vertex has0 neighbors
+random vertex is 173
+vertex has0 neighbors
+random vertex is 234
+vertex has0 neighbors
+random vertex is 18
+vertex has0 neighbors
+random vertex is 229
+vertex has0 neighbors
+random vertex is 201
+vertex has0 neighbors
+random vertex is 206
+vertex has0 neighbors
+random vertex is 78
+vertex has0 neighbors
+random vertex is 230
+vertex has0 neighbors
+random vertex is 207
+vertex has0 neighbors
+random vertex is 71
+vertex has0 neighbors
+random vertex is 94
+vertex has0 neighbors
+random vertex is 154
+vertex has0 neighbors
+random vertex is 175
+vertex has0 neighbors
+random vertex is 168
+vertex has0 neighbors
+random vertex is 157
+vertex has0 neighbors
+random vertex is 151
+vertex has0 neighbors
+random vertex is 99
+vertex has0 neighbors
+random vertex is 64
+vertex has0 neighbors
+random vertex is 108
+vertex has0 neighbors
+random vertex is 147
+vertex has0 neighbors
+random vertex is 118
+vertex has0 neighbors
+random vertex is 155
+vertex has0 neighbors
+random vertex is 5
+vertex has0 neighbors
+random vertex is 134
+vertex has0 neighbors
+random vertex is 93
+vertex has0 neighbors
+random vertex is 34
+vertex has0 neighbors
+random vertex is 48
+vertex has0 neighbors
+random vertex is 190
+vertex has0 neighbors
+random vertex is 208
+vertex has0 neighbors
+random vertex is 49
+vertex has0 neighbors
+random vertex is 11
+vertex has0 neighbors
+random vertex is 124
+vertex has0 neighbors
+random vertex is 26
+vertex has0 neighbors
+random vertex is 28
+vertex has0 neighbors
+random vertex is 96
+vertex has0 neighbors
+random vertex is 226
+vertex has0 neighbors
+random vertex is 234
+vertex has0 neighbors
+random vertex is 173
+vertex has0 neighbors
+random vertex is 199
+vertex has0 neighbors
+random vertex is 184
+vertex has0 neighbors
+random vertex is 244
+vertex has0 neighbors
+random vertex is 37
+vertex has0 neighbors
+random vertex is 82
+vertex has0 neighbors
+random vertex is 162
+vertex has0 neighbors
+random vertex is 204
+vertex has0 neighbors
+random vertex is 238
+vertex has0 neighbors
+random vertex is 56
+vertex has0 neighbors
+random vertex is 46
+vertex has0 neighbors
+random vertex is 46
+vertex has0 neighbors
+random vertex is 164
+vertex has0 neighbors
+random vertex is 192
+vertex has0 neighbors
+random vertex is 163
+vertex has0 neighbors
+random vertex is 62
+vertex has0 neighbors
+random vertex is 196
+vertex has0 neighbors
+random vertex is 40
+vertex has0 neighbors
+random vertex is 154
+vertex has0 neighbors
+random vertex is 229
+vertex has0 neighbors
+random vertex is 87
+vertex has0 neighbors
+random vertex is 87
+vertex has0 neighbors
+random vertex is 180
+vertex has0 neighbors
+random vertex is 135
+vertex has0 neighbors
+random vertex is 98
+vertex has0 neighbors
+random vertex is 47
+vertex has0 neighbors
+random vertex is 160
+vertex has0 neighbors
+random vertex is 125
+vertex has0 neighbors
+random vertex is 142
+vertex has0 neighbors
+random vertex is 129
+vertex has0 neighbors
+random vertex is 102
+vertex has0 neighbors
+random vertex is 59
+vertex has0 neighbors
+random vertex is 72
+vertex has0 neighbors
+random vertex is 30
+vertex has0 neighbors
+random vertex is 46
+vertex has0 neighbors
+random vertex is 108
+vertex has0 neighbors
+random vertex is 111
+vertex has0 neighbors
+random vertex is 207
+vertex has0 neighbors
+random vertex is 55
+vertex has0 neighbors
+random vertex is 92
+vertex has0 neighbors
+random vertex is 6
+vertex has0 neighbors
+random vertex is 101
+vertex has0 neighbors
+random vertex is 137
+vertex has0 neighbors
+random vertex is 169
+vertex has0 neighbors
+random vertex is 36
+vertex has0 neighbors
+random vertex is 43
+vertex has0 neighbors
+random vertex is 231
+vertex has0 neighbors
+random vertex is 232
+vertex has0 neighbors
+random vertex is 82
+vertex has0 neighbors
+random vertex is 128
+vertex has0 neighbors
+random vertex is 204
+vertex has0 neighbors
+random vertex is 169
+vertex has0 neighbors
+random vertex is 215
+vertex has0 neighbors
+random vertex is 128
+vertex has0 neighbors
+random vertex is 47
+vertex has0 neighbors
+random vertex is 56
+vertex has0 neighbors
+random vertex is 174
+vertex has0 neighbors
+random vertex is 207
+vertex has0 neighbors
+random vertex is 180
+vertex has0 neighbors
+random vertex is 60
+vertex has0 neighbors
+random vertex is 79
+vertex has0 neighbors
+random vertex is 26
+vertex has0 neighbors
+random vertex is 118
+vertex has0 neighbors
+random vertex is 150
+vertex has0 neighbors
+random vertex is 55
+vertex has0 neighbors
+random vertex is 163
+vertex has0 neighbors
+random vertex is 1
+vertex has0 neighbors
+random vertex is 165
+vertex has0 neighbors
+random vertex is 113
+vertex has0 neighbors
+random vertex is 56
+vertex has0 neighbors
+random vertex is 256
+vertex has130560 neighbors
+------------------
+num nodes 256 num edges 65280
+#insert 2 #deletemin 2 #update 0 #swap 0 #nodes_visited2 n=2 time=3
+#insert 2 #deletemin 2 #update 0 #swap 0 #nodes_visited2 n=4 time=3
+#insert 2 #deletemin 2 #update 0 #swap 0 #nodes_visited2 n=8 time=3
+#insert 2 #deletemin 2 #update 0 #swap 0 #nodes_visited2 n=16 time=3
+#insert 2 #deletemin 2 #update 0 #swap 0 #nodes_visited2 n=32 time=3
+#insert 2 #deletemin 2 #update 0 #swap 0 #nodes_visited2 n=64 time=3
+p at gen1.00392approximated m:65793
+n:256
+p1.00392
+random vertex is 144
+vertex has510 neighbors
+------------------
+num nodes 256 num edges 65280
+#insert 256 #deletemin 256 #update 1047 #swap 2508 #nodes_visited256 n=2 time=5
+#insert 256 #deletemin 256 #update 1045 #swap 1242 #nodes_visited256 n=4 time=5
+#insert 256 #deletemin 256 #update 1055 #swap 824 #nodes_visited256 n=8 time=5
+#insert 256 #deletemin 256 #update 1059 #swap 566 #nodes_visited256 n=16 time=5
+#insert 256 #deletemin 256 #update 1064 #swap 467 #nodes_visited256 n=32 time=5
+#insert 256 #deletemin 256 #update 1070 #swap 383 #nodes_visited256 n=64 time=5
+p at gen1.00196approximated m:262657
+n:512
+p1.00196
+random vertex is 52
+vertex has1022 neighbors
+------------------
+num nodes 512 num edges 261632
+#insert 512 #deletemin 512 #update 2480 #swap 5974 #nodes_visited512 n=2 time=16
+#insert 512 #deletemin 512 #update 2449 #swap 2827 #nodes_visited512 n=4 time=16
+#insert 512 #deletemin 512 #update 2473 #swap 1737 #nodes_visited512 n=8 time=16
+#insert 512 #deletemin 512 #update 2458 #swap 1187 #nodes_visited512 n=16 time=16
+#insert 512 #deletemin 512 #update 2467 #swap 927 #nodes_visited512 n=32 time=16
+#insert 512 #deletemin 512 #update 2462 #swap 834 #nodes_visited512 n=64 time=16
+p at gen1.00098approximated m:1049601
+n:1024
+p1.00098
+random vertex is 182
+vertex has2046 neighbors
+------------------
+num nodes 1024 num edges 1047552
+#insert 1024 #deletemin 1024 #update 5656 #swap 13936 #nodes_visited1024 n=2 time=69
+#insert 1024 #deletemin 1024 #update 5663 #swap 6458 #nodes_visited1024 n=4 time=67
+#insert 1024 #deletemin 1024 #update 5661 #swap 3681 #nodes_visited1024 n=8 time=66
+#insert 1024 #deletemin 1024 #update 5734 #swap 2763 #nodes_visited1024 n=16 time=65
+#insert 1024 #deletemin 1024 #update 5663 #swap 1746 #nodes_visited1024 n=32 time=65
+#insert 1024 #deletemin 1024 #update 5671 #swap 1594 #nodes_visited1024 n=64 time=65
+p at gen1.00098approximated m:1049601
+n:1024
+p1.00098
+------------------
+num nodes 1024 num edges 1047552
+#insert 1024 #deletemin 1024 #update 5676 #swap 13848 #nodes_visited1024 n=2 time=68
+#insert 1024 #deletemin 1024 #update 5691 #swap 6510 #nodes_visited1024 n=4 time=67
+#insert 1024 #deletemin 1024 #update 5658 #swap 3744 #nodes_visited1024 n=8 time=66
+#insert 1024 #deletemin 1024 #update 5678 #swap 2677 #nodes_visited1024 n=16 time=66
+#insert 1024 #deletemin 1024 #update 5668 #swap 1744 #nodes_visited1024 n=32 time=65
+#insert 1024 #deletemin 1024 #update 5673 #swap 1602 #nodes_visited1024 n=64 time=65
+p at gen1.00049approximated m:4196353
+n:2048
+p1.00049
+------------------
+num nodes 2048 num edges 4192256
+#insert 2048 #deletemin 2048 #update 12674 #swap 29696 #nodes_visited2048 n=2 time=282
+#insert 2048 #deletemin 2048 #update 12726 #swap 13222 #nodes_visited2048 n=4 time=275
+#insert 2048 #deletemin 2048 #update 12847 #swap 8237 #nodes_visited2048 n=8 time=269
+#insert 2048 #deletemin 2048 #update 12858 #swap 5070 #nodes_visited2048 n=16 time=265
+#insert 2048 #deletemin 2048 #update 12710 #swap 4171 #nodes_visited2048 n=32 time=264
+#insert 2048 #deletemin 2048 #update 12861 #swap 2583 #nodes_visited2048 n=64 time=262
+p at gen0.00977517approximated m:10250
+n:1024
+p0.00977517
+------------------
+num nodes 1024 num edges 9908
+#insert 1024 #deletemin 1024 #update 1015 #swap 9055 #nodes_visited1024 n=2 time=5
+#insert 1024 #deletemin 1024 #update 1015 #swap 4690 #nodes_visited1024 n=4 time=4
+#insert 1024 #deletemin 1024 #update 1014 #swap 3126 #nodes_visited1024 n=8 time=4
+#insert 1024 #deletemin 1024 #update 1015 #swap 2497 #nodes_visited1024 n=16 time=4
+#insert 1024 #deletemin 1024 #update 1017 #swap 1995 #nodes_visited1024 n=32 time=4
+#insert 1024 #deletemin 1024 #update 1016 #swap 1832 #nodes_visited1024 n=64 time=4
+p at gen0.00537372approximated m:22539
+n:2048
+p0.00537372
+------------------
+num nodes 2048 num edges 22321
+#insert 2048 #deletemin 2048 #update 2235 #swap 20324 #nodes_visited2048 n=2 time=14
+#insert 2048 #deletemin 2048 #update 2237 #swap 10393 #nodes_visited2048 n=4 time=12
+#insert 2048 #deletemin 2048 #update 2237 #swap 7097 #nodes_visited2048 n=8 time=11
+#insert 2048 #deletemin 2048 #update 2233 #swap 5556 #nodes_visited2048 n=16 time=11
+#insert 2048 #deletemin 2048 #update 2236 #swap 4262 #nodes_visited2048 n=32 time=10
+#insert 2048 #deletemin 2048 #update 2237 #swap 3913 #nodes_visited2048 n=64 time=11
+p at gen0.0029304approximated m:49164
+n:4096
+p0.0029304
+------------------
+num nodes 4096 num edges 49283
+#insert 4096 #deletemin 4096 #update 4727 #swap 45175 #nodes_visited4096 n=2 time=47
+#insert 4096 #deletemin 4096 #update 4725 #swap 23281 #nodes_visited4096 n=4 time=44
+#insert 4096 #deletemin 4096 #update 4728 #swap 15710 #nodes_visited4096 n=8 time=41
+#insert 4096 #deletemin 4096 #update 4734 #swap 11871 #nodes_visited4096 n=16 time=40
+#insert 4096 #deletemin 4096 #update 4733 #swap 9792 #nodes_visited4096 n=32 time=40
+#insert 4096 #deletemin 4096 #update 4731 #swap 8066 #nodes_visited4096 n=64 time=40
+p at gen0.00158711approximated m:106509
+n:8192
+p0.00158711
+------------------
+num nodes 8192 num edges 106497
+#insert 8192 #deletemin 8192 #update 10061 #swap 99508 #nodes_visited8192 n=2 time=191
+#insert 8192 #deletemin 8192 #update 10067 #swap 50542 #nodes_visited8192 n=4 time=177
+#insert 8192 #deletemin 8192 #update 10069 #swap 33890 #nodes_visited8192 n=8 time=167
+#insert 8192 #deletemin 8192 #update 10062 #swap 25553 #nodes_visited8192 n=16 time=160
+#insert 8192 #deletemin 8192 #update 10068 #swap 21826 #nodes_visited8192 n=32 time=158
+#insert 8192 #deletemin 8192 #update 10062 #swap 17086 #nodes_visited8192 n=64 time=157
+p at gen0.00977517approximated m:10250
+n:1024
+p0.00977517
+------------------
+num nodes 1024 num edges 10256
+#insert 1024 #deletemin 1024 #update 1004 #swap 9182 #nodes_visited1024 n=2 time=6
+#insert 1024 #deletemin 1024 #update 1005 #swap 4777 #nodes_visited1024 n=4 time=5
+#insert 1024 #deletemin 1024 #update 1004 #swap 3173 #nodes_visited1024 n=8 time=5
+#insert 1024 #deletemin 1024 #update 1004 #swap 2502 #nodes_visited1024 n=16 time=5
+#insert 1024 #deletemin 1024 #update 1002 #swap 2006 #nodes_visited1024 n=32 time=4
+#insert 1024 #deletemin 1024 #update 1003 #swap 1836 #nodes_visited1024 n=64 time=5
+p at gen0.00537372approximated m:22539
+n:2048
+p0.00537372
+------------------
+num nodes 2048 num edges 22694
+#insert 2048 #deletemin 2048 #update 2147 #swap 20289 #nodes_visited2048 n=2 time=14
+#insert 2048 #deletemin 2048 #update 2144 #swap 10409 #nodes_visited2048 n=4 time=13
+#insert 2048 #deletemin 2048 #update 2150 #swap 7146 #nodes_visited2048 n=8 time=12
+#insert 2048 #deletemin 2048 #update 2147 #swap 5520 #nodes_visited2048 n=16 time=11
+#insert 2048 #deletemin 2048 #update 2146 #swap 4261 #nodes_visited2048 n=32 time=11
+#insert 2048 #deletemin 2048 #update 2146 #swap 3900 #nodes_visited2048 n=64 time=11
+p at gen0.0029304approximated m:49164
+n:4096
+p0.0029304
+------------------
+num nodes 4096 num edges 49186
+#insert 4096 #deletemin 4096 #update 4681 #swap 45301 #nodes_visited4096 n=2 time=46
+#insert 4096 #deletemin 4096 #update 4688 #swap 23254 #nodes_visited4096 n=4 time=43
+#insert 4096 #deletemin 4096 #update 4686 #swap 15747 #nodes_visited4096 n=8 time=41
+#insert 4096 #deletemin 4096 #update 4688 #swap 11913 #nodes_visited4096 n=16 time=40
+#insert 4096 #deletemin 4096 #update 4685 #swap 9783 #nodes_visited4096 n=32 time=39
+#insert 4096 #deletemin 4096 #update 4688 #swap 8056 #nodes_visited4096 n=64 time=40
+p at gen0.00158711approximated m:106509
+n:8192
+p0.00158711
+------------------
+num nodes 8192 num edges 106611
+#insert 8192 #deletemin 8192 #update 9931 #swap 99552 #nodes_visited8192 n=2 time=202
+#insert 8192 #deletemin 8192 #update 9932 #swap 50465 #nodes_visited8192 n=4 time=180
+p at gen0.00977517approximated m:10250
+n:1024
+p0.00977517
+------------------
+num nodes 1024 num edges 10201
+#insert 1024 #deletemin 1024 #update 981 #swap 9026 #nodes_visited1024 n=2 time=6
+#insert 1024 #deletemin 1024 #update 982 #swap 4727 #nodes_visited1024 n=4 time=5
+#insert 1024 #deletemin 1024 #update 982 #swap 3137 #nodes_visited1024 n=8 time=5
+#insert 1024 #deletemin 1024 #update 980 #swap 2445 #nodes_visited1024 n=16 time=5
+#insert 1024 #deletemin 1024 #update 981 #swap 1981 #nodes_visited1024 n=32 time=5
+#insert 1024 #deletemin 1024 #update 981 #swap 1822 #nodes_visited1024 n=64 time=5
+p at gen0.00537372approximated m:22539
+n:2048
+p0.00537372
+------------------
+num nodes 2048 num edges 22894
+#insert 2048 #deletemin 2048 #update 2286 #swap 20705 #nodes_visited2048 n=2 time=15
+#insert 2048 #deletemin 2048 #update 2288 #swap 10562 #nodes_visited2048 n=4 time=13
+#insert 2048 #deletemin 2048 #update 2288 #swap 7251 #nodes_visited2048 n=8 time=12
+#insert 2048 #deletemin 2048 #update 2287 #swap 5611 #nodes_visited2048 n=16 time=11
+#insert 2048 #deletemin 2048 #update 2289 #swap 4283 #nodes_visited2048 n=32 time=11
+#insert 2048 #deletemin 2048 #update 2286 #swap 3891 #nodes_visited2048 n=64 time=11
+p at gen0.0029304approximated m:49164
+n:4096
+p0.0029304
+------------------
+num nodes 4096 num edges 49443
+#insert 4096 #deletemin 4096 #update 4797 #swap 45608 #nodes_visited4096 n=2 time=48
+#insert 4096 #deletemin 4096 #update 4800 #swap 23409 #nodes_visited4096 n=4 time=44
+#insert 4096 #deletemin 4096 #update 4800 #swap 15790 #nodes_visited4096 n=8 time=42
+#insert 4096 #deletemin 4096 #update 4800 #swap 11932 #nodes_visited4096 n=16 time=41
+#insert 4096 #deletemin 4096 #update 4793 #swap 9849 #nodes_visited4096 n=32 time=40
+#insert 4096 #deletemin 4096 #update 4804 #swap 8092 #nodes_visited4096 n=64 time=41
+p at gen0.00158711approximated m:106509
+n:8192
+p0.00158711
+------------------
+num nodes 8192 num edges 106393
+#insert 8192 #deletemin 8192 #update 10132 #swap 99579 #nodes_visited8192 n=2 time=198
+#insert 8192 #deletemin 8192 #update 10137 #swap 50437 #nodes_visited8192 n=4 time=177
+#insert 8192 #deletemin 8192 #update 10132 #swap 33889 #nodes_visited8192 n=8 time=166
+#insert 8192 #deletemin 8192 #update 10128 #swap 25536 #nodes_visited8192 n=16 time=161
+#insert 8192 #deletemin 8192 #update 10141 #swap 21803 #nodes_visited8192 n=32 time=158
+#insert 8192 #deletemin 8192 #update 10134 #swap 17099 #nodes_visited8192 n=64 time=158
+p at gen0.000854544approximated m:229390
+n:16384
+p0.000854544
+------------------
+num nodes 16384 num edges 229452
+#insert 16384 #deletemin 16384 #update 20934 #swap 216622 #nodes_visited16384 n=2 time=806
+#insert 16384 #deletemin 16384 #update 20951 #swap 110600 #nodes_visited16384 n=4 time=733
+#insert 16384 #deletemin 16384 #update 20942 #swap 74700 #nodes_visited16384 n=8 time=694
+#insert 16384 #deletemin 16384 #update 20941 #swap 56651 #nodes_visited16384 n=16 time=664
+#insert 16384 #deletemin 16384 #update 20923 #swap 46563 #nodes_visited16384 n=32 time=680
+#insert 16384 #deletemin 16384 #update 20941 #swap 38917 #nodes_visited16384 n=64 time=669
+p at gen0.000457778approximated m:491535
+n:32768
+p0.000457778
+------------------
+num nodes 32768 num edges 491192
+#insert 32768 #deletemin 32768 #update 44254 #swap 468857 #nodes_visited32768 n=2 time=3342
+#insert 32768 #deletemin 32768 #update 44277 #swap 237014 #nodes_visited32768 n=4 time=3077
+#insert 32768 #deletemin 32768 #update 44279 #swap 159926 #nodes_visited32768 n=8 time=2888
+#insert 32768 #deletemin 32768 #update 44266 #swap 122562 #nodes_visited32768 n=16 time=2775
+#insert 32768 #deletemin 32768 #update 44275 #swap 96856 #nodes_visited32768 n=32 time=2719
+#insert 32768 #deletemin 32768 #update 44279 #swap 86022 #nodes_visited32768 n=64 time=2697
+p at gen0.000244144approximated m:0
+n:65536
+p0.000244144
+------------------
+num nodes 65536 num edges 1048963
+#insert 65536 #deletemin 65536 #update 93112 #swap 1008917 #nodes_visited65536 n=2 time=14885
+#insert 65536 #deletemin 65536 #update 93119 #swap 512556 #nodes_visited65536 n=4 time=13721
+#insert 65536 #deletemin 65536 #update 93076 #swap 339820 #nodes_visited65536 n=8 time=12748
+#insert 65536 #deletemin 65536 #update 93097 #swap 258058 #nodes_visited65536 n=16 time=12101
+#insert 65536 #deletemin 65536 #update 93110 #swap 204678 #nodes_visited65536 n=32 time=11843
+#insert 65536 #deletemin 65536 #update 93096 #swap 183475 #nodes_visited65536 n=64 time=11904
+p at gen0.000518815approximated m:0
+n:131072
+p0.000518815
+------------------
+num nodes 131072 num edges 8920320
+#insert 131072 #deletemin 131072 #update 368886 #swap 2328077 #nodes_visited131072 n=2 time=141705
+p at gen0.000793554------------------
+num nodes 8192 num edges 53516
+#insert 8182 #deletemin 8182 #update 5256 #swap 92598 #nodes_visited8182 n=2 time=81
+#insert 8182 #deletemin 8182 #update 5257 #swap 47790 #nodes_visited8182 n=4 time=75
+#insert 8182 #deletemin 8182 #update 5264 #swap 32190 #nodes_visited8182 n=8 time=71
+#insert 8182 #deletemin 8182 #update 5264 #swap 24363 #nodes_visited8182 n=16 time=71
+#insert 8182 #deletemin 8182 #update 5253 #swap 21054 #nodes_visited8182 n=32 time=70
+#insert 8182 #deletemin 8182 #update 5263 #swap 16446 #nodes_visited8182 n=64 time=70
+p at gen0.000793554------------------
+num nodes 8192 num edges 53380
+#insert 8182 #deletemin 8182 #update 5279 #swap 92426 #nodes_visited8182 n=2 time=81
+#insert 8182 #deletemin 8182 #update 5275 #swap 47748 #nodes_visited8182 n=4 time=75
+#insert 8182 #deletemin 8182 #update 5277 #swap 32113 #nodes_visited8182 n=8 time=71
+#insert 8182 #deletemin 8182 #update 5279 #swap 24352 #nodes_visited8182 n=16 time=69
+#insert 8182 #deletemin 8182 #update 5276 #swap 20980 #nodes_visited8182 n=32 time=68
+#insert 8182 #deletemin 8182 #update 5275 #swap 16428 #nodes_visited8182 n=64 time=70
+p at gen0.000228889------------------
+num nodes 32768 num edges 244349
+#insert 32746 #deletemin 32746 #update 24546 #swap 442138 #nodes_visited32746 n=2 time=1508
+#insert 32746 #deletemin 32746 #update 24537 #swap 226229 #nodes_visited32746 n=4 time=1390
+#insert 32746 #deletemin 32746 #update 24543 #swap 154594 #nodes_visited32746 n=8 time=1317
+#insert 32746 #deletemin 32746 #update 24542 #swap 118928 #nodes_visited32746 n=16 time=1263
+#insert 32746 #deletemin 32746 #update 24542 #swap 95321 #nodes_visited32746 n=32 time=1252
+#insert 32746 #deletemin 32746 #update 24541 #swap 83969 #nodes_visited32746 n=64 time=1240
+p at gen0.000228889------------------
+num nodes 32768 num edges 245687
+#insert 32744 #deletemin 32744 #update 24620 #swap 442189 #nodes_visited32744 n=2 time=1481
+#insert 32744 #deletemin 32744 #update 24623 #swap 226483 #nodes_visited32744 n=4 time=1376
+#insert 32744 #deletemin 32744 #update 24615 #swap 154702 #nodes_visited32744 n=8 time=1290
+#insert 32744 #deletemin 32744 #update 24612 #swap 119049 #nodes_visited32744 n=16 time=1243
+#insert 32744 #deletemin 32744 #update 24621 #swap 95399 #nodes_visited32744 n=32 time=1230
+#insert 32744 #deletemin 32744 #update 24610 #swap 83919 #nodes_visited32744 n=64 time=1216
+p at gen0.000122072------------------
+num nodes 65536 num edges 524547
+#insert 65507 #deletemin 65507 #update 52282 #swap 955787 #nodes_visited65507 n=2 time=6356
+#insert 65507 #deletemin 65507 #update 52294 #swap 490268 #nodes_visited65507 n=4 time=5922
+#insert 65507 #deletemin 65507 #update 52319 #swap 327000 #nodes_visited65507 n=8 time=5553
+#insert 65507 #deletemin 65507 #update 52314 #swap 252498 #nodes_visited65507 n=16 time=5309
+#insert 65507 #deletemin 65507 #update 52301 #swap 198044 #nodes_visited65507 n=32 time=5223
+#insert 65507 #deletemin 65507 #update 52309 #swap 180661 #nodes_visited65507 n=64 time=5196
+p at gen0.000259407------------------
+num nodes 131072 num edges 4455370
+#insert 131072 #deletemin 131072 #update 280039 #swap 2243745 #nodes_visited131072 n=2 time=99014
+#insert 131072 #deletemin 131072 #update 280018 #swap 1124003 #nodes_visited131072 n=4 time=90787
+#insert 131072 #deletemin 131072 #update 280033 #swap 752205 #nodes_visited131072 n=8 time=85252
+#insert 131072 #deletemin 131072 #update 280100 #swap 555350 #nodes_visited131072 n=16 time=82051
+#insert 131072 #deletemin 131072 #update 280018 #swap 455683 #nodes_visited131072 n=32 time=79646
+#insert 131072 #deletemin 131072 #update 280147 #swap 382719 #nodes_visited131072 n=64 time=79053

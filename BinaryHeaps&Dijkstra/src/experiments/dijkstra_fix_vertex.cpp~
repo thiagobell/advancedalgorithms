@@ -1,3 +1,0 @@
-#include<iostream>
-#include "../graph/graph.h"
-#include "../graph/generete_graph.h"
