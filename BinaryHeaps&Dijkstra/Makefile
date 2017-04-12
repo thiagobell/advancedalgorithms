@@ -26,12 +26,10 @@ build/dijkstra_fix_vertex.o: src/experiments/dijkstra_fix_vertex.cpp
 	g++ -o build/dijkstra_fix_vertex.o -O3 -std=c++11 -c src/experiments/dijkstra_fix_vertex.cpp
 build/dijkstra_fix_edges.o: src/experiments/dijkstra_fix_edges.cpp
 	g++ -o build/dijkstra_fix_edges.o -O3 -std=c++11 -c src/experiments/dijkstra_fix_edges.cpp
-build/dijkstra_large_net.o: src/experiments/dijkstra_large_net.cpp
-	g++ -o build/dijkstra_large_net.o -O3 -std=c++11 -c src/experiments/dijkstra_large_net.cpp
 
 
 
-all:	build_folder build/nheap.o build/graph.o build/dijkstra.o build/main.o build/narity.o build/heap_insert.o build/heap_update.o build/heap_delete.o build/generate_graph.o build/dijkstra_fix_vertex.o build/dijkstra_fix_edges.o build/dijkstra_large_net.o
+all:	build_folder build/nheap.o build/graph.o build/dijkstra.o build/main.o build/narity.o build/heap_insert.o build/heap_update.o build/heap_delete.o build/generate_graph.o build/dijkstra_fix_vertex.o build/dijkstra_fix_edges.o
 	g++ -o build/dijkstra build/main.o  build/nheap.o build/graph.o build/dijkstra.o
 	g++ -o build/narity -g build/narity.o  build/nheap.o build/graph.o build/dijkstra.o build/generate_graph.o
 	g++ -o build/heap_insert build/heap_insert.o  build/nheap.o build/graph.o build/dijkstra.o
@@ -39,7 +37,6 @@ all:	build_folder build/nheap.o build/graph.o build/dijkstra.o build/main.o buil
 	g++ -o build/heap_delete build/heap_delete.o  build/nheap.o build/graph.o build/dijkstra.o
 	g++ -o build/dijkstra_fix_vertex build/dijkstra_fix_vertex.o  build/nheap.o build/graph.o build/dijkstra.o build/generate_graph.o
 	g++ -o build/dijkstra_fix_edges build/dijkstra_fix_edges.o  build/nheap.o build/graph.o build/dijkstra.o build/generate_graph.o
-	g++ -o build/dijkstra_large_net build/dijkstra_large_net.o  build/nheap.o build/graph.o build/dijkstra.o build/generate_graph.o
 
 #	g++ -o build/run -g -std=c++11 src/nheap/nheap.cpp src/graph/graph.cpp src/dijkstra/dijkstra.cpp src/main.cpp
 
