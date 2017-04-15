@@ -13,7 +13,7 @@ int main() {
   unsigned int expo = 20//15;
   unsigned int n = std::pow(2, expo);
   std::cout << "#n = 2^"<<expo<<"="<< n <<"\n";
-  
+
   for(int i =0; i<=max_i;i++) {
     double p = std::pow(2,i) /(std::pow(2,expo*2)-std::pow(2,expo));
     std::cout <<"----------------------\n";
