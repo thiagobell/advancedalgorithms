@@ -38,6 +38,7 @@ std::vector<unsigned> dijkstra(unsigned s, Graph g, unsigned heap_arity)
     
   }
   std::cout << "#insert "<< heap.num_insert << " #deletemin "<< heap.num_deletemin << " #update " << heap.num_update << " #swap "<< heap.num_swaps<< " #nodes_visited" << num_visits;
+
   return distance;
 }
 
