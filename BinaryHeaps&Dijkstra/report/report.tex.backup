@@ -36,11 +36,7 @@ Os experimentos foram realizados usando um processador Intel i7 2600k acompanhad
 \section{Análise de Complexidade da Heap}
 A complexidade teórica das operaç\~oes da heap foram comparadas com os resultados de experimentos. Os quais respeitam a expectativa teórica. 
 \subsection{Avaliaç\~ao das Operaç\~oes de Inserç\~ao}
-Fixando-se o valor $n = 2^{27}-1$, adicionou-se $n$ elementos na heap com chaves no intervalo de $[n,1]$.  Como se usou uma heap de grau 2, isso corresponde a 27 níveis completos na árvore. 
-Ao adicionar os elementos, após inserir $2^{i}-1$ chaves, mede o tempo $T_i$ e o número de swaps $I_i$ onde $0<=i<=27$. A complexidade dessa operaçao é de $O(2^i ~ \dot i)$.
-Com isso pode-se estimar o custo $E = 2^i ~ \dot i$ para cada $i$. Na figura \ref{fig:insert1} pode-se ver o número de swaps e E em funç\~ao de $2^i$. 
-Para ficar claro que a complexidade é respeitada, a curva E*15 mostra os valores de $E$ multiplicados por uma constante. Na figura \ref{fig:insert2}, 
-mostra-se a raz\~ao entre o tempo obtido experimentalmente e o custo teórico. Nota-se que a curva para valores maiores de $2^i$ tende a um valor constante o que indicaria que o tempo e o custo est\~ao crescendo na mesma taxa.
+Fixando-se o valor $n = 2^{27}-1$, adicionou-se $n$ elementos na heap com chaves no intervalo de $[n,1]$.  Como se usou uma heap de grau 2, isso corresponde a 27 níveis completos na árvore. Ao adicionar os elementos, após inserir $2^{i}-1$ chaves, mede o tempo $T_i$ e o número de swaps $I_i$ onde $0<=i<=27$. A complexidade dessa operaçao é de $O(2^i ~ \dot i)$. Com isso pode-se estimar o custo $E = 2^i ~ \dot i$ para cada $i$. Na figura \ref{fig:insert1} pode-se ver o número de swaps e E em funç\~ao de $2^i$. Para ficar claro que a complexidade é respeitada, a curva E*15 mostra os valores de $E$ multiplicados por uma constante. Na figura \ref{fig:insert2}, mostra-se a raz\~ao entre o tempo obtido experimentalmente e o custo teórico. Nota-se que a curva para valores maiores de $2^i$ tende a um valor constante o que indicaria que o tempo e o custo est\~ao crescendo na mesma taxa.
 
 Considerando as duas comparaç\~oes, conclui-se que a implementaç\~ao da inserç\~ao na heap respeita a complexidade do algoritmo.
 
@@ -63,26 +59,12 @@ Considerando as duas comparaç\~oes, conclui-se que a implementaç\~ao da inser�
 
 \end{axis}
 \end{tikzpicture}
-\caption{Comparaç\~ao entre o número de swaps e a complexidade através do custo esperado ($E$) e seu múltiplo ($E*15$).}
-\label{fig:insert1}
 \end{figure}
 
 \begin{figure}[H]
+\includegraphics[width=0.75\linewidth]{insert2}
 \centering
-
-\begin{tikzpicture}
-
-\begin{axis}[
-  title={},
-  xlabel=$i$,
-  ylabel=raz\~ao]
-  ]
-\addplot +[mark=none, color=red] table [x=2nai, y=TE, col sep=comma] {heap_insert.csv};
-\addlegendentry{T/E}
-\end{axis}
-\end{tikzpicture}
-
-\caption{Raz\~ao entre tempo de execuç\~ao e o custo esperado.}
+\caption{}{}
 \label{fig:insert2}
 \end{figure}
 \subsection{Avaliaç\~ao das Operaç\~oes de Atualizaç\~ao}
