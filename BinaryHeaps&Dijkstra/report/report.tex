@@ -26,11 +26,12 @@
 \setcounter{chapter}{1}
 
 \section{Tarefa}
-Implementar uma heap n-ária e usá-la ao implementar o algoritmo de Dijkstra. Verificar desempenho da heap e do algoritmo de Dijsktra e compará-los com as previs\~oes teóricas.
+Implementar uma \textit{heap} n-ária e usá-la ao implementar o algoritmo de Dijkstra. Verificar desempenho da \textit{heap} e do algoritmo de Dijsktra e compará-los com as previs\~oes teóricas.
 Os testes presentes no plano de teste sugerido foram utilizados neste trabalho.
 
 \section{Implementaç\~ao}
-Os algoritmos foram implementados em C++. A heap utiliza um vetor da standard library da linguagem para o armazenamento da árvore de forma eficiente. Os grafos s\~ao representados por lista de adjacências.
+Os algoritmos foram implementados em C++. A \textit{heap} utiliza um vetor da \textit{standard library} da linguagem para o armazenamento da árvore de forma eficiente. Os grafos s\~ao representados
+por lista de adjacências.
 \section{Ambiente de Teste}
 Os experimentos foram realizados usando um processador Intel i7 2600k acompanhado de 8 GiB de RAM. O sistema operacional utilizado foi Ubuntu Linux 16.04.
 \section{Análise de Complexidade da Heap}
@@ -74,7 +75,7 @@ Considerando as duas comparaç\~oes, conclui-se que a implementaç\~ao da inser�
 
 \begin{axis}[
   title={},
-  xlabel=$i$,
+  xlabel=$2^i$,
   ylabel=raz\~ao]
   ]
 \addplot +[mark=none, color=red] table [x=2nai, y=TE, col sep=comma] {heap_insert.csv};
@@ -91,25 +92,64 @@ Considerando-se uma variável $i$, $2^i -1$ chaves s\~ao inseridas com valor de 
 O custo teórico esperado também é de $E = 2^i \dot i$. Ao comparar com o número de swaps obtido para cada iteraç\~ao, percebeu-se que estes valores s\~ao iguais. Logo, pelo menos em número de swaps, a complexidade é obedecida. No entanto, ao comparar o tempo de execuç\~ao, o resultado obtido foi uma reta inclinada o que indicaria que o tempo de execuç\~ao cresce mais que o esperado.
 
 \begin{figure}[H]
-\includegraphics[width=0.75\linewidth]{update}
 \centering
+\begin{tikzpicture}
+
+\begin{axis}[
+  title={},
+  xlabel=$2^i$,
+  ylabel=raz\~ao]
+  ]
+\addplot +[mark=none, color=red] table [x=2nai, y=TdivE, col sep=comma] {heap_update.csv};
+\addlegendentry{T/E}
+\end{axis}
+\end{tikzpicture}
 \caption{}{}
 \label{fig:update1}
 \end{figure}
 
 \subsection{Avaliaç\~ao das Operaç\~oes de Remoç\~ao}
-Para um valor $i$, $2^{i} - 1$ chaves com valor aleatórios s\~ao adicionados. Depois, $2^{i - 1}$ chaves s\~ao removidas. O tempo de execuç\~ao e o número de swaps foram medidos para cada i. O custo teórico dessas operaç\~oes é de $E = 2^i \dot i$. Na figura \ref{fig:delete1} é comparado esse custo com o número de swaps. De forma análoga a feita anteriormente, também se multiplicou o valor de E por uma constante. A comparaç\~ao do tempo de execuç\~ao com E pode ser vista na figura \ref{fig:delete2}. A convergência a um valor indica que o tempo de execuç\~ao cresce conforme a complexidade do algoritmo.
+Para um valor $i$, $2^{i} - 1$ chaves com valor aleatórios s\~ao adicionados. Depois, $2^{i - 1}$ chaves s\~ao removidas. O tempo de execuç\~ao e o número de swaps foram medidos para cada i.
+O custo teórico dessas operaç\~oes é de $E = 2^i \dot i$. Na figura \ref{fig:delete1} é comparado esse custo com o número de swaps. De forma análoga a feita anteriormente,
+também se multiplicou o valor de E por uma constante. A comparaç\~ao do tempo de execuç\~ao com E pode ser vista na figura \ref{fig:delete2}.
+A convergência a um valor indica que o tempo de execuç\~ao cresce conforme a complexidade do algoritmo.
 
 \begin{figure}[H]
-\includegraphics[width=0.75\linewidth]{delete1}
+\begin{tikzpicture}
+
+\begin{axis}[
+  legend cell align={left},
+  title={},
+  xlabel=$i$,
+  ylabel=$num. op.$]
+  ]
+\addplot +[mark=none, color=red] table [x=nivel, y=swaps, col sep=comma] {heap_delete.csv};
+\addlegendentry{swaps}
+\addplot +[mark=none, color=blue] table [x=nivel, y=E, col sep=comma, mark=none, smooth] {heap_delete.csv};
+\addlegendentry{$E$}
+\addplot +[mark=none, color=green] table [x=nivel, y=E0.5, col sep=comma, mark=none, smooth] {heap_delete.csv};
+\addlegendentry{$E*0.5$}
+
+\end{axis}
+\end{tikzpicture}
 \centering
 \caption{}{}
 \label{fig:delete1}
 \end{figure}
 
 \begin{figure}[H]
-\includegraphics[width=0.75\linewidth]{delete1}
 \centering
+\begin{tikzpicture}
+
+\begin{axis}[
+  title={},
+  xlabel=$2^i$,
+  ylabel=raz\~ao]
+  ]
+\addplot +[mark=none, color=red] table [x=2nai, y=TdivE, col sep=comma] {heap_delete.csv};
+\addlegendentry{T/E}
+\end{axis}
+\end{tikzpicture}
 \caption{}{}
 \label{fig:delete2}
 \end{figure}
@@ -162,13 +202,38 @@ Fixou-se o número de arestas em $2^{20}$ e variou-se o número de vértices ent
 $E = (n+m)*log(n)$. Encontrou-se um problema onde o grafo se tornavo excessivamente esparso e o algoritmo de dijkstra encerrava sem percorrer 
 parte significante do grafo. Poucas amostras foram obtidas como fica evidente na figura \ref{fig:dij_edge}.
 
-\begin{figure}[h!]
-\includegraphics[width=0.75\linewidth]{dij_fixed_edge}
+\begin{figure}[H]
+\begin{tikzpicture}
+
+\begin{axis}[
+  title={},
+  xlabel=$n$,
+  ylabel=$T/(n+m)log(n)$]
+  ]
+\addplot +[mark=none, color=red] table [x=n, y=TdivE, col sep=comma, mark=none, smooth] {fixed_edge.csv};
+\end{axis}
+\end{tikzpicture}
 \centering
 \caption{}{}
 \label{fig:dij_edge}
 \end{figure}
 
+\begin{figure}[H]
+\begin{tikzpicture}
+
+\begin{axis}[
+  title={},
+  xlabel=$log(n)$,
+  ylabel=$log(time)$]
+  ]
+\addplot +[mark=o, color=red,only marks] table [x=logn, y=logtime, col sep=comma] {fix_edge_lin_regression.csv};
+\addplot +[mark=none, color=blue] table [x=logn, y=pred, col sep=comma, mark=none, smooth] {fix_edge_lin_regression.csv};
+\end{axis}
+\end{tikzpicture}
+\centering
+\caption{}{}
+\label{fig:dij_edge_lin_reg}
+\end{figure}
 
 \section{Verificando a implementaç\~ao de Dijkstra com grandes instâncias}
 Testou-se a implementaç\~ao do algoritmo com duas instâncias conforme recomendado no plano de teste. Para o caso de teste consistindo da rede completa dos Estados Unidos provida na definiç\~ao do trabalho, obteve-se um tempo médio de execuç\~ao de 169 segundos e consumo de memómia máximo de 3.64 GB. Para a rede de Nova York, foram 1.83 segundos e 43.7 MB de memória.
@@ -177,9 +242,24 @@ Testou-se a implementaç\~ao do algoritmo com duas instâncias conforme recomend
 \section{Testando Grau Ótimo da Heap}
 Testou-se a implementaç\~ao da heap variando-se o grau da mesma e usando as redes de Nova York e dos Estados Unidos assim como outras geradas aleatóriamente geradas com uma vers\~ao modificada do algoritmo gerador oferecido. Um comportamento interessante foi obtido. Para as redes reais, os resultados foram melhores para graus 4 e 8. Entretando, para as artificiais a tendência foi de quanto maior o grau da heap, melhor o desempenho ao executar o algoritmo de Dijkstra. A figura \ref{fig:narity} mostra os resultados. Os tempos de execuç\~ao de cada grafo foram normalizados em relaç\~ao ao tempo médio obtido para aquela rede. Acredita-se que esse comportamento, possa ser explicado pela aleatoriedade na atribuiç\~ao de grafos o que resulta numa topologia diferente.
 \begin{figure}[h!]
-\includegraphics[width=0.75\linewidth]{narity}
 \centering
-\caption{}{}
+\begin{tikzpicture}
+
+\begin{axis}[
+  title={},
+  xtick={2,4,8,16,32,64},
+  xlabel=grau,
+  ylabel=tempo normalizado]
+  ]
+\addplot +[mark=o, color=red] table [x=grau, y=NY, col sep=comma, smooth] {heap_narity.csv};
+\addplot +[mark=o, color=green] table [x=grau, y=USA, col sep=comma, smooth] {heap_narity.csv};
+\addplot +[mark=o, color=blue] table [x=grau, y=2na15, col sep=comma, smooth] {heap_narity.csv};
+\addplot +[mark=o, color=purple] table [x=grau, y=2na16, col sep=comma, smooth] {heap_narity.csv};
+\addplot +[mark=o, color=black] table [x=grau, y=2na17, col sep=comma, smooth] {heap_narity.csv};
+\end{axis}
+\end{tikzpicture}
+
+\caption{Tempo normalizado de execuç\~ao do algoritmo de Dijkstra}
 \label{fig:narity}
 \end{figure}
 
