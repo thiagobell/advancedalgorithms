@@ -37,7 +37,7 @@ por lista de adjacências. Um vetor armazena os vértices, e outro, as arestas.
 
 \section{Ambiente de Teste}
 Os experimentos foram realizados usando um processador Intel i7 2600k acompanhado de 8 GiB de RAM. 
-O sistema operacional utilizado foi Ubuntu Linux 16.04.
+O sistema operacional utilizado foi Ubuntu Linux 16.10.
 
 \section{Análise de Complexidade da \textit{Heap}}
 A complexidade teórica das operaç\~oes da \textit{heap} foram comparadas com os resultados de experimentos.
@@ -47,7 +47,7 @@ Conclui-se que a implementaç\~ao respeita as previs\~oes teóricas.
 Fixando-se o valor $n = 2^{27}-1$, adicionou-se $n$ elementos na \textit{heap} com chaves no intervalo de $[n,1]$.  
 Como se usou uma \textit{heap} de grau 2, isso corresponde a 27 níveis completos na árvore. 
 Ao adicionar os elementos, após inserir $2^{i}-1$ chaves, mede-se o tempo $T_i$ e o número de \textit{swaps} 
-$I_i$ onde $0<=i<=27$. A complexidade dessa operação é de $O(2^i  i)$.
+$I_i$ onde $0<=i<=27$. A complexidade desta operação é de $O(2^i  i)$.
 Com isso pode-se estimar o custo $E = 2^i i$ para cada $i$. Na figura \ref{fig:insert1}
 pode-se ver o número de \textit{swaps} e E em funç\~ao de $2^i$. Se essas curvas crescerem da mesma forma,
 a complexidade é respeitada. A curva E*15 mostra os valores de $E$ multiplicados por
@@ -104,7 +104,9 @@ respeita a complexidade do algoritmo.
 \subsection{Avaliaç\~ao das Operaç\~oes de Atualizaç\~ao}
 Considerando-se uma variável $i$, $2^i -1$ chaves s\~ao inseridas com valor de $2^i +1$. Em seguida, $2^i$ chaves com valor $2^i +2$ s\~ao adicionadas. Medindo-se o tempo e o número de swaps, as chaves com valor, $2^i +2$ s\~ao atualizadas para valores decrescentes no intervalo $[2^i, 1]$. As operaç\~oes de atualizaç\~ao começam por $2^i$ e a cada operaç\~ao seguinte esse valor é decrescido por 1. 
 
-O custo teórico esperado também é de $E = 2^i \dot i$. Ao comparar com o número de swaps obtido para cada iteraç\~ao, percebeu-se que estes valores s\~ao iguais. Logo, pelo menos em número de swaps, a complexidade é obedecida. No entanto, ao comparar o tempo de execuç\~ao, o resultado obtido foi uma reta inclinada o que indicaria que o tempo de execuç\~ao cresce mais que o esperado.
+O custo teórico esperado também é de $E = 2^i \dot i$. Ao comparar com o número de swaps obtido para cada iteraç\~ao, percebeu-se que estes valores s\~ao iguais. Logo, pelo menos em número de swaps, a complexidade é obedecida. No entanto, ao comparar o tempo de execuç\~ao, o resultado obtido foi uma reta inclinada o que indicaria que o tempo de execuç\~ao cresce mais que o esperado. Não se soube determinar o motivo de isso ter ocorrido. É possível que seja devido ao fato de que uma busca
+pelo nodo com o id que deseja-se atualizar ocorre. Caso, ao invés de o id, a posição do elemento na árvore ser informada,
+o tempo medido poderia ter crescido da mesma forma que a previsão teórica. 
 
 \begin{figure}[H]
 \centering
@@ -123,10 +125,12 @@ O custo teórico esperado também é de $E = 2^i \dot i$. Ao comparar com o núm
 \end{figure}
 
 \subsection{Avaliaç\~ao das Operaç\~oes de Remoç\~ao}
-Para um valor $i$, $2^{i} - 1$ chaves com valor aleatórios s\~ao adicionados. Depois, $2^{i - 1}$ chaves s\~ao removidas. O tempo de execuç\~ao e o número de swaps foram medidos para cada i.
-O custo teórico dessas operaç\~oes é de $E = 2^i \dot i$. Na figura \ref{fig:delete1} é comparado esse custo com o número de swaps. De forma análoga a feita anteriormente,
-também se multiplicou o valor de E por uma constante. A comparaç\~ao do tempo de execuç\~ao com E pode ser vista na figura \ref{fig:delete2}.
-A convergência a um valor indica que o tempo de execuç\~ao cresce conforme a complexidade do algoritmo.
+Para um valor $i$, $2^{i} - 1$ chaves com valor aleatórios s\~ao adicionados. Depois, $2^{i - 1}$ chaves s\~ao removidas.
+O tempo de execuç\~ao e o número de swaps foram medidos para cada i. O custo teórico dessas operaç\~oes é de
+$E = 2^i \dot i$. Na figura \ref{fig:delete1} é comparado esse custo com o número de swaps. De forma análoga a feita
+anteriormente, também se multiplicou o valor de E por uma constante. A comparaç\~ao do tempo de execuç\~ao com E pode
+ser vista na figura \ref{fig:delete2}. A convergência a um valor indica que o tempo de execuç\~ao cresce conforme a
+complexidade do algoritmo.
 
 \begin{figure}[H]
 \begin{tikzpicture}
