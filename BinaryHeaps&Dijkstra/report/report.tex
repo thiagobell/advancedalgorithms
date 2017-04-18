@@ -15,7 +15,7 @@
 
 \colorlet{shadecolor}{orange!15}
 
-\title{Laboratório 1}
+\title{Laboratório 1 - Binary Heaps e Dijkstra}
 \author{}{Thiago Bell}
 
 \addbibresource{report.bib}
@@ -257,16 +257,18 @@ parte significante do grafo. Poucas amostras foram obtidas como fica evidente na
 \end{figure}
 
 \section{Verificando a implementaç\~ao de Dijkstra com grandes instâncias}
-Testou-se a implementaç\~ao do algoritmo com duas instâncias conforme recomendado no plano de teste. Para o caso de teste consistindo da rede completa dos Estados Unidos provida na definiç\~ao do trabalho, obteve-se um tempo médio de execuç\~ao de 169 segundos e consumo de memómia máximo de 3.64 GB. Para a rede de Nova York, foram 1.83 segundos e 43.7 MB de memória.
+Testou-se a implementaç\~ao do algoritmo com duas instâncias conforme recomendado no plano de teste. Para o caso de teste consistindo da rede completa dos Estados Unidos provida na definiç\~ao do trabalho, obteve-se um tempo médio de execuç\~ao de 169 segundos e consumo de memómia máximo de 3.64 GiB. Para a rede de Nova York, foram 1.83 segundos e 43.7 MB de memória.
 
 
 \section{Testando Grau Ótimo da Heap}
-Testou-se a implementaç\~ao da heap variando-se o grau da mesma e usando as redes de Nova York e dos Estados Unidos assim como outras geradas 
-aleatóriamente geradas com uma vers\~ao modificada do algoritmo gerador oferecido. Um comportamento interessante foi obtido. 
-Para as redes reais, os resultados foram melhores para graus 4 e 8. Entretando, para as artificiais a tendência foi de quanto maior o grau da heap,
-melhor o desempenho ao executar o algoritmo de Dijkstra. A figura \ref{fig:narity} mostra os resultados. Os tempos de execuç\~ao de cada grafo
-foram normalizados em relaç\~ao ao tempo médio obtido para aquela rede. Acredita-se que esse comportamento, possa ser explicado pela aleatoriedade
-na atribuiç\~ao de grafos o que resulta numa topologia diferente daquelas encontradas em redes reais.
+Testou-se a implementaç\~ao da heap variando-se o grau da mesma e usando as redes de Nova York e dos Estados Unidos 
+assim como outras geradas aleatóriamente com uma vers\~ao modificada do algoritmo gerador oferecido. Um comportamento 
+interessante foi obtido. Para as redes reais, os resultados foram melhores para graus 4 e 8. Entretando, para as 
+artificiais a tendência foi de quanto maior o grau da heap, melhor o desempenho ao executar o algoritmo de Dijkstra. 
+A figura \ref{fig:narity} mostra os resultados. Os tempos de execuç\~ao de cada grafo
+foram normalizados em relaç\~ao ao tempo médio obtido para aquela rede. Acredita-se que esse comportamento
+possa ser explicado pela aleatoriedade
+na inserção de arestas o que resulta numa topologia diferente daquelas encontradas em redes reais.
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
