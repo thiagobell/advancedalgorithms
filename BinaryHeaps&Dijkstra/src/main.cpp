@@ -18,7 +18,7 @@ std::vector<unsigned> distances;
  Graph g = Graph(std::cin);
  distances = dijkstra(o,g,2);
  
- if(distances[d-1]==std::numeric_limits<int>::max()){
+ if(distances[d-1]==std::numeric_limits<unsigned>::max()){
    std::cout << "inf\n";
  } else {
    std::cout << distances[d-1]<<"\n";
