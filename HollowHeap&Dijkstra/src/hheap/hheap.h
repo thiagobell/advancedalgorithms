@@ -18,34 +18,17 @@ struct Item {
   unsigned int value;
 };
 
-
-class Hheap {
- private:
-  //points to the root with the lowest minimum key
-  Node *minimum_node;
+//points to the root with the lowest minimum key
+//Node *minimum_node;
 
 
-  Node* make_child(Node *winner, Node *loser);
-  Node* link(Node *n1, Node *n2);
-  Node* meld(Node *h1, Node *h1);
+Node* make_child(Node *winner, Node *loser);
+Node* meld(Node *h1, Node *h2);
+Node* get_min(Node *h);
+Item* find_min(Node *h);  
+Node* insert(Item *item, unsigned key, Node *h);
+void decrease_key(Item *item, unsigned key, Node *h);
 
-  
+Node* delete_item(Item *item, Node *h);
+Node* delete_min(Node *h);
 
-
- public: 
-  Hheap();
-  Item* get_min(){
-    return minimum_node->item;
-  }
-  Item* find_min(){
-    if(minimum_node==NULL)
-      return NULL;
-    else
-      return minimum_node.item;
-  }
-  
-  /*insert();
-  decrease_key();
-  delete();
-  delete_min();*/
-};
