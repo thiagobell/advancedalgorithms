@@ -1,8 +1,0 @@
-#include <iostream>
-#include "hheap.h"
-
-int main(){
-  
-  Node *h = NULL;
-
-}

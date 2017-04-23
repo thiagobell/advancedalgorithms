@@ -3,19 +3,17 @@
 #include <cmath>
 #include <cstring>
 
-Node* min_root=NULL;
-unsigned num_full_nodes = 0;
-unsigned num_all_nodes = 0;
-unsigned num_inserts = 0;
-unsigned num_decrease_key = 0;
-unsigned num_delete_min = 0;
 double const phi = (1 + std::sqrt(5))/2;
 
-unsigned get_num_insert() {return num_inserts;}
-unsigned get_num_decrease_key() {return num_decrease_key;}
-unsigned get_num_delete_min() {return num_delete_min;}
+unsigned HHeap::get_num_insert() {return num_inserts;}
+unsigned HHeap::get_num_decrease_key() {return num_decrease_key;}
+unsigned HHeap::get_num_delete_min() {return num_delete_min;}
+unsigned HHeap::get_num_melds() {return num_melds;}
+unsigned HHeap::get_num_nodes_created() {return num_nodes_created;}
+unsigned HHeap::get_num_nodes_destroyed() {return num_nodes_destroyed;}
+unsigned HHeap::get_num_links() {return num_links;}
 
-bool heap_is_empty(Node *h){
+bool HHeap::empty(){
   if(num_full_nodes > 0)
     return false;
   return true;
@@ -29,7 +27,8 @@ Node* make_child(Node *winner, Node *loser) {
 }
 
 
-Node* link(Node *n1, Node *n2){
+Node* HHeap::link(Node *n1, Node *n2){
+	num_links++;
   if(n1->key <= n2->key){
     return make_child(n1,n2);
   } else {
@@ -42,7 +41,7 @@ Node* make_heap()
 {
   return NULL;
 }
-Node* make_heap(Item *item, unsigned int key)
+Node* HHeap::make_heap(Item *item, unsigned int key)
 {
   Node *n= new Node;
   n->item = item;
@@ -56,7 +55,8 @@ Node* make_heap(Item *item, unsigned int key)
   return n;
 }
 
-Node* meld(Node *h1, Node *h2) {
+Node* HHeap::meld(Node *h1, Node *h2) {
+	num_melds++;
   if(h1 == NULL)
     return h2;
   if(h2 == NULL)
@@ -74,13 +74,13 @@ Node* meld(Node *h1, Node *h2) {
     return h2;
 }
 
-Node* insert(Item *item, unsigned key, Node* h){
+void HHeap::insert(Item *item, unsigned key){
   num_inserts++;
-  return meld(make_heap(item,key), h);
+  min_root = meld(make_heap(item,key), min_root);
 }
 
 
-Node* decrease_key(Item *item, unsigned key, Node* h){
+void HHeap::decrease_key(Item *item, unsigned key){
   num_decrease_key++;
   Node *u = item->node;
   u->item = NULL;
@@ -93,11 +93,11 @@ Node* decrease_key(Item *item, unsigned key, Node* h){
     u->rank = 2;
   }
 
-  return meld(v,h);
+  min_root = meld(v,min_root);
 
 }
 
-void link_heap(Node *h, Node **r_vec) {
+void HHeap::link_heap(Node *h, Node **r_vec) {
   
   if(h->item == NULL) {
     Node* r = h->fc;
@@ -106,6 +106,7 @@ void link_heap(Node *h, Node **r_vec) {
       link_heap(r, r_vec);
       r = rn;
     }
+		num_nodes_destroyed++;
     delete h;
   } else {
     unsigned i = h->rank;
@@ -121,17 +122,17 @@ void link_heap(Node *h, Node **r_vec) {
 }
 
 
-Node* delete_min(Node *h){
+void HHeap::delete_min(){
   num_delete_min++;
-  if(h == NULL)
-    return NULL;
-  h->item = NULL;  
+  if(min_root == NULL)
+    return;
+  min_root->item = NULL;  
   num_full_nodes--;
   unsigned M = ceil(log(num_full_nodes)/log(phi));
   Node** r_vec =  new Node *[M+1];
   memset(r_vec, 0, (M+1)*sizeof(Node*));
   
-  Node* r = h;
+  Node* r = min_root;
   Node* rn;
   do {
     if(r == NULL)
@@ -139,56 +140,37 @@ Node* delete_min(Node *h){
     rn = r->ns;
     link_heap(r,r_vec);
     r = rn;
-  } while(r != h);
+  } while(r != min_root);
 
-  h = NULL;
+  min_root = NULL;
   for(unsigned i = 0; i <= M; i++) {
     if(r_vec[i] != NULL) {
       r_vec[i]->ns = r_vec[i];
-      h = meld(h, r_vec[i]);
+      min_root = meld(min_root, r_vec[i]);
     }
   }
-  return h;
-  
-  /*
-  unsigned i = 0;
-  while(i <= M && r_vec[i]==NULL){
-    i++;
-  }
-  if(i>M)
-    return NULL;
-  h = r_vec[i];
-  h->ns = h;
-  while(i < M){
-    r_vec[i]->ns = r_vec[i];
-    h = meld(h, r_vec[i]);
-    i++;
-  }
-  return h;
-  */
 }
 
 
-Node* delete_item(Item *item, Node *h){
+void HHeap::delete_item(Item *item){
   item->node->item = NULL;
-  if(item->node == h) {
+  if(item->node == min_root) {
     //is min
-    return delete_min(h);
+    delete_min();
   } else {
     num_full_nodes--;
-    return h;
   }
 }
 
-Node* get_min(Node *h){
-  return h;
+Node* HHeap::get_min(){
+  return min_root;
 }
 
-Item* find_min(Node *h){
-  if(h==NULL)
+Item* HHeap::find_min(){
+  if(min_root==NULL)
     return NULL;
   else {
-    return h->item;
+    return min_root->item;
   }
 }
 

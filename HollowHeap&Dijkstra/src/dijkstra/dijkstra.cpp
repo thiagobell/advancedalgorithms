@@ -14,16 +14,17 @@ std::vector<unsigned> dijkstra(unsigned s, Graph g, unsigned heap_arity, bool pr
   std::vector<unsigned> distance(n_vertex,  inf);
   std::vector<bool > visited(n_vertex,  false);
   std::vector<Item*> items(n_vertex, NULL);
-  Node* heap = make_heap();
+//  Node* heap = make_heap();
+	HHeap heap;
   distance[s-1] = 0;
   
   //  heap.insert(hnode<unsigned>(0,s));
   items[s-1] = new Item(s);
-  heap = insert(items[s-1], 0, heap);
-  while(!heap_is_empty(heap)) {
+  heap.insert(items[s-1], 0);
+  while(!heap.empty()) {
     //    hnode<unsigned> v_node = heap.delete_min();
-    Item *v_node = find_min(heap);
-    heap = delete_min(heap);
+    Item *v_node = heap.find_min();
+    heap.delete_min();
     visited[v_node->value -1] = true;
     num_visits++;    
     std::vector<unsigned> u_set = g.get_edges_from_vertex(v_node->value);
@@ -35,11 +36,11 @@ std::vector<unsigned> dijkstra(unsigned s, Graph g, unsigned heap_arity, bool pr
 	if(distance[u_id-1] == inf) {
 	  distance[u_id-1] = distance_through_v;
 	  items[u_id-1] = new Item(u_id);
-	  heap = insert(items[u_id-1], distance_through_v, heap);
-	  //	  heap.insert(hnode<unsigned>(distance_through_v, u_id));
+	  heap.insert(items[u_id-1], distance_through_v);
+	  //heap.insert(hnode<unsigned>(distance_through_v, u_id));
 	} else if (distance_through_v < distance[u_id-1]) {
 	  distance[u_id-1] = distance_through_v;
-	  heap = decrease_key(items[u_id-1], distance_through_v, heap);
+	  heap.decrease_key(items[u_id-1], distance_through_v);
 	   
 	  //heap.update_key(u_id, distance_through_v);
 	}	
@@ -50,7 +51,7 @@ std::vector<unsigned> dijkstra(unsigned s, Graph g, unsigned heap_arity, bool pr
 
   if(print_heap_op_count){
     std::cout << "time(ms)= " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()-t).count();
-    std::cout << " num_insert " << get_num_insert() << " num_deletemin "<< get_num_delete_min() << " num_decreasekey "<< get_num_decrease_key() << " num_nodes_visited " << num_visits<< "\n";
+    std::cout << " num_insert " << heap.get_num_insert() << " num_deletemin "<< heap.get_num_delete_min() << " num_decreasekey "<< heap.get_num_decrease_key() << " num_nodes_visited " << num_visits<< "\n";
   } 
   
   return distance;
