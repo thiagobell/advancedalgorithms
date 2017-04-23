@@ -9,7 +9,7 @@ std::vector<unsigned> dijkstra(unsigned s, Graph g, unsigned heap_arity)
 {
   unsigned int num_visits=0;
   unsigned n_vertex = g.numVertexes();
-  unsigned inf = std::numeric_limits<int>::max();
+  unsigned inf = std::numeric_limits<unsigned>::max();
   std::vector<unsigned> distance(n_vertex,  inf);
   std::vector<bool > visited(n_vertex,  false);
   distance[s-1] = 0;
