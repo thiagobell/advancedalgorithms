@@ -53,7 +53,7 @@ std::vector<unsigned> dijkstra(unsigned s, Graph g, unsigned heap_arity, bool pr
     std::cout << "time(ms)= " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()-t).count();
     std::cout << " num_insert " << heap.get_num_insert() << " num_deletemin "<< heap.get_num_delete_min() << " num_decreasekey "<< heap.get_num_decrease_key() << " num_nodes_visited " << num_visits<< "\n";
   } 
-  
+ 	heap.~HHeap();
   return distance;
 }
 

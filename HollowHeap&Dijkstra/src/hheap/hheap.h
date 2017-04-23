@@ -19,6 +19,7 @@ struct Item {
   Item(unsigned v){
     value = v;
   }
+	Item() {}
 };
 
 //points to the root with the lowest minimum key
@@ -40,6 +41,7 @@ unsigned num_links = 0;
 //Node* make_heap();
 Node* get_min();
 Item* find_min();
+~HHeap();
 void insert(Item *item, unsigned key);
 void decrease_key(Item *item, unsigned key);
 
@@ -60,5 +62,6 @@ Node* min_root=NULL;
 Node* link(Node *n1, Node *n2);
 Node* make_heap(Item *item, unsigned int key);
 Node* meld(Node *h1, Node *h2);
+void dealloc_subtree(Node *h);
 };
 

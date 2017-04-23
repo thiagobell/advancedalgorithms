@@ -13,6 +13,35 @@ unsigned HHeap::get_num_nodes_created() {return num_nodes_created;}
 unsigned HHeap::get_num_nodes_destroyed() {return num_nodes_destroyed;}
 unsigned HHeap::get_num_links() {return num_links;}
 
+
+HHeap::~HHeap() {
+	//for each top level node
+	Node *pt = min_root;
+	if(pt != NULL){
+		do{
+			dealloc_subtree(pt->fc);
+			pt = pt->ns;
+		} while(pt!=min_root);
+
+		pt = min_root;
+		do{
+			Node *temp = pt->ns;
+			delete pt;
+			pt = temp;
+		} while(pt!=min_root);
+	}
+}
+
+void HHeap::dealloc_subtree(Node *h) {
+	if(h == NULL)
+		return;
+
+	if(h->ns != NULL)
+		dealloc_subtree(h->ns);
+	dealloc_subtree(h->fc);
+	delete h;
+}
+
 bool HHeap::empty(){
   if(num_full_nodes > 0)
     return false;
