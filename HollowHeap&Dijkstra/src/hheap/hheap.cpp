@@ -15,31 +15,31 @@ unsigned HHeap::get_num_links() {return num_links;}
 
 
 HHeap::~HHeap() {
-	//for each top level node
-	Node *pt = min_root;
-	if(pt != NULL){
-		do{
-			dealloc_subtree(pt->fc);
-			pt = pt->ns;
-		} while(pt!=min_root);
-
-		pt = min_root;
-		do{
-			Node *temp = pt->ns;
-			delete pt;
-			pt = temp;
-		} while(pt!=min_root);
-	}
+  //for each top level node
+  Node *pt = min_root;
+  if(pt != NULL){
+    do{
+      dealloc_subtree(pt->fc);
+      pt = pt->ns;
+    } while(pt!=min_root);
+    
+    pt = min_root;
+    do{
+      Node *temp = pt->ns;
+      delete pt;
+      pt = temp;
+    } while(pt!=min_root);
+  }
 }
 
 void HHeap::dealloc_subtree(Node *h) {
-	if(h == NULL)
-		return;
-
-	if(h->ns != NULL)
-		dealloc_subtree(h->ns);
-	dealloc_subtree(h->fc);
-	delete h;
+  if(h == NULL)
+    return;
+  
+  if(h->ns != NULL)
+    dealloc_subtree(h->ns);
+  dealloc_subtree(h->fc);
+  delete h;
 }
 
 bool HHeap::empty(){
@@ -81,11 +81,12 @@ Node* HHeap::make_heap(Item *item, unsigned int key)
   n->rank = 0;
   num_all_nodes++;
   num_full_nodes++;
+  num_nodes_created++;
   return n;
 }
 
 Node* HHeap::meld(Node *h1, Node *h2) {
-	num_melds++;
+  num_melds++;
   if(h1 == NULL)
     return h2;
   if(h2 == NULL)
@@ -135,7 +136,7 @@ void HHeap::link_heap(Node *h, Node **r_vec) {
       link_heap(r, r_vec);
       r = rn;
     }
-		num_nodes_destroyed++;
+    num_nodes_destroyed++;
     delete h;
   } else {
     unsigned i = h->rank;
