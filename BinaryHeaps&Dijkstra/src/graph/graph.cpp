@@ -56,8 +56,6 @@ Graph::Graph(std::istream& inputF)
     }
   }
 
-  //sorting temporary vector
-  std::sort(temp_.begin(), temp_.end());
   unsigned int edge_pointer = 0;
   for(int ind = 0; ind < n; ind++){
     vertexes[ind].num_neigh = temp_[ind].neighbor_ids.size();
