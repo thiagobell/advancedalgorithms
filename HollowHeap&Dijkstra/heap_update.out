@@ -1,0 +1,50 @@
+items 2 size= 2
+i=1 time=0 nodes_created= 2 nodes_destroyed= 0 num_melds= 2 num_links= 0
+items 2 size= 4
+i=2 time=0 nodes_created= 4 nodes_destroyed= 0 num_melds= 4 num_links= 0
+items 2 size= 8
+i=3 time=0 nodes_created= 8 nodes_destroyed= 0 num_melds= 8 num_links= 0
+items 2 size= 16
+i=4 time=0 nodes_created= 16 nodes_destroyed= 0 num_melds= 16 num_links= 0
+items 2 size= 32
+i=5 time=0 nodes_created= 32 nodes_destroyed= 0 num_melds= 32 num_links= 0
+items 2 size= 64
+i=6 time=0 nodes_created= 64 nodes_destroyed= 0 num_melds= 64 num_links= 0
+items 2 size= 128
+i=7 time=0 nodes_created= 128 nodes_destroyed= 0 num_melds= 128 num_links= 0
+items 2 size= 256
+i=8 time=0 nodes_created= 256 nodes_destroyed= 0 num_melds= 256 num_links= 0
+items 2 size= 512
+i=9 time=0 nodes_created= 512 nodes_destroyed= 0 num_melds= 512 num_links= 0
+items 2 size= 1024
+i=10 time=0 nodes_created= 1024 nodes_destroyed= 0 num_melds= 1024 num_links= 0
+items 2 size= 2048
+i=11 time=0 nodes_created= 2048 nodes_destroyed= 0 num_melds= 2048 num_links= 0
+items 2 size= 4096
+i=12 time=0 nodes_created= 4096 nodes_destroyed= 0 num_melds= 4096 num_links= 0
+items 2 size= 8192
+i=13 time=1 nodes_created= 8192 nodes_destroyed= 0 num_melds= 8192 num_links= 0
+items 2 size= 16384
+i=14 time=2 nodes_created= 16384 nodes_destroyed= 0 num_melds= 16384 num_links= 0
+items 2 size= 32768
+i=15 time=4 nodes_created= 32768 nodes_destroyed= 0 num_melds= 32768 num_links= 0
+items 2 size= 65536
+i=16 time=7 nodes_created= 65536 nodes_destroyed= 0 num_melds= 65536 num_links= 0
+items 2 size= 131072
+i=17 time=12 nodes_created= 131072 nodes_destroyed= 0 num_melds= 131072 num_links= 0
+items 2 size= 262144
+i=18 time=19 nodes_created= 262144 nodes_destroyed= 0 num_melds= 262144 num_links= 0
+items 2 size= 524288
+i=19 time=34 nodes_created= 524288 nodes_destroyed= 0 num_melds= 524288 num_links= 0
+items 2 size= 1048576
+i=20 time=68 nodes_created= 1048576 nodes_destroyed= 0 num_melds= 1048576 num_links= 0
+items 2 size= 2097152
+i=21 time=143 nodes_created= 2097152 nodes_destroyed= 0 num_melds= 2097152 num_links= 0
+items 2 size= 4194304
+i=22 time=274 nodes_created= 4194304 nodes_destroyed= 0 num_melds= 4194304 num_links= 0
+items 2 size= 8388608
+i=23 time=549 nodes_created= 8388608 nodes_destroyed= 0 num_melds= 8388608 num_links= 0
+items 2 size= 16777216
+i=24 time=1098 nodes_created= 16777216 nodes_destroyed= 0 num_melds= 16777216 num_links= 0
+items 2 size= 33554432
+i=25 time=2196 nodes_created= 33554432 nodes_destroyed= 0 num_melds= 33554432 num_links= 0

@@ -8,7 +8,7 @@
 int main()
 {
   unsigned n = 2;
-  unsigned num_levels =10;/// 27;
+  unsigned num_levels = 27;
   unsigned num_keys = std::pow(2,num_levels)-1;
 
   unsigned next_key = num_keys; 
