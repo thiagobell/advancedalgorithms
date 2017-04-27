@@ -35,6 +35,10 @@ Graph::Graph(std::istream& inputF)
   vertexes = new Vertex[n];
   edges = new Edge[m];
   std::vector<temp_vertex> temp_(n);
+  // initializing temp data structure
+  for(unsigned count=0; count < n; count++) {
+    temp_[count].id = count+1;
+  }
   unsigned i=0;
   unsigned edges_index=0;
   while (i<m) {
@@ -55,7 +59,6 @@ Graph::Graph(std::istream& inputF)
   //sorting temporary vector
   std::sort(temp_.begin(), temp_.end());
   unsigned int edge_pointer = 0;
-   
   for(int ind = 0; ind < n; ind++){
     vertexes[ind].num_neigh = temp_[ind].neighbor_ids.size();
     vertexes[ind].first_neigh = &edges[edge_pointer];
