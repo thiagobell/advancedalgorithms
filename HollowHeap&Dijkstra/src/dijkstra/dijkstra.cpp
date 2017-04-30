@@ -5,7 +5,7 @@
 #include <iostream>
 #include <chrono>
 //returns the minimum cost departing from node with id s to every other node
-std::vector<unsigned> dijkstra(unsigned s, Graph g, unsigned heap_arity, bool print_heap_op_count)
+std::vector<unsigned> dijkstra(unsigned s, Graph g, bool print_heap_op_count)
 {
   std::chrono::system_clock::time_point t = std::chrono::system_clock::now();
   unsigned int num_visits=0;

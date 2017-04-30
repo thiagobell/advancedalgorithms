@@ -32,16 +32,12 @@ int main() {
     for(unsigned j =0; j < 30; j++) {
       //choose random source vertex
       unsigned int s = std::rand() % g.numVertexes()+1;
-      std::cout <<"heap2 run# "<< j+1 << " origin vertex "<< s;
+      std::cout <<"run# "<< j+1 << " origin vertex "<< s;
       std::chrono::system_clock::time_point t = std::chrono::system_clock::now();
-      dijkstra(s,g,2);
+      dijkstra(s,g,true);
       std::cout << " time(ms)= " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()-t).count();
       std::cout << "\n";
-      std::cout <<"heap64 run# "<< j+1 << " origin vertex "<< s;
-      t = std::chrono::system_clock::now();
-      dijkstra(s,g,64);
-      std::cout << " time(ms)= " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()-t).count();
-      std::cout << "\n";
+      
     }
   }
 }
