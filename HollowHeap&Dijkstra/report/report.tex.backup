@@ -78,8 +78,11 @@ respeita a complexidade do algoritmo.
 Considerando-se uma variável $i$, $2^i -1$ chaves s\~ao inseridas com valor de $2^i +1$. Em seguida, $2^i$ chaves com valor $2^i +2$ s\~ao adicionadas.
 Medindo-se o tempo, as chaves com valor, $2^i +2$ s\~ao atualizadas para valores decrescentes no intervalo $[2^i, 1]$. As operaç\~oes de atualizaç\~ao 
 começam por $2^i$ e a cada operaç\~ao seguinte esse valor é decrescido por 1. A complexidade para a operação de \textit{decrease key} é $O(1)$. Logo para atualizar
-as $2^i$ chaves a complexidade é de $O(2^i)$. Ao comparar essa complexidade com o tempo de execuçao, nota-se a convergência da razão desses valores como mostra a figura
-\ref{fig:update1}. Assim, pode-se concluir que o algoritmo escala como previsto.
+as $2^i$ chaves a complexidade é de $O(2^i)$.
+
+O custo teórico esperado também é de $E = 2^i \dot i$. Ao comparar com o número de swaps obtido para cada iteraç\~ao, percebeu-se que estes valores s\~ao iguais. Logo, pelo menos em número de swaps, a complexidade é obedecida. No entanto, ao comparar o tempo de execuç\~ao, o resultado obtido foi uma reta inclinada o que indicaria que o tempo de execuç\~ao cresce mais que o esperado. Não se soube determinar o motivo de isso ter ocorrido. É possível que seja devido ao fato de que uma busca
+pelo nodo com o id que deseja-se atualizar ocorre. Caso, ao invés de o id, a posição do elemento na árvore ser informada,
+o tempo medido poderia ter crescido da mesma forma que a previsão teórica. 
 
 \begin{figure}[H]
 \centering
@@ -90,7 +93,7 @@ as $2^i$ chaves a complexidade é de $O(2^i)$. Ao comparar essa complexidade com
   xlabel=$2^i$,
   ylabel=raz\~ao]
   ]
-\addplot +[mark=o, color=red] table [x=2toi, y=ratio, col sep=comma] {decreasekey.csv};
+%\addplot +[mark=none, color=red] table [x=2nai, y=TdivE, col sep=comma] {heap_update.csv};
 \end{axis}
 \end{tikzpicture}
 \caption{Mostra a raz\~ao entre o tempo de execuç\~ao e o custo teórico esperado}
@@ -108,12 +111,13 @@ complexidade do algoritmo.
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
+
 \begin{axis}[
   title={},
   xlabel=$2^i-1$,
   ylabel=raz\~ao]
   ]
-\addplot +[mark=o, color=red] table [x=size, y=ratio, col sep=comma] {deletemin.csv};
+\addplot +[mark=none, color=red] table [x=size, y=ratio, col sep=comma] {deletemin.csv};
 \end{axis}
 \end{tikzpicture}
 \caption{Mostra a raz\~ao entre o tempo de execuç\~ao e o custo teórico esperado}
@@ -122,10 +126,7 @@ complexidade do algoritmo.
 
 \section{Análise de Complexidade do Algoritmo de Dijkstra}
 \subsection{Variando o número de Arestas}
-Fixando-se o número de vértices em $2^{15}$, variou-se o número de arestas entre $2^{23}$ e $2^{27}$. 
-
-
-
+Fixando-se o número de vértices em $2^{15}$, variou-se o número de arestas entre $2^{18}$ e $2^{28}$. 
 Ao comparar o tempo de execuç\~ao com o custo teórico de $E = (n+m)*log(n)$, 
 obteve-se uma convergência a um valor constante como pode ser visto na figura \ref{fig:dij_vertex}. 
 Os números de \textit{inserts} e \textit{deletes} foram
