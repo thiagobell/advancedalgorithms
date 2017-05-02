@@ -30,7 +30,7 @@ std::vector<unsigned> distances;
  }
  
  Graph g = Graph(std::cin);
- distances = dijkstra(o,g,2, print_info);
+ distances = dijkstra(o,g, print_info);
  if(distances[d-1]==std::numeric_limits<unsigned>::max()){
    std::cout << "inf\n";
  } else {

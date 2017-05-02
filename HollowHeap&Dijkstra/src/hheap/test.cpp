@@ -1,24 +1,29 @@
 #include <iostream>
 #include "hheap.h"
 
+void print_size(HHeap &h) {
+  std::cout << "full nodes: "<< h.num_full_nodes << " all nodes: "<< h.num_all_nodes << "\n";
+
+}
+
 int main(){
   
-  Node *h = NULL;
+  HHeap heap;
   Item meuitem(111),i2(999), i3(9);
 
-  h = insert(&meuitem, 20, h);
-  decrease_key(&meuitem, 10, h);
+  heap.insert(&meuitem, 20);
+  heap.insert(&i2, 90);
+  heap.insert(&i3, 22);
+  heap.genDot("1.dot");
+  heap.decrease_key(&meuitem, 10);
+  heap.genDot("2.dot");
+  heap.delete_min();
+  heap.genDot("3.dot");   
+  heap.decrease_key(heap.find_min(), 1);
+  print_size(heap);
 
-  h = insert(&i2, 8,h);
-  
-  Item *itpt;
-  itpt = find_min(h);
-  std::cout << "key of min is="<< itpt->node->key << " value is= "<< itpt->value; 
-  h = delete_min(h);
-
-  itpt = find_min(h);
-  std::cout << "key of min is="<< itpt->node->key << " value is= "<< itpt->value;
-
-  h = insert(&i3, 8,h);
-
+  std::cout<< "is empty?: " << heap.empty()<<"\n";
+  heap.delete_min();
+  std::cout<< "is empty?: " << heap.empty()<<"\n";
+  heap.genDot("4.dot");
 }

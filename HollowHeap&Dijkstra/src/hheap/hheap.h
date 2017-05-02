@@ -39,6 +39,7 @@ unsigned num_links = 0;
 
 
 //Node* make_heap();
+ void genDot(std::string path);
 Node* get_min();
 Item* find_min();
 ~HHeap();
@@ -57,7 +58,7 @@ unsigned get_num_nodes_destroyed();
 unsigned get_num_links();
 bool empty();
 private:
-void link_heap(Node *h, Node **r_vec);
+void link_heap(Node *h, Node **r_vec, unsigned M);
 Node* min_root=NULL; 
 Node* link(Node *n1, Node *n2);
 Node* make_heap(Item *item, unsigned int key);

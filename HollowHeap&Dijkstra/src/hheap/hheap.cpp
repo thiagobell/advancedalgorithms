@@ -1,7 +1,10 @@
 #include <iostream>
+#include <fstream>
 #include "hheap.h"
 #include <cmath>
 #include <cstring>
+#include <string>
+#include <sstream>
 
 double const phi = (1 + std::sqrt(5))/2;
 
@@ -13,6 +16,75 @@ unsigned HHeap::get_num_nodes_created() {return num_nodes_created;}
 unsigned HHeap::get_num_nodes_destroyed() {return num_nodes_destroyed;}
 unsigned HHeap::get_num_links() {return num_links;}
 
+unsigned null_count = 0;
+
+void dotChild(std::ofstream &outfile, Node *h, std::string parent, std::string relation){
+  if(h== NULL)
+    return;
+
+  std::stringstream ss;
+ 
+  std::string name;
+
+  if(h->item == NULL) {
+    //hollow
+    ss << "hollow";
+    ss << null_count;
+    null_count++;
+    name = ss.str();
+  } else {
+    ss << h->item->value;
+    name = ss.str();
+  }
+  outfile << parent << " -"<< relation <<"-> " << name<<"\n";
+  dotChild(outfile,h->fc,name, "child");
+  dotChild(outfile, h->ns, parent, "sibling");
+}
+
+void HHeap::genDot(std::string path){
+  std::ofstream outfile;
+  outfile.open(path);
+  //first level iter
+  Node *h = min_root;
+  std::string first_name, previous_name;
+  if(empty()){
+    outfile << "is empty\n";
+  }
+  outfile  << "full nodes: "<< num_full_nodes << " all nodes: "<< num_all_nodes << "\n";
+
+  outfile << " digraph graphname {\n";
+  do {
+    std::stringstream ss;
+    std::string name;
+    if(h == NULL){
+      outfile << "node is null\n";
+      return;
+    }
+  else if(h->item == NULL) {
+      //hollow
+      ss << "hollow";
+      ss << null_count;
+      null_count++;
+      name = ss.str();
+    } else {
+      if(h == min_root)
+	ss<< "src";
+      ss << h->item->value;
+      name = ss.str();
+    }
+    dotChild(outfile,h->fc, name, "child");
+    if(h != min_root)
+      outfile << previous_name << "-sibling->" << name << "\n";
+    else
+      first_name = name;
+    previous_name = name;
+    h = h->ns;
+  }while(h!=min_root);
+  outfile << previous_name << "-sibling->" << first_name << "\n";
+  
+  outfile << "}\n";
+ 
+}
 
 HHeap::~HHeap() {
   //for each top level node
@@ -111,11 +183,12 @@ void HHeap::insert(Item *item, unsigned key){
 
 
 void HHeap::decrease_key(Item *item, unsigned key){
+
   num_decrease_key++;
   Node *u = item->node;
   u->item = NULL;
-  num_full_nodes--;
   Node *v = make_heap(item, key);
+  num_full_nodes--; // to compensate for increment done on make_heap()
   v->rank = std::max(0, int(u->rank) -2);
   if(u->rank >= 2) {
     v->fc = u->fc->ns->ns;
@@ -127,21 +200,22 @@ void HHeap::decrease_key(Item *item, unsigned key){
 
 }
 
-void HHeap::link_heap(Node *h, Node **r_vec) {
+void HHeap::link_heap(Node *h, Node **r_vec, unsigned M) {
   
   if(h->item == NULL) {
     Node* r = h->fc;
     while(r != NULL){
       Node *rn = r->ns;
-      link_heap(r, r_vec);
+      link_heap(r, r_vec,M);
       r = rn;
     }
+    num_all_nodes--;
+    
     num_nodes_destroyed++;
     delete h;
   } else {
     unsigned i = h->rank;
-    unsigned M = ceil(log(num_full_nodes)/log(phi));
-    while(r_vec[i] != NULL && i <= M ){
+    while(r_vec[i] != NULL && i < M ){
       h = link(h, r_vec[i]);
       r_vec[i] = NULL;
       i++;
@@ -157,28 +231,29 @@ void HHeap::delete_min(){
   if(min_root == NULL)
     return;
   min_root->item = NULL;  
+
   num_full_nodes--;
-  unsigned M = ceil(log(num_full_nodes)/log(phi));
-  Node** r_vec =  new Node *[M+1];
-  memset(r_vec, 0, (M+1)*sizeof(Node*));
+
+  unsigned M = ceil(log(num_all_nodes)/log(phi))+1;
+
+  Node** r_vec =  new Node *[M];
+  memset(r_vec, 0, (M)*sizeof(Node*));
   
   Node* r = min_root;
-  Node* rn;
+
   do {
-    if(r == NULL)
-      std::cout<< "PROBLEM\n";
-    rn = r->ns;
-    link_heap(r,r_vec);
+    Node *rn = r->ns;
+    link_heap(r,r_vec,M);
     r = rn;
   } while(r != min_root);
 
   min_root = NULL;
-  for(unsigned i = 0; i <= M; i++) {
+  for(unsigned i = 0; i < M; i++) {
     if(r_vec[i] != NULL) {
       r_vec[i]->ns = r_vec[i];
       min_root = meld(min_root, r_vec[i]);
     }
-  }
+  }  
 }
 
 
@@ -197,9 +272,14 @@ Node* HHeap::get_min(){
 }
 
 Item* HHeap::find_min(){
-  if(min_root==NULL)
+  if(min_root==NULL){
+    std::cout << "trying to find min when heap is empty\n";
     return NULL;
+  }
   else {
+    if(min_root->item == NULL) {
+      std::cout << "minimum node is a hollow node\n";
+    }
     return min_root->item;
   }
 }

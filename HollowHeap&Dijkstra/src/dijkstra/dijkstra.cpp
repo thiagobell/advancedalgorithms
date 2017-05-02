@@ -4,6 +4,13 @@
 #include <limits>
 #include <iostream>
 #include <chrono>
+
+void print_size(HHeap &h) {
+  std::cout << "full nodes: "<< h.num_full_nodes << " all nodes: "<< h.num_all_nodes << "\n";
+
+}
+
+
 //returns the minimum cost departing from node with id s to every other node
 std::vector<unsigned> dijkstra(unsigned s, Graph g, bool print_heap_op_count)
 {
@@ -13,6 +20,7 @@ std::vector<unsigned> dijkstra(unsigned s, Graph g, bool print_heap_op_count)
   unsigned inf = std::numeric_limits<unsigned>::max();
   std::vector<unsigned> distance(n_vertex,  inf);
   std::vector<bool > visited(n_vertex,  false);
+  int num_at_heap = 0 ;
   std::vector<Item*> items(n_vertex, NULL);
 //  Node* heap = make_heap();
 	HHeap heap;
@@ -21,10 +29,12 @@ std::vector<unsigned> dijkstra(unsigned s, Graph g, bool print_heap_op_count)
   //  heap.insert(hnode<unsigned>(0,s));
   items[s-1] = new Item(s);
   heap.insert(items[s-1], 0);
+  num_at_heap++;
   while(!heap.empty()) {
     //    hnode<unsigned> v_node = heap.delete_min();
     Item *v_node = heap.find_min();
-    heap.delete_min();
+  
+    heap.delete_min();  
     visited[v_node->value -1] = true;
     num_visits++;    
     std::vector<unsigned> u_set = g.get_edges_from_vertex(v_node->value);
@@ -41,7 +51,6 @@ std::vector<unsigned> dijkstra(unsigned s, Graph g, bool print_heap_op_count)
 	} else if (distance_through_v < distance[u_id-1]) {
 	  distance[u_id-1] = distance_through_v;
 	  heap.decrease_key(items[u_id-1], distance_through_v);
-	   
 	  //heap.update_key(u_id, distance_through_v);
 	}	
       }
