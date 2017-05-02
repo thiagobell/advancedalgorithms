@@ -1,0 +1,722 @@
+35686430
+        Command being timed: "./build/dijkstra 23080148 15954661"
+        User time (seconds): 139.70
+        System time (seconds): 2.60
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:22.30
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5329828
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 1521144
+        Voluntary context switches: 1
+        Involuntary context switches: 330
+        Swaps: 0
+        File system inputs: 0
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+12088259
+        Command being timed: "./build/dijkstra 23332170 1442680"
+        User time (seconds): 141.83
+        System time (seconds): 2.12
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:24.39
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5495616
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 3
+        Minor (reclaiming a frame) page faults: 1168123
+        Voluntary context switches: 148
+        Involuntary context switches: 1985
+        Swaps: 0
+        File system inputs: 226744
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+12563712
+        Command being timed: "./build/dijkstra 7531074 12426117"
+        User time (seconds): 154.28
+        System time (seconds): 2.09
+        Percent of CPU this job got: 96%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:41.83
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5489340
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 1166553
+        Voluntary context switches: 2851
+        Involuntary context switches: 4657
+        Swaps: 0
+        File system inputs: 1060616
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+7038965
+        Command being timed: "./build/dijkstra 19389549 6410245"
+        User time (seconds): 145.33
+        System time (seconds): 2.16
+        Percent of CPU this job got: 98%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:30.34
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5453064
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 2
+        Minor (reclaiming a frame) page faults: 1157492
+        Voluntary context switches: 3467
+        Involuntary context switches: 1735
+        Swaps: 0
+        File system inputs: 927200
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+17895476
+        Command being timed: "./build/dijkstra 4844268 7532674"
+        User time (seconds): 143.49
+        System time (seconds): 2.00
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:26.91
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5362496
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 3
+        Minor (reclaiming a frame) page faults: 1134839
+        Voluntary context switches: 2512
+        Involuntary context switches: 2164
+        Swaps: 0
+        File system inputs: 670000
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+15977439
+        Command being timed: "./build/dijkstra 9167428 6831846"
+        User time (seconds): 142.15
+        System time (seconds): 1.94
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:25.25
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5302312
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 2
+        Minor (reclaiming a frame) page faults: 1119832
+        Voluntary context switches: 1708
+        Involuntary context switches: 2098
+        Swaps: 0
+        File system inputs: 604728
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+21567595
+        Command being timed: "./build/dijkstra 20609859 5781447"
+        User time (seconds): 142.81
+        System time (seconds): 1.79
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:25.49
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5423056
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 3
+        Minor (reclaiming a frame) page faults: 1150522
+        Voluntary context switches: 932
+        Involuntary context switches: 2163
+        Swaps: 0
+        File system inputs: 397472
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+21859047
+        Command being timed: "./build/dijkstra 9706534 19254708"
+        User time (seconds): 140.46
+        System time (seconds): 1.93
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:22.80
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5461592
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 2
+        Minor (reclaiming a frame) page faults: 1160171
+        Voluntary context switches: 514
+        Involuntary context switches: 4208
+        Swaps: 0
+        File system inputs: 507832
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+12281270
+        Command being timed: "./build/dijkstra 20856534 23803552"
+        User time (seconds): 141.70
+        System time (seconds): 1.99
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:23.97
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5360612
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 2
+        Minor (reclaiming a frame) page faults: 1134904
+        Voluntary context switches: 399
+        Involuntary context switches: 3371
+        Swaps: 0
+        File system inputs: 721208
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+36527585
+        Command being timed: "./build/dijkstra 16621525 13443660"
+        User time (seconds): 140.34
+        System time (seconds): 1.67
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:22.88
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5408968
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 1
+        Minor (reclaiming a frame) page faults: 1146502
+        Voluntary context switches: 488
+        Involuntary context switches: 2761
+        Swaps: 0
+        File system inputs: 325288
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+12903723
+        Command being timed: "./build/dijkstra 3802674 20755886"
+        User time (seconds): 137.07
+        System time (seconds): 1.77
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:19.30
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5374712
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 3
+        Minor (reclaiming a frame) page faults: 1138456
+        Voluntary context switches: 438
+        Involuntary context switches: 3843
+        Swaps: 0
+        File system inputs: 485568
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+15205387
+        Command being timed: "./build/dijkstra 1542527 2646696"
+        User time (seconds): 141.59
+        System time (seconds): 2.13
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:23.99
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5435004
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 1
+        Minor (reclaiming a frame) page faults: 1154034
+        Voluntary context switches: 410
+        Involuntary context switches: 2315
+        Swaps: 0
+        File system inputs: 460744
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+18770732
+        Command being timed: "./build/dijkstra 4681419 17134788"
+        User time (seconds): 139.21
+        System time (seconds): 1.72
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:21.77
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5372660
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 3
+        Minor (reclaiming a frame) page faults: 1137937
+        Voluntary context switches: 695
+        Involuntary context switches: 2258
+        Swaps: 0
+        File system inputs: 466392
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+23473867
+        Command being timed: "./build/dijkstra 22851326 14978917"
+        User time (seconds): 142.34
+        System time (seconds): 1.81
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:24.36
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5487740
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 1166705
+        Voluntary context switches: 319
+        Involuntary context switches: 2360
+        Swaps: 0
+        File system inputs: 331912
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+17427464
+        Command being timed: "./build/dijkstra 7424720 12788253"
+        User time (seconds): 143.74
+        System time (seconds): 1.95
+        Percent of CPU this job got: 98%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:27.73
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5517408
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 3
+        Minor (reclaiming a frame) page faults: 1173627
+        Voluntary context switches: 1868
+        Involuntary context switches: 2758
+        Swaps: 0
+        File system inputs: 542968
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+17673727
+        Command being timed: "./build/dijkstra 13580644 10158343"
+        User time (seconds): 137.46
+        System time (seconds): 1.97
+        Percent of CPU this job got: 98%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:21.33
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5325340
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 1126110
+        Voluntary context switches: 1808
+        Involuntary context switches: 3071
+        Swaps: 0
+        File system inputs: 632384
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+14227125
+        Command being timed: "./build/dijkstra 11281261 2669710"
+        User time (seconds): 140.74
+        System time (seconds): 1.74
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:22.88
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5420924
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 3
+        Minor (reclaiming a frame) page faults: 1149506
+        Voluntary context switches: 380
+        Involuntary context switches: 1098
+        Swaps: 0
+        File system inputs: 216816
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+22676559
+        Command being timed: "./build/dijkstra 17708862 21418040"
+        User time (seconds): 142.13
+        System time (seconds): 1.71
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:24.08
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5354372
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 1
+        Minor (reclaiming a frame) page faults: 1132873
+        Voluntary context switches: 342
+        Involuntary context switches: 1333
+        Swaps: 0
+        File system inputs: 394312
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+9743149
+        Command being timed: "./build/dijkstra 9646352 14143853"
+        User time (seconds): 141.52
+        System time (seconds): 1.68
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:24.56
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5457144
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 3
+        Minor (reclaiming a frame) page faults: 1159078
+        Voluntary context switches: 1227
+        Involuntary context switches: 2312
+        Swaps: 0
+        File system inputs: 192128
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+39129071
+        Command being timed: "./build/dijkstra 3173985 21692721"
+        User time (seconds): 141.71
+        System time (seconds): 1.91
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:23.86
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5305056
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 1121053
+        Voluntary context switches: 384
+        Involuntary context switches: 2481
+        Swaps: 0
+        File system inputs: 384408
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+4522426
+        Command being timed: "./build/dijkstra 4144337 6416650"
+        User time (seconds): 140.57
+        System time (seconds): 1.70
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:22.43
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5393808
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 3
+        Minor (reclaiming a frame) page faults: 1142732
+        Voluntary context switches: 129
+        Involuntary context switches: 929
+        Swaps: 0
+        File system inputs: 104120
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+37426970
+        Command being timed: "./build/dijkstra 17350038 11106837"
+        User time (seconds): 146.20
+        System time (seconds): 1.62
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:28.14
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5327628
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 1
+        Minor (reclaiming a frame) page faults: 1126181
+        Voluntary context switches: 187
+        Involuntary context switches: 648
+        Swaps: 0
+        File system inputs: 241296
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+20873138
+        Command being timed: "./build/dijkstra 19259535 16620522"
+        User time (seconds): 142.46
+        System time (seconds): 1.74
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:24.56
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5511848
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 1172755
+        Voluntary context switches: 746
+        Involuntary context switches: 909
+        Swaps: 0
+        File system inputs: 114624
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+19519174
+        Command being timed: "./build/dijkstra 20800238 21056592"
+        User time (seconds): 142.64
+        System time (seconds): 1.64
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:25.54
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5361832
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 2
+        Minor (reclaiming a frame) page faults: 1135252
+        Voluntary context switches: 1738
+        Involuntary context switches: 2958
+        Swaps: 0
+        File system inputs: 626912
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+5139882
+        Command being timed: "./build/dijkstra 22523662 15975568"
+        User time (seconds): 141.10
+        System time (seconds): 1.68
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:24.07
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5406128
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 1
+        Minor (reclaiming a frame) page faults: 1145802
+        Voluntary context switches: 1297
+        Involuntary context switches: 1886
+        Swaps: 0
+        File system inputs: 294760
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+29843401
+        Command being timed: "./build/dijkstra 18778094 2644568"
+        User time (seconds): 139.39
+        System time (seconds): 1.74
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:21.44
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5447612
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 2
+        Minor (reclaiming a frame) page faults: 1156215
+        Voluntary context switches: 499
+        Involuntary context switches: 1439
+        Swaps: 0
+        File system inputs: 336016
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+21261059
+        Command being timed: "./build/dijkstra 23885334 18274743"
+        User time (seconds): 140.62
+        System time (seconds): 1.74
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:23.57
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5492828
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 2
+        Minor (reclaiming a frame) page faults: 1168011
+        Voluntary context switches: 1531
+        Involuntary context switches: 2906
+        Swaps: 0
+        File system inputs: 390896
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+5819704
+        Command being timed: "./build/dijkstra 1270801 19162272"
+        User time (seconds): 138.91
+        System time (seconds): 1.67
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:20.86
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5453192
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 2
+        Minor (reclaiming a frame) page faults: 1158123
+        Voluntary context switches: 130
+        Involuntary context switches: 1491
+        Swaps: 0
+        File system inputs: 406104
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+6444608
+        Command being timed: "./build/dijkstra 14011284 11047697"
+        User time (seconds): 143.44
+        System time (seconds): 1.79
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:25.86
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5559148
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 2
+        Minor (reclaiming a frame) page faults: 1184593
+        Voluntary context switches: 687
+        Involuntary context switches: 2165
+        Swaps: 0
+        File system inputs: 356032
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+7684361
+        Command being timed: "./build/dijkstra 23490729 5596649"
+        User time (seconds): 139.63
+        System time (seconds): 1.68
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 2:21.68
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 5492436
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 2
+        Minor (reclaiming a frame) page faults: 1167922
+        Voluntary context switches: 271
+        Involuntary context switches: 2023
+        Swaps: 0
+        File system inputs: 575560
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+thiago@turing:~/gitprojects/advancedalgorithms/HollowHeap&Dijkstra$ 
+
