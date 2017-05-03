@@ -15,7 +15,7 @@
 
 \colorlet{shadecolor}{orange!15}
 
-\title{Laboratório 1 - Binary Heaps e Dijkstra}
+\title{Laboratório 1 - Hollow Heaps e Dijkstra}
 \author{}{Thiago Bell}
 
 \addbibresource{report.bib}
@@ -31,26 +31,26 @@ Verificar desempenho da \textit{Hollow Heap} e do algoritmo de Dijsktra e compar
 Os testes presentes no plano de teste sugerido foram utilizados neste trabalho.
 
 \section{Implementaç\~ao}
-Os algoritmos foram implementados em C++. A \textit{Hollow Heap} utiliza memória alocada dinâmicamente para armazenar os seus nodos.
+Os algoritmos foram implementados em C++. A \textit{Hollow Heap} utiliza memória alocada dinamicamente para armazenar os seus nodos.
 Os grafos s\~ao representados por lista de adjacências. Um vetor armazena os vértices, e outro, as arestas.
 
 \section{Ambiente de Teste}
 Os experimentos foram realizados usando um processador Intel i7 2600k acompanhado de 8 GiB de RAM. 
 O sistema operacional utilizado foi Ubuntu Linux 16.10.
 
-\section{Análise de Complexidade da \textit{Heap}}
+\section{Análise de Complexidade da \textit{Hollow Heap}}
 A complexidade teórica das operaç\~oes da \textit{Hollow Heap} foram comparadas com os resultados de experimentos.
 Conclui-se que a implementaç\~ao respeita as previs\~oes teóricas.
 
 \subsection{Avaliaç\~ao das Operaç\~oes de Inserç\~ao}
 Fixando-se o valor $n = 2^{27}-1$, adicionou-se $n$ elementos na \textit{Hollow Heap} com chaves no intervalo de $[n,1]$.
 Para cada bloco com o intervalo de inserções $[2^{i-1},2^i - 1]$ para $i \in [0,26]$, foi medido o número de nodos criados
-$C_i$, o número de melds $M_i$ e tempo de execução $T_i$. Para cada valor inserido na \textit{Hollow Heap}, um meld é executado.
-Um meld é a união de duas \textit{heaps}. Onde um nodo único também é considerado uma heap. Com experimentos, verificou-se que 
-o número de chamadas as rotinas de inserção e \textit{meld} foram chamadas uam vez para cada elemento inserido como era esperado.
+$C_i$, o número de melds $M_i$ e tempo de execução $T_i$. Para cada valor inserido na \textit{Hollow Heap}, um \textit{meld} é executado.
+Um \textit{meld} é a união de duas \textit{heaps}. Onde um nodo único também é considerado uma heap. Com experimentos, verificou-se que 
+o número de chamadas as rotinas de inserção e \textit{meld} foram chamadas uma vez para cada elemento inserido como era esperado.
 A inserção de um elemento na heap tem custo $O(1)$ (\textit{meld} do elemento com a \textit{heap}). Logo, inserir $n$ nodos 
-terá custo $O(n)$. Comparando o número de inserções com o número de \textit{melds} percebe-se que eles são os mesmos indicando
-que a implementaçao respeita a definição do algoritmo. Comparando-se o tempo de execuçao com o nüumero de operações esperadas
+terá custo $O(n)$. Comparando o número de inserções com o número de \textit{melds}, percebe-se que eles são os mesmos indicando
+que a implementaçao respeita a definição do algoritmo. Comparando-se o tempo de execuçao com o número de operações esperadas
 pela complexidade, vê-se uma relação constante como pode ser vista na figura \ref{fig:insert}
 
 Considerando as duas comparaç\~oes, conclui-se que a implementaç\~ao da inserç\~ao na \textit{Hollow Heap}
@@ -73,18 +73,18 @@ respeita a complexidade do algoritmo.
 
 \caption{Raz\~ao entre tempo de execuç\~ao e o custo esperado.}
 \label{fig:insert}
-\end{figure}
+\end{figure}	
+
 \subsection{Avaliaç\~ao das Operaç\~oes de Decrescimento de Chaves}
 Considerando-se uma variável $i$, $2^i -1$ chaves s\~ao inseridas com valor de $2^i +1$. Em seguida, $2^i$ chaves com valor $2^i +2$ s\~ao adicionadas.
 Medindo-se o tempo, as chaves com valor, $2^i +2$ s\~ao atualizadas para valores decrescentes no intervalo $[2^i, 1]$. As operaç\~oes de atualizaç\~ao 
-começam por $2^i$ e a cada operaç\~ao seguinte esse valor é decrescido por 1. A complexidade para a operação de \textit{decrease key} é $O(1)$. Logo para atualizar
-as $2^i$ chaves a complexidade é de $O(2^i)$. Ao comparar essa complexidade com o tempo de execuçao, nota-se a convergência da razão desses valores como mostra a figura
-\ref{fig:update1}. Assim, pode-se concluir que o algoritmo escala como previsto.
+começam por $2^i$ e a cada operaç\~ao seguinte a esse valor é decrescido por 1. A complexidade para a operação de \textit{decrease key} é $O(1)$. Logo,
+para atualizar as $2^i$ chaves, a complexidade é de $O(2^i)$. Ao comparar essa complexidade com o tempo de execuçao, nota-se a convergência da razão
+desses valores para um valor como mostra a figura \ref{fig:update1}. Assim, pode-se concluir que o algoritmo escala como previsto.
 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-
 \begin{axis}[
   title={},
   xlabel=$2^i$,
@@ -100,7 +100,7 @@ as $2^i$ chaves a complexidade é de $O(2^i)$. Ao comparar essa complexidade com
 \subsection{Avaliaç\~ao das Operaç\~oes de Remoç\~ao Mínima}
 Para um valor $i$, $n = 2^{i} - 1$ chaves com valor aleatórios s\~ao adicionados. Depois, $m = 2^{i - 1}$ chaves s\~ao removidas.
 O tempo de execuç\~ao e o número de swaps foram medidos para cada i. A complexidade da operação de \textit{delete min} é de
-$O(log n)$ onde n é o número de nós na heap. Para remover $m$ nodos, a complexidade é $O(log n * m)$
+$O(log~n)$ onde n é o número de nós na heap. Para remover $m$ nodos, a complexidade é $O(log(n) * m)$.
 Na figura \ref{fig:delete1} é comparado esse custo com o tempo de execução.
 A convergência a um valor indica que o tempo de execuç\~ao cresce conforme a
 complexidade do algoritmo.
@@ -120,17 +120,78 @@ complexidade do algoritmo.
 \label{fig:delete1}
 \end{figure}
 
+\subsection{Comparando \textit{Binary Heap} e \textit{Hollow Heap}}
+O tempo de execução para as operações descritas acima nos dois tipos de heaps foram comparados. Essas comparações estão plotadas nas figuras
+\ref{fig:compare_insert}, \ref{fig:compare_decrease} e \ref{fig:compare_deletemin}. Com exceção das operações de \textit{delete min}, 
+a \textit{Hollow Heap} teve melhor desempenho.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  title={},
+  xlabel=$i$,
+  ylabel=$Tempo$]
+  ]
+\addplot +[mark=none, color=red] table [x=i, y=Hollow, col sep=comma, mark=none, smooth] {comparison_insert.csv};
+\addlegendentry{Hollow Heap}
+\addplot +[mark=none, color=blue] table [x=i, y=Binary, col sep=comma, mark=none, smooth] {comparison_insert.csv};
+\addlegendentry{Binary Heap}
+\end{axis}
+\end{tikzpicture}
+\caption{Tempo de execução para testes de inserção}
+\label{fig:compare_insert}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  title={},
+  xlabel=$i$,
+  ylabel=$Tempo$]
+  ]
+\addplot +[mark=none, color=red] table [x=i, y=Hollow, col sep=comma, mark=none, smooth] {comparison_decrease.csv};
+\addlegendentry{Hollow Heap}
+\addplot +[mark=none, color=blue] table [x=i, y=Binary, col sep=comma, mark=none, smooth] {comparison_decrease.csv};
+\addlegendentry{Binary Heap}
+\end{axis}
+\end{tikzpicture}
+\caption{Tempo de execução para testes de \textit{decrease key}}
+\label{fig:compare_decrease}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  title={},
+  xlabel=$i$,
+  ylabel=$Tempo$]
+  ]
+\addplot +[mark=none, color=red] table [x=i, y=Hollow, col sep=comma, mark=none, smooth] {comparison_deletemin.csv};
+\addlegendentry{Hollow Heap}
+\addplot +[mark=none, color=blue] table [x=i, y=Binary, col sep=comma, mark=none, smooth] {comparison_deletemin.csv};
+\addlegendentry{Binary Heap}
+\end{axis}
+\end{tikzpicture}
+\caption{Tempo de execução para testes de \textit{delete min}}
+\label{fig:compare_deletemin}
+\end{figure}
+
+
+
 \section{Análise de Complexidade do Algoritmo de Dijkstra}
 \subsection{Variando o número de Arestas}
-Fixando-se o número de vértices em $2^{15}$, variou-se o número de arestas entre $2^{23}$ e $2^{27}$. 
-
-
-
-Ao comparar o tempo de execuç\~ao com o custo teórico de $E = (n+m)*log(n)$, 
-obteve-se uma convergência a um valor constante como pode ser visto na figura \ref{fig:dij_vertex}. 
-Os números de \textit{inserts} e \textit{deletes} foram
-menores ou iguais ao de vértices e o de \textit{updates} menor ou igual ao de arestas. Uma regress\~ao
-linear na figura \ref{fig:dij_vertex_linear_regression} sobre o os dados obtidos mostrou que o tempo de execução
+Fixando-se o número de vértices em $2^{15}$, variou-se o número de arestas entre $2^{23}$ e $2^{27}$. Esse intervalo
+foi pequeno devido a restrições de memória no limite superior e o de precisão na medição de tempo no inferior.
+A complexidade do algoritmo de Dijkstra é de $O(m + n*log(n))$. Comparando o tempo de execuçao com essa complexidade - 
+através da divisão da complexidade esperada para o tamanho da instância pelo tempo - obteve-se a curva na figura 
+\ref{fig:dij_vertex}. Nota-se uma convergência para um valor constante indicando que a implementação segue os limites
+teóricos.
+Os números de \textit{inserts} e \textit{delete mins} foram
+menores ou iguais ao de vértices e o de \textit{decrease min}, menor ou igual ao de arestas. Uma regress\~ao
+linear na figura \ref{fig:dij_vertex_linear_regression} sobre os dados obtidos mostrou que o tempo de execução
 cresce exponencialmente de acordo com a soma do número de arestas.
 
 \begin{figure}[H]
@@ -141,12 +202,12 @@ cresce exponencialmente de acordo com a soma do número de arestas.
 \begin{axis}[
   title={},
   xlabel=$m$,
-  ylabel=$T/(n+m)log(n)$]
+  ylabel=$m + n*log(n)/T$
   ]
-%\addplot +[mark=none, color=red] table [x=m, y=tratio, col sep=comma, mark=none, smooth] {fixed_vertex.csv};
+\addplot +[mark=none, color=red] table [x=m, y=ratio, col sep=comma, mark=none, smooth] {fix_vertex.csv};
 \end{axis}
 \end{tikzpicture}
-\caption{Mostra a raz\~ao entre o tempo de execuç\~ao e o custo teórico esperado}
+\caption{Mostra a raz\~ao entre o custo teórico e o tempo de execução}
 \label{fig:dij_vertex}
 \end{figure}
 
@@ -160,9 +221,8 @@ cresce exponencialmente de acordo com a soma do número de arestas.
   title={},
   xlabel=$log(m)$,
   ylabel=$log(time)$]
-  ]
-%\addplot +[mark=o, color=red,only marks] table [x=logm, y=logtime, col sep=comma] {fix_vertex_lin_regression.csv};
-%\addplot +[mark=none, color=blue] table [x=logm, y=pred, col sep=comma, mark=none, smooth] {fix_vertex_lin_regression.csv};
+  \addplot +[mark=o, color=red,only marks] table [x=logn, y=logtime, col sep=comma] {fix_vertex_lin_regression.csv};
+  \addplot +[mark=none, color=blue] table [x=logn, y=pred, col sep=comma] {fix_vertex_lin_regression.csv};
 \end{axis}
 \end{tikzpicture}
 \caption{Regress\~ao linear. O número de vértices foi desconsiderado pois é constante.}
@@ -170,24 +230,27 @@ cresce exponencialmente de acordo com a soma do número de arestas.
 \end{figure}
 
 \subsection{Variando o número de Vértices}
-Fixou-se o número de arestas em $2^{20}$ e variou-se o número de vértices entre $2^{11}$ e $2^{18}$. O custo teórico é o mesmo do caso anterior,
-$E = (n+m)*log(n)$. Encontrou-se um problema onde o grafo se tornavo excessivamente esparso e o algoritmo de dijkstra encerrava sem percorrer 
-parte significante do grafo. Poucas amostras foram obtidas como fica evidente na figura \ref{fig:dij_edge}.
+Fixou-se o número de arestas em $2^{20}$ e variou-se o número de vértices entre $2^{11}$ e $2^{18}$. A complexidade é a mesma do caso anterior: $O(m + n*log(n))$.
+Comparando-se o tempo de processamento como no caso anterior, obteve-se os resultados mostrados na figura \ref{fig:dij_edges}. O gráfico mostra que o valor tende
+a uma constante indicando que a implementação respeita a complexidade do algoritmo. Uma regress\~ao
+linear na figura \ref{fig:dij_edge_lin_reg} sobre os dados obtidos mostrou que o tempo de execução
+cresce exponencialmente de acordo com a soma do número de vértices.
+
+
 
 \begin{figure}[H]
+\centering
 \begin{tikzpicture}
-
 \begin{axis}[
   title={},
-  xlabel=$n$,
-  ylabel=$T/(n+m)log(n)$]
+  xlabel=$m$,
+  ylabel=$m + n*log(n)/T$]
   ]
-%\addplot +[mark=none, color=red] table [x=n, y=TdivE, col sep=comma, mark=none, smooth] {fixed_edge.csv};
+\addplot +[mark=none, color=red] table [x=n, y=ratio, col sep=comma, mark=none, smooth] {fix_edges.csv};
 \end{axis}
 \end{tikzpicture}
-\centering
-\caption{Mostra a raz\~ao entre o tempo de execuç\~ao e o custo teórico esperado}
-\label{fig:dij_edge}
+\caption{Mostra a raz\~ao entre o custo teórico e o tempo de execução}
+\label{fig:dij_edges}
 \end{figure}
 
 \begin{figure}[H]
@@ -198,8 +261,8 @@ parte significante do grafo. Poucas amostras foram obtidas como fica evidente na
   xlabel=$log(n)$,
   ylabel=$log(time)$]
   ]
-%\addplot +[mark=o, color=red,only marks] table [x=logn, y=logtime, col sep=comma] {fix_edge_lin_regression.csv};
-%\addplot +[mark=none, color=blue] table [x=logn, y=pred, col sep=comma, mark=none, smooth] {fix_edge_lin_regression.csv};
+\addplot +[mark=o, color=red,only marks] table [x=logn, y=logtime, col sep=comma] {fix_edge_lin_regression.csv};
+\addplot +[mark=none, color=blue] table [x=logn, y=pred, col sep=comma] {fix_edge_lin_regression.csv};
 \end{axis}
 \end{tikzpicture}
 \centering
@@ -207,50 +270,85 @@ parte significante do grafo. Poucas amostras foram obtidas como fica evidente na
 \label{fig:dij_edge_lin_reg}
 \end{figure}
 
-\section{Verificando a implementaç\~ao de Dijkstra com grandes instâncias}
-Testou-se a implementaç\~ao do algoritmo com duas instâncias conforme recomendado no plano de teste. Para o caso de teste consistindo da rede completa dos Estados Unidos provida na definiç\~ao do trabalho, obteve-se um tempo médio de execuç\~ao de 169 segundos e consumo de memómia máximo de 3.64 GiB. Para a rede de Nova York, foram 1.83 segundos e 43.7 MB de memória.
+\subsection{Comparando \textit{Binary Heap} e \textit{Hollow Heap}}
+Os tempos de execução para o algoritmo de Dijkstra usando as duas heaps foram comparados. Essas comparações estão plotadas nas figuras
+\ref{fig:compare_fix_vertex} e \ref{fig:compare_fix_edge}. Em ambos os casos a \textit{Hollow Heap} teve melhor desempenho.
 
-
-\section{Testando Grau Ótimo da Heap}
-Testou-se a implementaç\~ao da heap variando-se o grau da mesma e usando as redes de Nova York e dos Estados Unidos 
-assim como outras geradas aleatóriamente com uma vers\~ao modificada do algoritmo gerador oferecido. Um comportamento 
-interessante foi obtido. Para as redes reais, os resultados foram melhores para graus 4 e 8. Entretando, para as 
-artificiais a tendência foi de quanto maior o grau da heap, melhor o desempenho ao executar o algoritmo de Dijkstra. 
-A figura \ref{fig:narity} mostra os resultados. Os tempos de execuç\~ao de cada grafo
-foram normalizados em relaç\~ao ao tempo médio obtido para aquela rede. Acredita-se que esse comportamento
-possa ser explicado pela aleatoriedade
-na inserção de arestas o que resulta numa topologia diferente daquelas encontradas em redes reais.
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-
 \begin{axis}[
   title={},
-  legend style={at={(1.1,1)},anchor=north west},
-  xtick={2,4,8,16,32,64},
-  xlabel=grau,
-  ylabel=tempo normalizado]
+  xlabel=$i$,
+  ylabel=$Tempo$]
   ]
-%\addplot +[mark=o, color=red] table [x=grau, y=NY, col sep=comma, smooth] {heap_narity.csv};
-%\addlegendentry{NY}
-%\addplot +[mark=o, color=green] table [x=grau, y=USA, col sep=comma, smooth] {heap_narity.csv};
-%\addlegendentry{USA}
-%\addplot +[mark=o, color=blue] table [x=grau, y=2na15, col sep=comma, smooth] {heap_narity.csv};
-%\addlegendentry{$2^{15}$}
-%\addplot +[mark=o, color=purple] table [x=grau, y=2na16, col sep=comma, smooth] {heap_narity.csv};
-%\addlegendentry{$2^{16}$}
-%\addplot +[mark=o, color=black] table [x=grau, y=2na17, col sep=comma, smooth] {heap_narity.csv};
-%\addlegendentry{$2^{17}$}
+\addplot +[mark=none, color=red] table [x=i, y=Hollow, col sep=comma, mark=none, smooth] {comparison_fix_vertex.csv};
+\addlegendentry{Hollow Heap}
+\addplot +[mark=none, color=blue] table [x=i, y=Binary, col sep=comma, mark=none, smooth] {comparison_fix_vertex.csv};
+\addlegendentry{Binary Heap}
 \end{axis}
 \end{tikzpicture}
-
-\caption{Tempo normalizado de execuç\~ao do algoritmo de Dijkstra}
-\label{fig:narity}
+\caption{Tempo de execução para testes de inserção}
+\label{fig:compare_fix_vertex}
 \end{figure}
 
-\section{Conclus\~ao}
-Excluindo-se o caso do tempo de execuç\~ao das atualizaç\~oes quando comparado com a expectativa teórica, as implementaç\~oes dos 
-algoritmos respeitaram a complexidade teórica dos mesmos. Procurou-se, também, o grau da heap com o valor mais adequado ao algoritmo de Dijkstra. Chegou-se
-a conclus\~ao que a rede com a qual se testa pode influenciar os resultados desse teste.
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  title={},
+  xlabel=$i$,
+  ylabel=$Tempo$]
+  ]
+\addplot +[mark=none, color=red] table [x=i, y=Hollow, col sep=comma, mark=none, smooth] {comparison_fix_edge.csv};
+\addlegendentry{Hollow Heap}
+\addplot +[mark=none, color=blue] table [x=i, y=Binary, col sep=comma, mark=none, smooth] {comparison_fix_edge.csv};
+\addlegendentry{Binary Heap}
+\end{axis}
+\end{tikzpicture}
+\caption{Tempo de execução para testes de \textit{decrease key}}
+\label{fig:compare_fix_edge}
+\end{figure}
 
+
+
+
+\section{Verificando a implementaç\~ao de Dijkstra com grandes instâncias}
+Testou-se a implementaç\~ao do algoritmo com duas instâncias conforme recomendado no plano de teste. Comparou-se, também, com os resultados
+obtidos com as \textit{Binary heaps} implementadas anteriormente. A comparação para os dois casos pode ser vista nas tabelas \ref{tab:hollow} e \ref{tab:nary}.
+O caso usando \textit{Hollow Heaps} teve um tempo de execução menor em ambos os casos a custo de um consumo maior de memória.
+
+
+\begin{table}[H]
+  \centering
+ \begin{tabular}{c | c c}
+    rede & tempo de execução (s) & máximo de memória (MiB) \\
+    \hline
+    NY	    & 1.62 & 54.41 \\
+    USA     & 141.81 & 5204 \\
+ \end{tabular}
+ \label{tab:hollow}
+  \caption{Tempo de execução do algoritmo de Dijkstra usando Hollow Heaps}
+\end{table}
+
+\begin{table}[H]
+\centering
+ \begin{tabular}{c | c c}
+    rede & tempo de execução (s) & máximo de memória (MiB) \\
+    \hline
+    NY	    & 1.83 & 42.67  \\
+    USA     & 169.78 & 3555  \\
+ \end{tabular}
+ \label{tab:nary}
+  \caption{Tempo de execução do algoritmo de Dijkstra usando Binary Heaps}
+\end{table}
+
+
+
+
+\section{Conclus\~ao}
+Implementou-se a estrutura de dados \textit{Hollow Heap} assim como o algoritmo de Dijkstra usando essa estrutura. A implementação respeitou as previsões teóricas.
+Ao calcular a regressão linear para os experimentos envolvendo o algoritmo de Dijkstra, obteve-se no entretanto uma comprovação de uma hipótese exponencial o que contraria
+a complexidade do algoritmo. Comparou-se a performance da \textit{Hollow Heap} e da \textit{Binary Heap} nos vários experimentos. A primeira teve melhores tempos de execução
+na maior parte dos casos. Essa melhora tem o custo de maior uso de memória.
 \end{document}
