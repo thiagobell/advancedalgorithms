@@ -1,0 +1,14 @@
+graph read
+n= 4096 m= 8176 time= 123
+graph read
+n= 4096 m= 16298 time= 22
+graph read
+n= 4096 m= 32478 time= 898
+graph read
+n= 4096 m= 65494 time= 3650
+graph read
+n= 4096 m= 130373 time= 34114
+graph read
+n= 4096 m= 262210 time= 497345
+graph read
+n= 4096 m= 524778 time= 1873475

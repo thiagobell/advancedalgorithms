@@ -53,7 +53,7 @@ Graph::Graph(std::istream& inputF)
         t = node;
     }
   }
-  std::cout << "source is "<< s <<", destination is " << t<<"\n";
+
 }
 
 unsigned Graph::numVertexes()
