@@ -10,7 +10,7 @@
 #include <chrono>
 int main() {
 	unsigned maxf;
-  unsigned min_m_exp = 17, max_m_exp = 18;
+  unsigned min_m_exp = 14, max_m_exp = 18;
   //m ~= 2^Nfactor * Nfactor
   unsigned n_exp = 10;
   for(unsigned m_exp = min_m_exp; m_exp <= max_m_exp; m_exp++) {

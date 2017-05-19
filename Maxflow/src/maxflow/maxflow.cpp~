@@ -39,6 +39,6 @@ unsigned maxflow(Graph g)
 	for(unsigned i=0; i < edges.size(); i++){
 			sum = sum + edges[i]->flow;
 	} 
-  std::cout << "num iterations: " << iterations << " ";
+  std::cout << "num iterations: " << iterations ;
 	return sum;
 }
