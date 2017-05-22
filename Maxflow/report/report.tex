@@ -1,0 +1,81 @@
+\documentclass{iiufrgs}
+\usepackage[utf8]{inputenc}   % pacote para acentuação
+\usepackage{graphicx}           % pacote para importar figuras
+\usepackage{times}              % pacote para usar fonte Adobe Times
+\usepackage{framed}             % para exemplos e TODOs
+\usepackage{biblatex}           % para referências bibliográficas
+\usepackage{xcolor}             % cores
+\usepackage{hyperref}           % referências
+\usepackage{amsmath}
+\usepackage{float}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{tikz}
+
+\colorlet{shadecolor}{orange!15}
+
+\title{Laboratório 3 - Maxflow}
+\author{}{Thiago Bell}
+
+\addbibresource{report.bib}
+
+\begin{document}
+\maketitle
+
+\setcounter{chapter}{1}
+
+\section{Tarefa}
+Implementar o algoritmo de Ford-Fulkerson usando a estratégia de \emph{fattest path} para o problema de fluxo máximo. 
+
+\section{Implementaç\~ao}
+Os algoritmos foram implementados em C++. A implementação de grafo usa listas de adjacências. Cada aresta armazena informações de
+capacidade e fluxo atual. os valores dos \emph{forward edges} e \emph{backward edges} são calculados baseados nessas informações.
+
+\section{Ambiente de Teste}
+Os experimentos foram realizados usando um processador Intel i7 2600k acompanhado de 8 GiB de RAM. 
+O sistema operacional utilizado foi Ubuntu Linux 16.10.
+
+\section{Análise de Complexidade do Algoritmo de Ford-Fulkerson}
+A complexidade teórica do algoritmo foi comparado com resultados experimentais.
+Conclui-se que a implementaç\~ao respeita as previs\~oes teóricas.
+
+\subsection{Complexidade}
+A complexidade do algoritmo depedende do número de iterações que ele executa. Isso é, o número de vezes em que ele incrementa o fluxo.
+Supondo um limitante superior $I$ para o número de iterações, a complexidade do algoritmo é de:
+
+\begin{equation*}
+\label{eq:ql}
+O((nlogn + m)I)
+\end{equation*}
+
+\subsection{Formulação do Teste}
+Para testar o algoritmo gerou-se redes mesh com o gerador de \emph{Washington} sempre mantendo o número de colunas igual ao de 
+linhas. Executou-se o algoritmo para estas redes e comparou-se o tempo de execução com a previsão teórica. Para calcular-se o custo
+para uma determinada instância usou-se o número de iterações do algoritmo ao executar como limitante superior $I$.
+
+\subsection{Experimento e Comparação}
+Para redes com dimensões laterais variando de 100 até 500 em incrementos de 100, mediu-se o tempo de execução. A comparação destes tempos
+com o custo teórico pode ser vista na figura \ref{fig:comparison}. Percebe-se que para todos os casos a razão entre esses dois valores permaneceu
+razoavelmente constante. Dessa forma, a implementação segue a complexidade do algoritmo.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  title={},
+  ymin = 0,
+  xlabel=dimens\~ao,
+  ylabel=raz\~ao],
+\addplot +[mark=o, color=red] table [x=dimension, y=ratio, col sep=comma] {data.csv};
+\end{axis}
+\end{tikzpicture}
+\caption{Mostra a raz\~ao entre o custo teórico esperado e o tempo de execuç\~ao}
+\label{fig:comparison}
+\end{figure}
+
+
+\section{Conclus\~ao}
+Implementou-se o algoritmo de Ford-Fulkerson com a estratégia do \emph{Fattest-Path}. Verificou-se que a implementação respeitava a
+complexidade do algoritmo.
+\end{document}
