@@ -16,7 +16,6 @@ Graph::Graph(std::istream& inputF)
 
   std::stringstream linestr;
   linestr.str(line);
-  int n,m;
   linestr >> dummy >> dummy >> n >> m;
   unsigned sizeofset = n/2;
   //allocates memory

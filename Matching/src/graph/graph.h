@@ -23,6 +23,7 @@ class Vertex {
 
 class Graph {
   public:
+   unsigned n, m;
    std::vector<Vertex> U,V;
    Graph(std::istream& input);
 
