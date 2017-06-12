@@ -8,7 +8,7 @@ class Vertex {
  public:
   std::vector<unsigned> neigh;
 
-  enum vertex_group {U,V};
+  enum vertex_group {U,V,NILL};
   vertex_group group;
   int  matched_to;
   unsigned distance;
