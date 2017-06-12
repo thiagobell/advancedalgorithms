@@ -1,29 +1,15 @@
 //implementation of the    for bipartite graph matching
-
+//based on pseudocode from https://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algorithm
 
 #ifndef H_HPMATCH
 #define H_HPMATCH
 #include <vector>
-class Vertex {
- public:
-  std::vector<unsigned> neigh;
+#include "../graph/graph.h"
 
-  enum vertex_group {U,V,NILL};
-  vertex_group group;
-  int  matched_to;
-  unsigned distance;
-  Vertex(std::vector<unsigned> neighbours, vertex_group gr) {
-    neigh = neighbours;
-    group = gr;
-    distance = 0;
-    matched_to = -1;
-  }
-};
 
 class HPmatch {
  public:
-  int match();
-
+  static int match(std::vector<Vertex> U, std::vector<Vertex> V);
 };
 
 
