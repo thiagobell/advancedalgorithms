@@ -1,91 +1,78 @@
 #include "hpmatch.h"
-#include <iostream>
-#include <vector>
-#include <limits>
-#include <iterator>
-int inf = std::numeric_limits<int>::max();
-
-
-// 0 - 1
-// 2 \- 3
-//
-//
-//
-//
-
-
-//starts from free vertexes from U
-//occupied vertexes from V
-//occupied vertexes from U
-//free vertex from V
-int breadth_search(std::vector<Vertex> vertices)
-{
-  std::vector<unsigned> vec_inxs;
-  //analyses edges from set U
-  for(unsigned inx = 0; inx < vertices.size(); inx++){
-    if(vertices[inx].group == Vertex::U)  {
-      if(vertices[inx].matched_to == -1) {//vertex is free
-	vertices[inx].distance = 0;
-	vec_inxs.push_back(inx);
-      } else { //vertex not free
-	vertices[inx].distance = inf;
-      }
-    } else {
-      std::cout <<" not v "<<inx<<"\n";
-    }
-  }
-  bool found = false;
-  while(!vec_inxs.empty()) {
-    unsigned inx = vec_inxs.front();
-    vec_inxs.erase(vec_inxs.begin());
-    //for(unsigned v_inx = vertices[inx].neigh
-    for(std::vector<unsigned>::iterator v_inx = vertices[inx].neigh.begin(); v_inx != vertices[inx].neigh.end(); v_inx++){
-      if(vertices[*v_inx].matched_to ==-1) { //vertex is free
-	       found = true;
-      } else {
-      	//test if node was already added
-      	if(vertices[vertices[*v_inx].matched_to].distance == inf) {///problema e se o V nao tiver match?
-      	  //not visited yet
-      	  vertices[vertices[*v_inx].matched_to].distance = vertices[*v_inx].distance + 1;
-      	  //add u matched with v
-      	  vec_inxs.push_back(vertices[*v_inx].matched_to);
-      	}
-      }
-    }
-
-  }
-
-  for(unsigned inx = 0; inx < vertices.size(); inx++){
-    std::cout << "id"<<inx << " distance:"<<vertices[inx].distance << std::endl;
-  }
-  return found;
-}
-
-
 
 int HPmatch::match()
 {
   //points to the vertex the the given vertex is matched to
-  std::vector<Vertex> vex;
-  std::cout<<"init\n";
+  std::vector<Vertex> U, V;
 
-  std::vector<unsigned> n0,n1,n2,n3;
-  n0.push_back(1);
-  n0.push_back(3);
-  n1.push_back(0);
-  n2.push_back(3);
-  n3.push_back(2);
-  n3.push_back(0);
-  Vertex v0(n0, Vertex::U);
-  Vertex v1(n1, Vertex::V);
-  Vertex v2(n2, Vertex::U);
-  Vertex v3(n3, Vertex::V);
+  std::vector<unsigned> nU1,nV1,nU2,nV2;
+  nU1.push_back(1);
+  nU1.push_back(2);
+  nU2.push_back(2);
 
-  vex.push_back(v0);
-  vex.push_back(v1);
-  vex.push_back(v2);
-  vex.push_back(v3);
+  nV1.push_back(1);
+  nV2.push_back(1);
+  nV2.push_back(2);
+
+
+  Vertex v0(nU1, Vertex::U);
+  Vertex v1(nU2, Vertex::V);
+  Vertex v2(nV1, Vertex::U);
+  Vertex v3(nV2, Vertex::V);
+
+  U.push_back(v0);
+  U.push_back(v1);
+  V.push_back(v2);
+  V.push_back(v3);
+
+
   //MUST DO INITIAL MATCHING
-  breadth_search(vex);
+}
 
+int b_search(std::vector<Vertex> U, std::vector<Vertex> V){
+  bool m_u* =  new[U.size()];
+  bool m_v* =  new[V.size()];
+  unsigned d_u* = new[U.size()];
+  unsigned d_v* = new[V.size()];
+  bool found = false;
+
+  for(int i=0;i<U.size();i++){
+    m_u[i] = false;
+    d_u[i] = 0;
+  }
+  for(int i=0;i<V.size();i++){
+    m_v[i] = false;
+  }
+do{
+  std::vector<unsigned> u2;
+  for(unsigned u=1;u<=U.size();u++){
+    m_u[u-1] = true;
+
+    for(std::vector<unsigned>::iterator v = U[u-1].neigh.begin(); v !=  U[u-1].neigh.end(); v++){
+      if(U[u-1].path_to != v*){
+        if(!m_v[(v*)-1]){
+          d_v[(v*)-1] = d_u[u-1]+1;
+          u2.push_back(v*);
+        }
+      }
+    }
+  }
+
+  found = false;
+  std::vector<unsigned> u1;
+  for(std::vector<unsigned>::iterator u = u2.begin(); u !=  u2.end(); u++){
+    int u_inx = u* -1
+    m_u[u_inx] = true;
+    if(U[u_inx].path_to == -1){
+      //u is free
+      found = true;
+    } else {
+      int v_inx = U[u_inx].path_to -1;
+      if(!m_v[v_inx]){
+        d_v[v_inx] = d_u[u_inx] +1;
+        u1.push_back(v_inx +1);
+      }
+    }
+  }
+}while(!found);
 }

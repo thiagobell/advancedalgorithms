@@ -1,4 +1,5 @@
-//implementation of the Hopcroft-Karp algorithm for bipartite graph matching
+//implementation of the    for bipartite graph matching
+
 
 #ifndef H_HPMATCH
 #define H_HPMATCH
@@ -6,6 +7,7 @@
 class Vertex {
  public:
   std::vector<unsigned> neigh;
+
   enum vertex_group {U,V};
   vertex_group group;
   int  matched_to;
