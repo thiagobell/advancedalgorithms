@@ -1,0 +1,104 @@
+\documentclass{iiufrgs}
+\usepackage[utf8]{inputenc}   % pacote para acentuação
+\usepackage{graphicx}           % pacote para importar figuras
+\usepackage{times}              % pacote para usar fonte Adobe Times
+\usepackage{framed}             % para exemplos e TODOs
+\usepackage{biblatex}           % para referências bibliográficas
+\usepackage{xcolor}             % cores
+\usepackage{hyperref}           % referências
+\usepackage{amsmath}
+\usepackage{float}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{tikz}
+
+\colorlet{shadecolor}{orange!15}
+
+\title{Laboratório 3 - Maxflow}
+\author{}{Thiago Bell}
+
+\addbibresource{report.bib}
+
+\begin{document}
+\maketitle
+
+\setcounter{chapter}{1}
+
+\section{Tarefa}
+Implementar o algoritmo de Hopcroft-Karp para o problema de pareamento de grafos bipartidos.
+
+\section{Implementaç\~ao}
+Os algoritmos foram implementados em C++. A implementação de grafo usa listas de adjacências. Cada vértice contém uma variável com o indíce
+de qual o vertice com o qual ela está pareada assim como uma variável para distância usada na execução do algoritmo. Essa última é desnecessária 
+para ambos os subgrafos, pois, apenas
+se calculará a distância para um deles. Não se modificou isso para manter a simplicidade.
+
+\section{Ambiente de Teste}
+Os experimentos foram realizados usando um processador Intel i7 2600k acompanhado de 8 GiB de RAM. 
+O sistema operacional utilizado foi Ubuntu Linux 16.10.
+
+\section{Análise de Complexidade do Algoritmo de Hopcroft-Karp}
+A complexidade teórica do algoritmo foi comparado com resultados experimentais.
+Conclui-se que a implementaç\~ao respeita as previs\~oes teóricas.
+
+\subsection{Complexidade}
+A complexidade do algoritmo é de:
+
+\begin{equation*}
+\label{eq:ql}
+O(sqrt(n)(n+m))
+\end{equation*}
+Para demonstrar que a implementação respeita esse limite, fez-se dois testes. Um fixando o número de arestas e variando o de vértices.
+Outro, fixando o de vértices e variando o de arestas.
+
+Também, o número de fases do algoritmo é limitado por 
+
+\begin{equation*}
+\label{eq:ql}
+O(sqrt(n))
+\end{equation*}
+
+\subsection{Fixando Números de Arestas}
+Fixou-se o número de arestas em aproximadamente 1.67 milhões. O número de vértices foi variado entre $2^{12}$ a $2^{15}$. Comparando-se o tempo de execução e o custo teórico,
+esperado. Conclui-se a adesão da implementação a complexidade prevista.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  title={},
+  ymin = 0,
+  xlabel= (expoente),
+  ylabel=raz\~ao],
+\addplot +[mark=o, color=red] table [x=i, y=ratio, col sep=comma] {data_fixedge.csv};
+\end{axis}
+\end{tikzpicture}
+\caption{Mostra a raz\~ao entre o custo teórico esperado e o tempo de execuç\~ao}
+\label{fig:comparison}
+\end{figure}
+
+\subsection{Fixando Números de Vértices}
+Fixou-se o número de vértices em 16384. O número de arestas foi variado entre $838971$ a $6710515$. Comparando-se o tempo de execução e o custo teórico,
+esperado. Conclui-se a adesão da implementação a complexidade prevista.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  title={},
+  ymin = 0,
+  xlabel=arestas,
+  ylabel=raz\~ao],
+\addplot +[mark=o, color=red] table [x=m, y=ratio, col sep=comma] {data_fixvertex.csv};
+\end{axis}
+\end{tikzpicture}
+\caption{Mostra a raz\~ao entre o custo teórico esperado e o tempo de execuç\~ao}
+\label{fig:comparison}
+\end{figure}
+
+
+\section{Conclus\~ao}
+Implementou-se o algoritmo de Ford-Fulkerson com a estratégia do \emph{Fattest-Path}. Verificou-se que a implementação respeitava a
+complexidade do algoritmo.
+\end{document}
