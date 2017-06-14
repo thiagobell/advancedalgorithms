@@ -83,12 +83,14 @@ bool DFS(int u, std::vector<Vertex>& U, std::vector<Vertex>& V)
 }
 
 
-int HPmatch::match(std::vector<Vertex> U, std::vector<Vertex> V)
+int HPmatch::match(std::vector<Vertex> U, std::vector<Vertex> V, bool verbose)
 {
   //MUST DO INITIAL MATCHING
   int matched = 0;
+  int iteration = 0;
   while(breadth_search(U,V)== true){
       //std::cout<<"done breadth\n";
+      iteration++;
       for(int u = 1; u < U.size(); u++){
         if(U[u].matched_to == 0) {
           if(DFS(u,U,V) == true)
@@ -96,5 +98,7 @@ int HPmatch::match(std::vector<Vertex> U, std::vector<Vertex> V)
         }
       }
     }
+  if(verbose)
+    std::cout<<"iterations="<< iteration<<",";
     return matched;
 }

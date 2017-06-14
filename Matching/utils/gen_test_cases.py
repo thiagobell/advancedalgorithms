@@ -7,11 +7,20 @@ for each value n_expo in the list, the number of vertexes in each set is 2^n_exp
 ms_prob: probabilities of each edge existing
 '''
 
-ns_expo = [10,11,12,13,14,15]
-ms_prob = [0.001, 0.01, 0.02]
+ns_expo = [20,21]
+#ms_prob = [0.001, 0.01, 0.02]
+start_p = 0.0001*0.25*0.25
+
+#for n_expo in ns_expo:
+#    for m_prob in ms_prob:
+#        n = str(2**n_expo)
+#        p = str(m_prob)
+#        print "./gen " + n + " " + p + " > n" + "2tothe"+ str(n_expo) + "p" + p+ ".gr"   
 
 for n_expo in ns_expo:
-    for m_prob in ms_prob:
-        n = str(2**n_expo)
-        p = str(m_prob)
-        print "./gen " + n + " " + p + " > n" + "2tothe"+ str(n_expo) + "p" + p+ ".gr"   
+    n = str(2**n_expo)
+    print "./fastgen " + n + " " + str(start_p) + " > n" + "2tothe"+ str(n_expo) + "p" + str(start_p)+ ".gr"
+    start_p *= 0.25
+
+    
+    

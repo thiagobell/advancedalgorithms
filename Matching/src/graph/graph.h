@@ -25,6 +25,7 @@ class Graph {
   public:
    unsigned n, m;
    std::vector<Vertex> U,V;
+   Graph(int n, double p);
    Graph(std::istream& input);
 
 };

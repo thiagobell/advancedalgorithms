@@ -9,10 +9,12 @@ int main(int argc, char **argv)
   if(argc > 1 && strncmp(argv[1],"-v",2)==0) {
     verbose = true;
   }
+  std::cout << "reading graph\n";
   Graph g(std::cin);
-
+  std::cout << "done\n";
   std::chrono::system_clock::time_point t = std::chrono::system_clock::now();
-  int num_match = HPmatch::match(g.U, g.V);
+  int num_match;
+  num_match = HPmatch::match(g.U, g.V,verbose);
   if(verbose) {
       std::cout << "time(ms)= " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()-t).count();
       std::cout << ",match=" << num_match;

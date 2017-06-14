@@ -46,7 +46,7 @@ int main(int argc, char *argv[]) {
   for ( tie(vb, ve)=vertices(g); vb != ve; vb++)
     if (g[*vb].mate != graph_traits<Graph>::null_vertex())
       card++;
-  //cout << "The cardinality of a maximum matching is " << card/2 << "." << endl;
+  cout << "c The cardinality of a maximum matching is " << card/2 << "." << endl;
 
   // (3) print out in DIMACS format
   cout << "c Bi-partite graph" << endl << endl;

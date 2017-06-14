@@ -1,18 +1,2 @@
-./gen 1024 0.001 > n2tothe10p0.001.gr
-./gen 1024 0.01 > n2tothe10p0.01.gr
-./gen 1024 0.02 > n2tothe10p0.02.gr
-./gen 2048 0.001 > n2tothe11p0.001.gr
-./gen 2048 0.01 > n2tothe11p0.01.gr
-./gen 2048 0.02 > n2tothe11p0.02.gr
-./gen 4096 0.001 > n2tothe12p0.001.gr
-./gen 4096 0.01 > n2tothe12p0.01.gr
-./gen 4096 0.02 > n2tothe12p0.02.gr
-./gen 8192 0.001 > n2tothe13p0.001.gr
-./gen 8192 0.01 > n2tothe13p0.01.gr
-./gen 8192 0.02 > n2tothe13p0.02.gr
-./gen 16384 0.001 > n2tothe14p0.001.gr
-./gen 16384 0.01 > n2tothe14p0.01.gr
-./gen 16384 0.02 > n2tothe14p0.02.gr
-./gen 32768 0.001 > n2tothe15p0.001.gr
-./gen 32768 0.01 > n2tothe15p0.01.gr
-./gen 32768 0.02 > n2tothe15p0.02.gr
+./fastgen 1048576 0.00000625 > n2tothe20p6.25e-06.gr &
+./fastgen 2097152 0.0000015625 > n2tothe21p1.5625e-06.gr

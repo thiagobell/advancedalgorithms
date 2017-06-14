@@ -9,7 +9,7 @@
 
 class HPmatch {
  public:
-  static int match(std::vector<Vertex> U, std::vector<Vertex> V);
+  static int match(std::vector<Vertex> U, std::vector<Vertex> V, bool verbose);
 };
 
 
