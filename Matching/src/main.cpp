@@ -10,9 +10,9 @@ int main(int argc, char **argv)
     verbose = true;
   }
   Graph g(std::cin);
-
   std::chrono::system_clock::time_point t = std::chrono::system_clock::now();
-  int num_match = HPmatch::match(g.U, g.V);
+  int num_match;
+  num_match = HPmatch::match(g.U, g.V,verbose);
   if(verbose) {
       std::cout << "time(ms)= " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()-t).count();
       std::cout << ",match=" << num_match;
