@@ -3,7 +3,7 @@
 #include "../dijkstra/dijkstra.h"
 #include <iostream>
 
-unsigned maxflow(Graph g) 
+unsigned maxflow(Graph g)
 {
   unsigned s,t;
   s = g.s;
@@ -22,23 +22,24 @@ unsigned maxflow(Graph g)
 			std::vector<unsigned> paths = dj.get_paths();
 			unsigned u = paths[t-1]; // origin
 			unsigned v = t; // destination
-			do {
-				g.increment_flow_on_edge(u,v, fat_bottleneck);
-				v = u;
-				u = paths[u-1];
-			} while(v != s);
 
+      while(u != 0) {
+        g.increment_flow_on_edge(u,v, fat_bottleneck);
+
+        v = u;
+        u = paths[v-1];
+      }
 		}
-		else 
+		else
 			path_exists=false;
-	}	
+	}
 
 	//summing individual paths...
 	std::vector<Edge*> edges = g.get_edges_from_vertex(s);
 	unsigned sum=0;
 	for(unsigned i=0; i < edges.size(); i++){
 			sum = sum + edges[i]->flow;
-	} 
-  std::cout << "num iterations: " << iterations << " ";
+	}
+  //std::cout << "num iterations: " << iterations << " ";
 	return sum;
 }

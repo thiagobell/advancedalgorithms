@@ -22,7 +22,6 @@ Graph::Graph(std::istream& inputF)
   vertexes = new Vertex[n];
   edges = new Edge[m];
 
-
   unsigned i=0;
   while (i<m) {
     getline(inputF,line);
@@ -53,7 +52,6 @@ Graph::Graph(std::istream& inputF)
         t = node;
     }
   }
-
 }
 
 unsigned Graph::numVertexes()

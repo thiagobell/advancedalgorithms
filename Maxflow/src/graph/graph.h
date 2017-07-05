@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include <cassert>
 struct Vertex;
 class Edge {
 		public:
@@ -12,7 +13,9 @@ class Edge {
 		  unsigned capacity, flow;
 			unsigned get_forward(){return capacity-flow;};
 			unsigned get_backward(){return flow;};
-			void increment_flow(unsigned delta){flow = flow + delta;};
+			void increment_flow(unsigned delta){
+				assert(delta >= 0);
+				flow = flow + delta;};
    };
 
 struct Vertex {
@@ -22,12 +25,13 @@ struct Vertex {
 
 class Graph {
   private:
-  unsigned int n, m;
+
    Edge *edges;
    Vertex *vertexes;
 
   public:
    unsigned s,t;
+	 unsigned int n, m;
    Graph(std::istream& input);
    unsigned numVertexes();
    unsigned numEdges();

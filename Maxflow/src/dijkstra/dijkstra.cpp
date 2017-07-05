@@ -4,7 +4,7 @@
 #include <vector>
 #include <limits>
 #include <iostream>
-#include <algorithm> 
+#include <algorithm>
 
 Dijkstra::Dijkstra(unsigned s, unsigned t,Graph g, unsigned heap_arity)
 {
@@ -29,23 +29,21 @@ Dijkstra::Dijkstra(unsigned s, unsigned t,Graph g, unsigned heap_arity)
 		    unsigned weight = u_set[i]->get_forward();
 		    if(!visited[u_id-1]) {
 					unsigned distance_through_v = std::min(distance[v_node.id-1], weight);
-					previous_vertex[u_id-1] = v_node.id;
 					if(distance[u_id-1] == inf) {
+            previous_vertex[u_id-1] = v_node.id;
 						distance[u_id-1] = distance_through_v;
 						heap.insert(hnode<unsigned>(distance_through_v, u_id));
-					} else if (distance_through_v < distance[u_id-1]) {
+					} else if (distance_through_v > distance[u_id-1]) {
+            previous_vertex[u_id-1] = v_node.id;
 						distance[u_id-1] = distance_through_v;
 						heap.update_key(u_id, distance_through_v);
-					}	
+					}
       	}
     	}
-    
+
   	}
 	}
 
 	found_path = visited[t-1];
 	return;
 }
-
-
-
