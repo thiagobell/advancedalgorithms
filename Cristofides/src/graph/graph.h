@@ -13,6 +13,8 @@ struct Edge {
   double distance;
   /* whether this edge is part of MST*/
   bool selected = false;
+  /*sum of selected edges*/
+  double weight_selected_edges;
   bool operator<(const Edge& rhs){
     return distance < rhs.distance;
   }
@@ -27,6 +29,9 @@ class Graph {
    //distance inforation stored this way so that the vector can be sorted
    //for generating the MST
    std::vector<Edge> edges;
+
+   //sum of the weights of the selected edges.
+   double selected_edges_weight;
 
    double distance_between(unsigned n1, unsigned n2);
    //returns vector with edges (endpoint1, endpoint2, enpoint1, endpoint2..)

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "PerfectMatching.h"
 #include "GEOM/GeomPerfectMatching.h"
-
+/*
 void LoadFile(int& node_num, int& edge_num, int*& edges, int*& weights, char* filename)
 {
 	int e = 0;
@@ -219,7 +219,7 @@ int main(int argc, char* argv[])
 				ShowUsage();
 				break;
 		}
-		
+
 	}
 
 	if (!filename && !geom_filename) ShowUsage();
@@ -284,4 +284,4 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
-
+*/
