@@ -15,10 +15,7 @@ ifneq ($(shell uname -s),Darwin)
     LIBS += -lrt
 endif
  
-all: blossom5
-
-blossom5: ${OBJS}
-	$(CXX) $(CFLAGS) ${LIBDIR} -o $@ ${OBJS} ${LIBS}
+all: ${OBJS}
 
 .cpp.o:
 	$(CXX) $(CFLAGS) ${INCLUDES} $< -c -o $@

@@ -3317,7 +3317,8 @@ struct behavior *b;
   b->order = 1;
   b->minangle = 0.0;
   b->maxarea = -1.0;
-  b->quiet = b->verbose = 0;
+  b->quiet = 1;
+  b->verbose = 0;
 #ifndef TRILIBRARY
   b->innodefilename[0] = '\0';
 #endif /* not TRILIBRARY */
@@ -6434,7 +6435,7 @@ REAL dheight;
   adxbdy = adx * bdy;
   bdxady = bdx * ady;
 
-  det = adheight * (bdxcdy - cdxbdy) 
+  det = adheight * (bdxcdy - cdxbdy)
       + bdheight * (cdxady - adxcdy)
       + cdheight * (adxbdy - bdxady);
 
@@ -11475,7 +11476,7 @@ FILE *polyfile;
       for (j = 0; j < 2; j++) {
         if ((end[j] < b->firstnumber) ||
             (end[j] >= b->firstnumber + m->invertices)) {
-          printf("Error:  Segment %ld has an invalid vertex index.\n", 
+          printf("Error:  Segment %ld has an invalid vertex index.\n",
                  segmentnumber);
           triexit(1);
         }
@@ -13110,7 +13111,7 @@ int regions;
         } else {
           printf("Spreading regional attributes.\n");
         }
-      } else { 
+      } else {
         printf("Spreading regional area constraints.\n");
       }
     }

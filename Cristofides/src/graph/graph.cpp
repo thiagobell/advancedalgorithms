@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <cmath>
 #include <cstring>
+#include <cassert>
 double parse_mantissa_float(std::string s)
 { //https://stackoverflow.com/questions/38381030/unable-to-parse-mantissa-and-exponent-value-separately
   double value;
@@ -39,18 +40,19 @@ unsigned find_root(std::vector<unsigned> &parent, unsigned node)
     return find_root(parent, parent[node]);
 }
 
-void merge_tree(std::vector<unsigned> parent, unsigned t1, unsigned t2)
+void merge_tree(std::vector<unsigned> &parent, unsigned t1, unsigned t2)
 {
   unsigned roott1 = find_root(parent, t1);
-  parent[roott1] = t2;
+  parent[roott1] = find_root(parent,t2);
 }
 
 //creates a Minimum Spanning Tree
 //based on http://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/
 std::vector<unsigned> Graph::gen_mst()
 {
-  std::sort(edges.begin(), edges.end());
+  std::sort(edges_pt.begin(), edges_pt.end(),Edge::less_than_pointer);
   std::vector<unsigned> node_degrees;
+  selected_edges_weight = 0;
   node_degrees.reserve(n);
   std::vector<unsigned> parent;
   for(unsigned i = 0; i < n; i++) {
@@ -61,14 +63,14 @@ std::vector<unsigned> Graph::gen_mst()
   unsigned curr_edge = 0;
   while(edges_added < n-1){
     unsigned n1, n2;
-    n1 = edges[curr_edge].n1;
-    n2 = edges[curr_edge].n2;
+    n1 = edges_pt[curr_edge]->n1;
+    n2 = edges_pt[curr_edge]->n2;
     unsigned rootn1 = find_root(parent, n1);
     unsigned rootn2 = find_root(parent, n2);
     if(rootn1!=rootn2) {
       //edge does not add a cycle
-      edges[curr_edge].selected = true;
-      selected_edges_weight += edges[curr_edge].distance;
+      edges_pt[curr_edge]->selected = true;
+      selected_edges_weight += edges_pt[curr_edge]->distance;
       merge_tree(parent, n1, n2);
       edges_added++;
       node_degrees[n1] += 1;
@@ -123,6 +125,7 @@ Graph::Graph(std::istream& inputF)
     i++;
   }
   edges.reserve(m);
+  edges_vertex.resize(n-1);
   //calculate distances
   for(unsigned j=0; j<n; j++){
     for(unsigned k=j+1; k<n; k++){
@@ -131,7 +134,17 @@ Graph::Graph(std::istream& inputF)
       e.n2 = k;
       e.distance = distance_between(j,k);
       edges.push_back(e);
+      Edge *pt = &edges[edges.size()-1];
+      edges_pt.push_back(pt);
+      edges_vertex[j].push_back(pt);
     }
   }
   selected_edges_weight = 0;
+}
+
+void Graph::reset_selected()
+{
+  for(auto &a: edges){
+    a.selected = false;
+  }
 }

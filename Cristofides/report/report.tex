@@ -1,0 +1,56 @@
+\documentclass{iiufrgs}
+\usepackage[utf8]{inputenc}   % pacote para acentuação
+\usepackage{graphicx}           % pacote para importar figuras
+\usepackage{times}              % pacote para usar fonte Adobe Times
+\usepackage{framed}             % para exemplos e TODOs
+\usepackage{biblatex}           % para referências bibliográficas
+\usepackage{xcolor}             % cores
+\usepackage{hyperref}           % referências
+\usepackage{amsmath}
+\usepackage{float}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{tikz}
+
+\colorlet{shadecolor}{orange!15}
+
+\title{Laboratório 5 - Algoritmo de Cristofides}
+\author{}{Thiago Bell}
+
+\addbibresource{report.bib}
+
+\begin{document}
+\maketitle
+
+\setcounter{chapter}{1}
+
+\section{Tarefa}
+Implementar o algoritmo de Cristofides para o problema do caixeiro viajante.
+
+\section{Implementaç\~ao}
+O algoritmo foi implementado em C++. A implementação de grafo é feita através do
+armazenamento de cada aresta em uma estrutura de dados especial.
+
+
+\section{Ambiente de Teste}
+Os experimentos foram realizados usando um processador Intel  i5-2540M 
+acompanhado de 6 GiB de RAM. 
+O sistema operacional utilizado foi Debian Linux.
+
+\section{Testes Realizados}
+Foram realizados testes com as redes propostas na definição do trabalho.
+No entanto, apenas a estratégia
+
+\section{Comparação entre Hopcroft-Karp e Redução a Maxflow}
+Comparou-se os tempos de execução entre o algoritmo implementado e a execução do algoritmo de Ford-Fulkerson com estratégia de caminho mais gordo com a mesma instância reduzida ao
+problema do fluxo máximo.
+O algoritmo de Hopcroft-Karp foi significativamente mais rápido. Para 4096 vértices e 1679005 arestas, o tempo de execução para o primeiro foi de $13.8 ms$ (repetiu-se a execução 300 vezes 
+para evitar problemas de precisão de relógio e obter uma medida precisa). Para o Ford-Fulkerson o tempo foi de $94.3s$. Dessa forma, o algoritmo de Hopcroft-Karp tem uma performance ordens
+de grandeza melhor.
+
+
+\section{Conclus\~ao}
+Implementou-se o algoritmo de Hopcroft-Karp . Verificou-se que a implementação respeita a
+complexidade do algoritmo. Além disso, esse algoritmo tem melhor performance que o de Fork-Fulkerson com uma mesma instância reduzida ao problema de fluxo máximo.
+\end{document}
