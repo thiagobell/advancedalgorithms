@@ -30,24 +30,35 @@ Implementar o algoritmo de Cristofides para o problema do caixeiro viajante.
 
 \section{Implementaç\~ao}
 O algoritmo foi implementado em C++. A implementação de grafo é feita através do
-armazenamento de cada aresta em uma estrutura de dados especial.
+armazenamento de cada aresta em uma estrutura de dados especial. Em diferentes 
+momentos da execução do algoritmo é necessário acessar essa informação de formas
+diferentes. No cálculo da \textit{minimum spanning 
+tree} precisa-se ordenar as arestas por comprimento e no pareamento precisa-se
+acessá-las a partir dos seus respectivos vértices. Por isso, armazena-se listas de ponteiros.
+Uma lista de arestas para cada vértice utilizando ponteiros também é utilizada. 
+Assim, pode-se ordenar os ponteiros e manter a ordem anterior mantendo válida 
+outras referências a esses dados.
+
+Cada estrutura de arestas, representava uma ou mais arestas nao direcionadas entre dois vértices.
+Um campo númerico determinava o número de arestas paralelas entre os vértices. No caso de uma aresta
+estar na \textit{minimum spanning tree} e também ser selecionada no pareamento esse número passa a ser dois.
+
+O algoritmo usado para o cálculo da \textit{minimum spanning tree} foi o de Kruskal com complexidade $O(log n)$
+onde $n$ é o número de vértices. Para o ciclo euleriano, foi usado o algoritmo de Hierholzer com custo $O(m)$.
+
 
 
 \section{Ambiente de Teste}
-Os experimentos foram realizados usando um processador Intel  i5-2540M 
-acompanhado de 6 GiB de RAM. 
-O sistema operacional utilizado foi Debian Linux.
+Os experimentos foram realizados usando um processador Intel  i7-2600k 
+acompanhado de 8 GiB de RAM. 
+O sistema operacional utilizado foi Ubuntu Linux.
 
 \section{Testes Realizados}
-Foram realizados testes com as redes propostas na definição do trabalho.
-No entanto, apenas a estratégia
+Testes foram realizados com as redes sugeridas. Os tempos de execução foram medidos. Os resultados foram comparados com os caminhos ótimos apresentados na TSPLIB.
 
-\section{Comparação entre Hopcroft-Karp e Redução a Maxflow}
-Comparou-se os tempos de execução entre o algoritmo implementado e a execução do algoritmo de Ford-Fulkerson com estratégia de caminho mais gordo com a mesma instância reduzida ao
-problema do fluxo máximo.
-O algoritmo de Hopcroft-Karp foi significativamente mais rápido. Para 4096 vértices e 1679005 arestas, o tempo de execução para o primeiro foi de $13.8 ms$ (repetiu-se a execução 300 vezes 
-para evitar problemas de precisão de relógio e obter uma medida precisa). Para o Ford-Fulkerson o tempo foi de $94.3s$. Dessa forma, o algoritmo de Hopcroft-Karp tem uma performance ordens
-de grandeza melhor.
+
+\section{}
+
 
 
 \section{Conclus\~ao}

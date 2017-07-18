@@ -75,6 +75,8 @@ std::vector<unsigned> Graph::gen_mst()
       edges_added++;
       node_degrees[n1] += 1;
       node_degrees[n2] += 1;
+    } else {
+      edges_pt[curr_edge]->edge_count=0;
     }
     curr_edge++;
   }

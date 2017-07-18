@@ -11,12 +11,7 @@ std::vector<Edge*> greedy_matching(Graph &g, std::vector<unsigned> &odd_vertices
     for(unsigned inx_b=inx_a+1;inx_b< odd_vertices.size();inx_b++) {
       unsigned n1 = odd_vertices[inx_a];
       unsigned n2 = odd_vertices[inx_b];
-      assert(n1< n2);
-        //if(g.edges_vertex[n1][n2-n1-1]->selected == false){
-            assert(g.edges_vertex[n1][n2-n1-1]->n1 == n1);
-            assert(g.edges_vertex[n1][n2-n1-1]->n2 == n2);
-            free_edges.push_back(g.edges_vertex[n1][n2-n1-1]);
-          //}
+      free_edges.push_back(g.edges_vertex[n1][n2-n1-1]);
      }
   }
 
