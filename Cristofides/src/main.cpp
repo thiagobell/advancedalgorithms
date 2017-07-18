@@ -34,7 +34,6 @@ int main(int argc, char **argv)
       }
       count++;
     }
-
   }
 
   Graph g(std::cin);
@@ -42,7 +41,7 @@ int main(int argc, char **argv)
   double cost;
   for(unsigned iter=0; iter<repetitions;iter++){
     cost = cristofides(g, greedy);
-    g.reset_selected();
+    //no need to reset data structure because Edge.edge_count is reset by Graph::MST
   }
   if(measure_time)
     std::cout << "time:"<<  std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()-t).count()<<"\n";

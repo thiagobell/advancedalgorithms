@@ -27,9 +27,10 @@ double parse_mantissa_float(std::string s)
 
 
 double Graph::distance_between(unsigned n1, unsigned n2) {
-  double deltax = vertex_coordinates[n1*2] - vertex_coordinates[n2*2];
-  double deltay = vertex_coordinates[n1*2+1] - vertex_coordinates[n2*2+1];
-  return sqrt( deltax*deltax + deltay*deltay );
+  double deltax = vertex_coordinates_x[n1] - vertex_coordinates_x[n2];
+  double deltay = vertex_coordinates_y[n1] - vertex_coordinates_y[n2];
+  //return round(sqrt( deltax*deltax + deltay*deltay ));
+  return round(sqrt( deltax*deltax + deltay*deltay ));
 }
 
 unsigned find_root(std::vector<unsigned> &parent, unsigned node)
@@ -52,26 +53,25 @@ std::vector<unsigned> Graph::gen_mst()
 {
   std::sort(edges_pt.begin(), edges_pt.end(),Edge::less_than_pointer);
   std::vector<unsigned> node_degrees;
-  selected_edges_weight = 0;
   node_degrees.reserve(n);
-  std::vector<unsigned> parent;
+  std::vector<unsigned> sets;
   for(unsigned i = 0; i < n; i++) {
     node_degrees.push_back(0);
-    parent.push_back(i);
+    sets.push_back(i);
   }
+
   unsigned edges_added = 0;
   unsigned curr_edge = 0;
   while(edges_added < n-1){
     unsigned n1, n2;
     n1 = edges_pt[curr_edge]->n1;
     n2 = edges_pt[curr_edge]->n2;
-    unsigned rootn1 = find_root(parent, n1);
-    unsigned rootn2 = find_root(parent, n2);
+    unsigned rootn1 = find_root(sets, n1);
+    unsigned rootn2 = find_root(sets, n2);
     if(rootn1!=rootn2) {
       //edge does not add a cycle
-      edges_pt[curr_edge]->selected = true;
-      selected_edges_weight += edges_pt[curr_edge]->distance;
-      merge_tree(parent, n1, n2);
+      edges_pt[curr_edge]->edge_count=1;
+      merge_tree(sets, n1, n2);
       edges_added++;
       node_degrees[n1] += 1;
       node_degrees[n2] += 1;
@@ -101,16 +101,17 @@ Graph::Graph(std::istream& inputF)
     std::stringstream linestr;
     linestr.str(tokens[tokens.size()-1]);
     linestr >> n;
-    m = n*(n-1);
+    m = (n*(n-1))/2;
 
   while (line.substr(0,18) != "NODE_COORD_SECTION")
     getline(inputF,line);
 
-  vertex_coordinates.reserve(n*2);
+  vertex_coordinates_x.reserve(n);
+  vertex_coordinates_y.reserve(n);
+
   unsigned i=0;
   while (i<n) {
     getline(inputF,line);
-
     std::stringstream arc(line);
     unsigned node;
     std::string xstr, ystr;
@@ -118,14 +119,13 @@ Graph::Graph(std::istream& inputF)
     arc >> node >> xstr >> ystr;
     x = parse_mantissa_float(xstr);
     y = parse_mantissa_float(ystr);
-
-    vertex_coordinates.push_back(x);
-    vertex_coordinates.push_back(y);
-
+    vertex_coordinates_x.push_back(x);
+    vertex_coordinates_y.push_back(y);
     i++;
   }
-  edges.reserve(m);
+  edges = new Edge[m];
   edges_vertex.resize(n-1);
+  unsigned count_e=0;
   //calculate distances
   for(unsigned j=0; j<n; j++){
     for(unsigned k=j+1; k<n; k++){
@@ -133,18 +133,13 @@ Graph::Graph(std::istream& inputF)
       e.n1 = j;
       e.n2 = k;
       e.distance = distance_between(j,k);
-      edges.push_back(e);
-      Edge *pt = &edges[edges.size()-1];
+      e.edge_count = 0;
+      //std::cout <<e.n1+1 <<" "<<e.n2+1<< " "<<e.distance<< "\n";
+      edges[count_e] = e;
+      Edge *pt = edges + count_e;
       edges_pt.push_back(pt);
       edges_vertex[j].push_back(pt);
+      count_e++;
     }
-  }
-  selected_edges_weight = 0;
-}
-
-void Graph::reset_selected()
-{
-  for(auto &a: edges){
-    a.selected = false;
   }
 }
