@@ -42,5 +42,8 @@ class Graph {
    double distance_between(unsigned n1, unsigned n2);
    //returns vector with edges (endpoint1, endpoint2, enpoint1, endpoint2..)
    std::vector<unsigned> gen_mst();
+
+   //resets edge_counter
+   void reset();
 };
 #endif

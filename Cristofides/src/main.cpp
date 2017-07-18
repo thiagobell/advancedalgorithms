@@ -41,6 +41,7 @@ int main(int argc, char **argv)
   double cost;
   for(unsigned iter=0; iter<repetitions;iter++){
     cost = cristofides(g, greedy);
+    g.reset();
     //no need to reset data structure because Edge.edge_count is reset by Graph::MST
   }
   if(measure_time)
